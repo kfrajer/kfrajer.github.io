@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>js on Hugo Zzo Theme</title>
+    <link>http://example.org/en/tags/js/</link>
+    <description>Recent content in js on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 30 May 2020 18:09:26 -0400</lastBuildDate>
+    
+        <atom:link href="http://example.org/en/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>P5JS HTML Bundle</title>
+        <link>http://example.org/en/templates/processing/p5js-html-bundle/</link>
+        <pubDate>Sat, 30 May 2020 18:09:26 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 18:09:26 -0400</atom:modified>
+        <guid>http://example.org/en/templates/processing/p5js-html-bundle/</guid>
+        <description>P5js Template: Loading local p5.js script 1 2 3 4 5 6 7 8  &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;sketch.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;   P5js Template: Embedded p5.js script 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; function setup() { createCanvas(400, 400); } function draw() { if (mouseIsPressed) { fill(0); } else { fill(255); } ellipse(mouseX, mouseY, 80, 80); } &amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;   P5js Template: Loading a local image 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  &amp;lt;!</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Processing</category>
+            
+          
+            
+              <category>js</category>
+            
+          
+            
+              <category>Javascript</category>
+            
+          
+            
+              <category>p5js</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

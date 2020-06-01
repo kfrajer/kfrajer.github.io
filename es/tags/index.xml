@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Tags on Hugo Zzo Theme</title>
+    <link>http://example.org/es/tags/</link>
+    <description>Recent content in Tags on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 31 May 2020 12:10:39 -0400</lastBuildDate>
+    
+        <atom:link href="http://example.org/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Demo</title>
+        <link>http://example.org/es/tags/demo/</link>
+        <pubDate>Sun, 31 May 2020 12:10:39 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        
+        <guid>http://example.org/es/tags/demo/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Entradas</title>
+        <link>http://example.org/es/tags/entradas/</link>
+        <pubDate>Sun, 31 May 2020 12:10:39 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        
+        <guid>http://example.org/es/tags/entradas/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>index</title>
+        <link>http://example.org/es/tags/index/</link>
+        <pubDate>Sun, 31 May 2020 12:07:35 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        
+        <guid>http://example.org/es/tags/index/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Main</title>
+        <link>http://example.org/es/tags/main/</link>
+        <pubDate>Sun, 31 May 2020 12:07:35 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        
+        <guid>http://example.org/es/tags/main/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Welcome</title>
+        <link>http://example.org/es/tags/welcome/</link>
+        <pubDate>Sun, 31 May 2020 12:07:35 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        
+        <guid>http://example.org/es/tags/welcome/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

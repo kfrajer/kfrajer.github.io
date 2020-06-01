@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>WSL on Hugo Zzo Theme</title>
+    <link>http://example.org/en/tags/wsl/</link>
+    <description>Recent content in WSL on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 30 May 2020 19:50:05 -0400</lastBuildDate>
+    
+        <atom:link href="http://example.org/en/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Setup Docker in Wsl</title>
+        <link>http://example.org/en/development/setup-docker-in-wsl/</link>
+        <pubDate>Sat, 30 May 2020 19:50:05 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 19:50:05 -0400</atom:modified>
+        <guid>http://example.org/en/development/setup-docker-in-wsl/</guid>
+        <description>Installing Docker in Windows Subsystem Linux (WSL) NOTES  After ssummer 2020, you need to have WSL2 which is made available for Windows 10 Home edition It is recommended to upgrade to Windows 10 Pro In &amp;ldquo;Turn Windows features on and off&amp;rdquo;, check &amp;ldquo;Windows Hypervisor Platform&amp;rdquo; To be confirmed, check &amp;ldquo;Hyper-V&amp;rdquo;? Currently working but this is not checked. To investigate&amp;hellip; Finally, install &amp;ldquo;Docker Destop&amp;rdquo; and ensure the docker-machine is up and running.</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Docker</category>
+            
+          
+            
+              <category>WSL</category>
+            
+          
+            
+              <category>Cheatsheet</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Docker Knowlegde Base</title>
+        <link>http://example.org/en/development/docker/</link>
+        <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 17:29:59 -0400</atom:modified>
+        <guid>http://example.org/en/development/docker/</guid>
+        <description>Core Docker commands   docker ps -a
+  docker run --rm --name {containerName} {imageName}
+  docker run --rm -it --name {containerName} {imageName}
+  docker logs -f {containerName}: Continuos logs
+  docker exec -it {containerName} {cmd-to-execute}
+  alias ccx=&#39;f(){ [ -n &amp;quot;$1&amp;quot; ] &amp;amp;&amp;amp; docker exec -it &amp;quot;$1&amp;quot; /bin/bash; unset -f f; }; : Creates bash session in running container
+  docker inspect {containerName}</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Docker</category>
+            
+          
+            
+              <category>Docker-compose</category>
+            
+          
+            
+              <category>Linux</category>
+            
+          
+            
+              <category>WSL</category>
+            
+          
+            
+              <category>Cheatsheet</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

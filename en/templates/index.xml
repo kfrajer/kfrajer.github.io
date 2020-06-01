@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Templates on Hugo Zzo Theme</title>
+    <link>http://example.org/en/templates/</link>
+    <description>Recent content in Templates on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 30 May 2020 18:10:09 -0400</lastBuildDate>
+    
+        <atom:link href="http://example.org/en/templates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Makefile</title>
+        <link>http://example.org/en/templates/makefile/</link>
+        <pubDate>Sat, 30 May 2020 18:10:09 -0400</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 18:10:09 -0400</atom:modified>
+        <guid>http://example.org/en/templates/makefile/</guid>
+        <description>.DEFAULT_GOAL := build
+.PHONY: clean
+CTIMESTAMP=$(shell date +%Y%m%d%H%M%S)
+MAIN=newsletter-prep
+DF_ORIGINAL=dockerfiles/df-original/Dockerfile
+DF_STAGES=dockerfiles/df-stages/Dockerfile
+DC_DF_FILE=dockerfiles/dockercompose/Dockerfile
+DC_MAIN_FILE=dockerfiles/dockercompose/docker-compose.yml
+LOGFILE=log-backups.log
+TRASH=Trash/
+info:
+@ echo &amp;ldquo;Build and runs report generator (code name newsletter&amp;rdquo;
+safebackup: clean
+$(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(TRASH)/$(LOGFILE))
+@echo &amp;ldquo;:::::Dockerfile_$CTIMESTAMP&amp;rdquo;
+-@test -f Dockerfile &amp;amp;&amp;amp; $(shell head -n 3 Dockerfile &amp;raquo; $(TRASH)/$(LOGFILE))
+-@test -f Dockerfile &amp;amp;&amp;amp; $(shell [ ! -s Dockerfile ] &amp;amp;&amp;amp; echo &amp;quot; (Dockerfile was empty)&amp;rdquo; &amp;raquo; $(TRASH)/$(LOGFILE))
+-@test -f Dockerfile &amp;amp;&amp;amp; cp -vf Dockerfile $(TRASH)/Dockerfile_$(CTIMESTAMP) || true</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>c&#43;&#43;</category>
+            
+          
+            
+              <category>make</category>
+            
+          
+            
+              <category>Makefile</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>docker</title>
+        <link>http://example.org/en/templates/docker/</link>
+        <pubDate>Thu, 05 Mar 2020 14:08:48 +0000</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <atom:modified>Thu, 05 Mar 2020 14:08:48 +0000</atom:modified>
+        <guid>http://example.org/en/templates/docker/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Processing</title>
+        <link>http://example.org/en/templates/processing/</link>
+        <pubDate>Thu, 05 Mar 2020 14:08:48 +0000</pubDate>
+        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <atom:modified>Thu, 05 Mar 2020 14:08:48 +0000</atom:modified>
+        <guid>http://example.org/en/templates/processing/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
