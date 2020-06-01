@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Golang on Hugo Zzo Theme</title>
-    <link>http://example.org/en/tags/golang/</link>
+    <link>http://kfrajer.github.io/en/tags/golang/</link>
     <description>Recent content in Golang on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 30 May 2020 17:29:59 -0400</lastBuildDate>
     
-        <atom:link href="http://example.org/en/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/en/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Building a Hugo Page</title>
-        <link>http://example.org/en/development/cr_buidling_static_site/</link>
+        <link>http://kfrajer.github.io/en/development/cr_buidling_static_site/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:29:59 -0400</atom:modified>
-        <guid>http://example.org/en/development/cr_buidling_static_site/</guid>
+        <guid>http://kfrajer.github.io/en/development/cr_buidling_static_site/</guid>
         <description>Building a Site: Generation
 *) (Why to setup a static site?)[#]
 *) Install HUGO (Binary+add to PATH)

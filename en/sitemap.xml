@@ -3,561 +3,561 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/en/showcase/hugo/hugo-resources/</loc>
+    <loc>http://kfrajer.github.io/en/showcase/hugo/hugo-resources/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/showcase/hugo/hugo-theme-zzo/</loc>
+    <loc>http://kfrajer.github.io/en/showcase/hugo/hugo-theme-zzo/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/showcase/hugo/hugo-theme-zdoc/</loc>
+    <loc>http://kfrajer.github.io/en/showcase/hugo/hugo-theme-zdoc/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/</loc>
+    <loc>http://kfrajer.github.io/en/</loc>
     <lastmod>2020-05-30T19:50:05-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/"
+                href="http://kfrajer.github.io/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/"
+                href="http://kfrajer.github.io/en/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/cheatsheet/</loc>
+    <loc>http://kfrajer.github.io/en/tags/cheatsheet/</loc>
     <lastmod>2020-05-30T19:50:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/docker/</loc>
+    <loc>http://kfrajer.github.io/en/tags/docker/</loc>
     <lastmod>2020-05-30T19:50:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/setup-docker-in-wsl/</loc>
+    <loc>http://kfrajer.github.io/en/development/setup-docker-in-wsl/</loc>
     <lastmod>2020-05-30T19:50:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/</loc>
+    <loc>http://kfrajer.github.io/en/tags/</loc>
     <lastmod>2020-05-30T19:50:05-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/tags/"
+                href="http://kfrajer.github.io/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/tags/"
+                href="http://kfrajer.github.io/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/wsl/</loc>
+    <loc>http://kfrajer.github.io/en/tags/wsl/</loc>
     <lastmod>2020-05-30T19:50:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/c&#43;&#43;/</loc>
+    <loc>http://kfrajer.github.io/en/tags/c&#43;&#43;/</loc>
     <lastmod>2020-05-30T18:11:25-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/docker-cpp-mem-demo/</loc>
+    <loc>http://kfrajer.github.io/en/development/docker-cpp-mem-demo/</loc>
     <lastmod>2020-05-30T18:11:25-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/commands/</loc>
+    <loc>http://kfrajer.github.io/en/tags/commands/</loc>
     <lastmod>2020-05-30T18:11:04-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/git/</loc>
+    <loc>http://kfrajer.github.io/en/tags/git/</loc>
     <lastmod>2020-05-30T18:11:04-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/git-flow-fbranch/</loc>
+    <loc>http://kfrajer.github.io/en/development/git-flow-fbranch/</loc>
     <lastmod>2020-05-30T18:11:04-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/make/</loc>
+    <loc>http://kfrajer.github.io/en/tags/make/</loc>
     <lastmod>2020-05-30T18:10:09-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/makefile/</loc>
+    <loc>http://kfrajer.github.io/en/tags/makefile/</loc>
     <lastmod>2020-05-30T18:10:09-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/makefile/</loc>
+    <loc>http://kfrajer.github.io/en/templates/makefile/</loc>
     <lastmod>2020-05-30T18:10:09-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/</loc>
+    <loc>http://kfrajer.github.io/en/templates/</loc>
     <lastmod>2020-05-30T18:10:09-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/build/</loc>
+    <loc>http://kfrajer.github.io/en/tags/build/</loc>
     <lastmod>2020-05-30T18:09:54-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/docker/dockerfile-multistage/</loc>
+    <loc>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</loc>
     <lastmod>2020-05-30T18:09:54-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/java/</loc>
+    <loc>http://kfrajer.github.io/en/tags/java/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/javascript/</loc>
+    <loc>http://kfrajer.github.io/en/tags/javascript/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/js/</loc>
+    <loc>http://kfrajer.github.io/en/tags/js/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/p3/</loc>
+    <loc>http://kfrajer.github.io/en/tags/p3/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/p5js/</loc>
+    <loc>http://kfrajer.github.io/en/tags/p5js/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/processing/p5js-html-bundle/</loc>
+    <loc>http://kfrajer.github.io/en/templates/processing/p5js-html-bundle/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/processing/</loc>
+    <loc>http://kfrajer.github.io/en/tags/processing/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/processing/processing-java/</loc>
+    <loc>http://kfrajer.github.io/en/templates/processing/processing-java/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/docker/docker-compose/</loc>
+    <loc>http://kfrajer.github.io/en/templates/docker/docker-compose/</loc>
     <lastmod>2020-05-30T18:08:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/one/</loc>
+    <loc>http://kfrajer.github.io/en/tags/one/</loc>
     <lastmod>2020-05-30T18:08:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/two/</loc>
+    <loc>http://kfrajer.github.io/en/tags/two/</loc>
     <lastmod>2020-05-30T18:08:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/docker/dockerfile/</loc>
+    <loc>http://kfrajer.github.io/en/templates/docker/dockerfile/</loc>
     <lastmod>2020-05-30T18:08:14-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/python-virtualenv/</loc>
+    <loc>http://kfrajer.github.io/en/development/python-virtualenv/</loc>
     <lastmod>2020-05-30T18:00:56-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/jq/</loc>
+    <loc>http://kfrajer.github.io/en/development/jq/</loc>
     <lastmod>2020-05-30T18:00:31-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/cr_buidling_static_site/</loc>
+    <loc>http://kfrajer.github.io/en/development/cr_buidling_static_site/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/docker/</loc>
+    <loc>http://kfrajer.github.io/en/development/docker/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/docker-compose/</loc>
+    <loc>http://kfrajer.github.io/en/tags/docker-compose/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/golang/</loc>
+    <loc>http://kfrajer.github.io/en/tags/golang/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/hugo/</loc>
+    <loc>http://kfrajer.github.io/en/tags/hugo/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/linux/</loc>
+    <loc>http://kfrajer.github.io/en/tags/linux/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/static-generator/</loc>
+    <loc>http://kfrajer.github.io/en/tags/static-generator/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/web/</loc>
+    <loc>http://kfrajer.github.io/en/tags/web/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/git/</loc>
+    <loc>http://kfrajer.github.io/en/development/git/</loc>
     <lastmod>2020-05-30T17:25:33-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/publication/article/</loc>
+    <loc>http://kfrajer.github.io/en/publication/article/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/publication/book/</loc>
+    <loc>http://kfrajer.github.io/en/publication/book/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/development/</loc>
+    <loc>http://kfrajer.github.io/en/development/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/docker/</loc>
+    <loc>http://kfrajer.github.io/en/templates/docker/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/publication/misc/</loc>
+    <loc>http://kfrajer.github.io/en/publication/misc/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/templates/processing/</loc>
+    <loc>http://kfrajer.github.io/en/templates/processing/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/publication/</loc>
+    <loc>http://kfrajer.github.io/en/publication/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/</loc>
+    <loc>http://kfrajer.github.io/en/posts/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/shortcode/</loc>
+    <loc>http://kfrajer.github.io/en/tags/shortcode/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/shortcodes/</loc>
+    <loc>http://kfrajer.github.io/en/posts/shortcodes/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/showcase/hugo/</loc>
+    <loc>http://kfrajer.github.io/en/showcase/hugo/</loc>
     <lastmod>2020-01-19T21:04:11+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/showcase/</loc>
+    <loc>http://kfrajer.github.io/en/showcase/</loc>
     <lastmod>2020-01-19T15:43:38+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/categories/</loc>
+    <loc>http://kfrajer.github.io/en/categories/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/categories/"
+                href="http://kfrajer.github.io/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/categories/"
+                href="http://kfrajer.github.io/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/css/</loc>
+    <loc>http://kfrajer.github.io/en/tags/css/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/html/</loc>
+    <loc>http://kfrajer.github.io/en/tags/html/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/markdown/</loc>
+    <loc>http://kfrajer.github.io/en/tags/markdown/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/markdown-syntax/</loc>
+    <loc>http://kfrajer.github.io/en/posts/markdown-syntax/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/series/</loc>
+    <loc>http://kfrajer.github.io/en/series/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/series/"
+                href="http://kfrajer.github.io/es/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/series/"
+                href="http://kfrajer.github.io/en/series/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/en/categories/syntax/</loc>
+    <loc>http://kfrajer.github.io/en/categories/syntax/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/themes/</loc>
+    <loc>http://kfrajer.github.io/en/tags/themes/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/categories/themes/</loc>
+    <loc>http://kfrajer.github.io/en/categories/themes/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/series/themes-guide/</loc>
+    <loc>http://kfrajer.github.io/en/series/themes-guide/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/privacy/</loc>
+    <loc>http://kfrajer.github.io/en/tags/privacy/</loc>
     <lastmod>2019-12-19T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/rich-content/</loc>
+    <loc>http://kfrajer.github.io/en/posts/rich-content/</loc>
     <lastmod>2019-12-19T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/shortcodes/</loc>
+    <loc>http://kfrajer.github.io/en/tags/shortcodes/</loc>
     <lastmod>2019-12-19T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/categories/hugo/</loc>
+    <loc>http://kfrajer.github.io/en/categories/hugo/</loc>
     <lastmod>2019-12-18T10:33:41+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/syntax-highlight/</loc>
+    <loc>http://kfrajer.github.io/en/posts/syntax-highlight/</loc>
     <lastmod>2019-12-18T10:33:41+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/math-typesetting/</loc>
+    <loc>http://kfrajer.github.io/en/posts/math-typesetting/</loc>
     <lastmod>2019-12-17T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/amoji/</loc>
+    <loc>http://kfrajer.github.io/en/tags/amoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/bamoji/</loc>
+    <loc>http://kfrajer.github.io/en/tags/bamoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/emoji/</loc>
+    <loc>http://kfrajer.github.io/en/tags/emoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/emoji-support/</loc>
+    <loc>http://kfrajer.github.io/en/posts/emoji-support/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/gamoji/</loc>
+    <loc>http://kfrajer.github.io/en/tags/gamoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/namoji/</loc>
+    <loc>http://kfrajer.github.io/en/tags/namoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/categories/diagram/</loc>
+    <loc>http://kfrajer.github.io/en/categories/diagram/</loc>
     <lastmod>2019-11-18T21:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/test-viz/</loc>
+    <loc>http://kfrajer.github.io/en/posts/test-viz/</loc>
     <lastmod>2019-11-18T21:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/test-wavedrom/</loc>
+    <loc>http://kfrajer.github.io/en/posts/test-wavedrom/</loc>
     <lastmod>2019-11-18T18:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/test-chartjs/</loc>
+    <loc>http://kfrajer.github.io/en/posts/test-chartjs/</loc>
     <lastmod>2019-11-18T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/test-js-sequence-diagrams/</loc>
+    <loc>http://kfrajer.github.io/en/posts/test-js-sequence-diagrams/</loc>
     <lastmod>2019-11-18T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/diagram/</loc>
+    <loc>http://kfrajer.github.io/en/tags/diagram/</loc>
     <lastmod>2019-11-17T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/test-mermaid/</loc>
+    <loc>http://kfrajer.github.io/en/posts/test-mermaid/</loc>
     <lastmod>2019-11-17T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/categories/math/</loc>
+    <loc>http://kfrajer.github.io/en/categories/math/</loc>
     <lastmod>2019-11-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/test-mathjax/</loc>
+    <loc>http://kfrajer.github.io/en/posts/test-mathjax/</loc>
     <lastmod>2019-11-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/test-katex/</loc>
+    <loc>http://kfrajer.github.io/en/posts/test-katex/</loc>
     <lastmod>2019-11-15T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/posts/test-flowchart/</loc>
+    <loc>http://kfrajer.github.io/en/posts/test-flowchart/</loc>
     <lastmod>2019-11-14T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/gallery/cartoon/</loc>
+    <loc>http://kfrajer.github.io/en/gallery/cartoon/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/gallery/</loc>
+    <loc>http://kfrajer.github.io/en/gallery/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/gallery/photo/</loc>
+    <loc>http://kfrajer.github.io/en/gallery/photo/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/presentation/dir/fourth/</loc>
+    <loc>http://kfrajer.github.io/en/presentation/dir/fourth/</loc>
     <lastmod>2019-10-30T20:48:10+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/presentation/</loc>
+    <loc>http://kfrajer.github.io/en/presentation/</loc>
     <lastmod>2019-10-30T20:48:10+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/presentation/third/</loc>
+    <loc>http://kfrajer.github.io/en/presentation/third/</loc>
     <lastmod>2019-10-30T20:46:30+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/presentation/second/</loc>
+    <loc>http://kfrajer.github.io/en/presentation/second/</loc>
     <lastmod>2019-10-30T20:45:24+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/presentation/first/</loc>
+    <loc>http://kfrajer.github.io/en/presentation/first/</loc>
     <lastmod>2019-10-30T19:45:20+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/archive/</loc>
+    <loc>http://kfrajer.github.io/en/archive/</loc>
     <lastmod>2019-10-19T11:44:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/about/</loc>
+    <loc>http://kfrajer.github.io/en/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/publication/article/article_any_folder_name_1/</loc>
+    <loc>http://kfrajer.github.io/en/publication/article/article_any_folder_name_1/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/publication/book/book_any_folder_name_1/</loc>
+    <loc>http://kfrajer.github.io/en/publication/book/book_any_folder_name_1/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/publication/misc/misc_any_folder_name_1/</loc>
+    <loc>http://kfrajer.github.io/en/publication/misc/misc_any_folder_name_1/</loc>
     <lastmod>2016-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/en/tags/index/</loc>
+    <loc>http://kfrajer.github.io/en/tags/index/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/tags/index/"
+                href="http://kfrajer.github.io/es/tags/index/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/tags/index/"
+                href="http://kfrajer.github.io/en/tags/index/"
                 />
   </url>
   

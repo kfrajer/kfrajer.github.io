@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on Hugo Zzo Theme</title>
-    <link>http://example.org/es/series/</link>
+    <link>http://kfrajer.github.io/es/series/</link>
     <description>Recent content in Series on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
@@ -15,7 +15,7 @@
     <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     
-        <atom:link href="http://example.org/es/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/es/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     

@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Hugo Zzo Theme</title>
-    <link>http://example.org/es/tags/</link>
+    <link>http://kfrajer.github.io/es/tags/</link>
     <description>Recent content in Tags on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 31 May 2020 12:10:39 -0400</lastBuildDate>
     
-        <atom:link href="http://example.org/es/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Demo</title>
-        <link>http://example.org/es/tags/demo/</link>
+        <link>http://kfrajer.github.io/es/tags/demo/</link>
         <pubDate>Sun, 31 May 2020 12:10:39 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/es/tags/demo/</guid>
+        <guid>http://kfrajer.github.io/es/tags/demo/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>Entradas</title>
-        <link>http://example.org/es/tags/entradas/</link>
+        <link>http://kfrajer.github.io/es/tags/entradas/</link>
         <pubDate>Sun, 31 May 2020 12:10:39 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/es/tags/entradas/</guid>
+        <guid>http://kfrajer.github.io/es/tags/entradas/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>index</title>
-        <link>http://example.org/es/tags/index/</link>
+        <link>http://kfrajer.github.io/es/tags/index/</link>
         <pubDate>Sun, 31 May 2020 12:07:35 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/es/tags/index/</guid>
+        <guid>http://kfrajer.github.io/es/tags/index/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -78,11 +78,11 @@
       
       <item>
         <title>Main</title>
-        <link>http://example.org/es/tags/main/</link>
+        <link>http://kfrajer.github.io/es/tags/main/</link>
         <pubDate>Sun, 31 May 2020 12:07:35 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/es/tags/main/</guid>
+        <guid>http://kfrajer.github.io/es/tags/main/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -96,11 +96,11 @@
       
       <item>
         <title>Welcome</title>
-        <link>http://example.org/es/tags/welcome/</link>
+        <link>http://kfrajer.github.io/es/tags/welcome/</link>
         <pubDate>Sun, 31 May 2020 12:07:35 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/es/tags/welcome/</guid>
+        <guid>http://kfrajer.github.io/es/tags/welcome/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>

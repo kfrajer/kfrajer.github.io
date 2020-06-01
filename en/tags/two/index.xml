@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>two on Hugo Zzo Theme</title>
-    <link>http://example.org/en/tags/two/</link>
+    <link>http://kfrajer.github.io/en/tags/two/</link>
     <description>Recent content in two on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 30 May 2020 18:08:28 -0400</lastBuildDate>
     
-        <atom:link href="http://example.org/en/tags/two/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/en/tags/two/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Docker Compose</title>
-        <link>http://example.org/en/templates/docker/docker-compose/</link>
+        <link>http://kfrajer.github.io/en/templates/docker/docker-compose/</link>
         <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:08:28 -0400</atom:modified>
-        <guid>http://example.org/en/templates/docker/docker-compose/</guid>
+        <guid>http://kfrajer.github.io/en/templates/docker/docker-compose/</guid>
         <description></description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
@@ -52,11 +52,11 @@
       
       <item>
         <title>Python Virtualenv</title>
-        <link>http://example.org/en/development/python-virtualenv/</link>
+        <link>http://kfrajer.github.io/en/development/python-virtualenv/</link>
         <pubDate>Sat, 30 May 2020 18:00:56 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:00:56 -0400</atom:modified>
-        <guid>http://example.org/en/development/python-virtualenv/</guid>
+        <guid>http://kfrajer.github.io/en/development/python-virtualenv/</guid>
         <description>Python Virtual Environment For Linux  virtualenv -v venv --python=/usr/bin/python3 source ./venv/bin/activate  For Windows  python -m pip install --proxy=http://u:p@proxy-svc-name.com:port --upgrade pip pip install --proxy=http://u:p@proxy-svc-name.com:port virtualenv virtualenv -v {envName} --python=c:\Python37\python.exe {envName}\Scripts\activate
 […] deactivate doskey /history  </description>
         
@@ -81,11 +81,11 @@
       
       <item>
         <title>Jq</title>
-        <link>http://example.org/en/development/jq/</link>
+        <link>http://kfrajer.github.io/en/development/jq/</link>
         <pubDate>Sat, 30 May 2020 18:00:31 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:00:31 -0400</atom:modified>
-        <guid>http://example.org/en/development/jq/</guid>
+        <guid>http://kfrajer.github.io/en/development/jq/</guid>
         <description>Core JQ commands Doc&amp;rsquo;s main reference: jq Tutorial
 Commands in Docker context  [TBD]  Commands applied to log files  cat {filename} | jq &#39;. | length&#39; : How many entries cat {filename} | jq &#39;. | {name: .appName}&#39; : Displays all appNames in each entry. They are each tagged with name cat {filename} | jq &#39;. | {LEVEL: .logLevel, MSG: .message, EXCEPTION: .exception}&#39; : Demo of multiple mapping cat {filename} | jq &#39;.</description>
         
@@ -110,11 +110,11 @@ Commands in Docker context  [TBD]  Commands applied to log files  cat {filename}
       
       <item>
         <title>Git</title>
-        <link>http://example.org/en/development/git/</link>
+        <link>http://kfrajer.github.io/en/development/git/</link>
         <pubDate>Sat, 30 May 2020 17:25:33 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:25:33 -0400</atom:modified>
-        <guid>http://example.org/en/development/git/</guid>
+        <guid>http://kfrajer.github.io/en/development/git/</guid>
         <description>Core Git commands  git status git checkout git rev-parse --abbrev-ref HEAD: Current branch name git branch -a: List all branches git checkout -b git log --pretty=oneline git diff {branch1}..{branch2} git diff {fileName} git add {fileName01} {fileName02} ... {fileName0N} git commit -m &amp;quot;Commit msg here&amp;quot; git push  or  git push --set-upstream {upstream-ref} {which-branch} git stash git stash pop git commit --amend -m {new-commit-message} git commit -amend ## Opens vi to edit commit msg.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>

@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Hugo Zzo Theme</title>
-    <link>http://example.org/en/tags/</link>
+    <link>http://kfrajer.github.io/en/tags/</link>
     <description>Recent content in Tags on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 30 May 2020 19:50:05 -0400</lastBuildDate>
     
-        <atom:link href="http://example.org/en/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Cheatsheet</title>
-        <link>http://example.org/en/tags/cheatsheet/</link>
+        <link>http://kfrajer.github.io/en/tags/cheatsheet/</link>
         <pubDate>Sat, 30 May 2020 19:50:05 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/cheatsheet/</guid>
+        <guid>http://kfrajer.github.io/en/tags/cheatsheet/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>docker</title>
-        <link>http://example.org/en/tags/docker/</link>
+        <link>http://kfrajer.github.io/en/tags/docker/</link>
         <pubDate>Sat, 30 May 2020 19:50:05 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/docker/</guid>
+        <guid>http://kfrajer.github.io/en/tags/docker/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>WSL</title>
-        <link>http://example.org/en/tags/wsl/</link>
+        <link>http://kfrajer.github.io/en/tags/wsl/</link>
         <pubDate>Sat, 30 May 2020 19:50:05 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/wsl/</guid>
+        <guid>http://kfrajer.github.io/en/tags/wsl/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -78,11 +78,11 @@
       
       <item>
         <title>c&#43;&#43;</title>
-        <link>http://example.org/en/tags/c&#43;&#43;/</link>
+        <link>http://kfrajer.github.io/en/tags/c&#43;&#43;/</link>
         <pubDate>Sat, 30 May 2020 18:11:25 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/c&#43;&#43;/</guid>
+        <guid>http://kfrajer.github.io/en/tags/c&#43;&#43;/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -96,11 +96,11 @@
       
       <item>
         <title>Commands</title>
-        <link>http://example.org/en/tags/commands/</link>
+        <link>http://kfrajer.github.io/en/tags/commands/</link>
         <pubDate>Sat, 30 May 2020 18:11:04 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/commands/</guid>
+        <guid>http://kfrajer.github.io/en/tags/commands/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -114,11 +114,11 @@
       
       <item>
         <title>Git</title>
-        <link>http://example.org/en/tags/git/</link>
+        <link>http://kfrajer.github.io/en/tags/git/</link>
         <pubDate>Sat, 30 May 2020 18:11:04 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/git/</guid>
+        <guid>http://kfrajer.github.io/en/tags/git/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -132,11 +132,11 @@
       
       <item>
         <title>make</title>
-        <link>http://example.org/en/tags/make/</link>
+        <link>http://kfrajer.github.io/en/tags/make/</link>
         <pubDate>Sat, 30 May 2020 18:10:09 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/make/</guid>
+        <guid>http://kfrajer.github.io/en/tags/make/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -150,11 +150,11 @@
       
       <item>
         <title>Makefile</title>
-        <link>http://example.org/en/tags/makefile/</link>
+        <link>http://kfrajer.github.io/en/tags/makefile/</link>
         <pubDate>Sat, 30 May 2020 18:10:09 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/makefile/</guid>
+        <guid>http://kfrajer.github.io/en/tags/makefile/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -168,11 +168,11 @@
       
       <item>
         <title>build</title>
-        <link>http://example.org/en/tags/build/</link>
+        <link>http://kfrajer.github.io/en/tags/build/</link>
         <pubDate>Sat, 30 May 2020 18:09:54 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/build/</guid>
+        <guid>http://kfrajer.github.io/en/tags/build/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -186,11 +186,11 @@
       
       <item>
         <title>Java</title>
-        <link>http://example.org/en/tags/java/</link>
+        <link>http://kfrajer.github.io/en/tags/java/</link>
         <pubDate>Sat, 30 May 2020 18:09:26 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/java/</guid>
+        <guid>http://kfrajer.github.io/en/tags/java/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -204,11 +204,11 @@
       
       <item>
         <title>Javascript</title>
-        <link>http://example.org/en/tags/javascript/</link>
+        <link>http://kfrajer.github.io/en/tags/javascript/</link>
         <pubDate>Sat, 30 May 2020 18:09:26 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/javascript/</guid>
+        <guid>http://kfrajer.github.io/en/tags/javascript/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -222,11 +222,11 @@
       
       <item>
         <title>js</title>
-        <link>http://example.org/en/tags/js/</link>
+        <link>http://kfrajer.github.io/en/tags/js/</link>
         <pubDate>Sat, 30 May 2020 18:09:26 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/js/</guid>
+        <guid>http://kfrajer.github.io/en/tags/js/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -240,11 +240,11 @@
       
       <item>
         <title>P3</title>
-        <link>http://example.org/en/tags/p3/</link>
+        <link>http://kfrajer.github.io/en/tags/p3/</link>
         <pubDate>Sat, 30 May 2020 18:09:26 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/p3/</guid>
+        <guid>http://kfrajer.github.io/en/tags/p3/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -258,11 +258,11 @@
       
       <item>
         <title>p5js</title>
-        <link>http://example.org/en/tags/p5js/</link>
+        <link>http://kfrajer.github.io/en/tags/p5js/</link>
         <pubDate>Sat, 30 May 2020 18:09:26 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/p5js/</guid>
+        <guid>http://kfrajer.github.io/en/tags/p5js/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -276,11 +276,11 @@
       
       <item>
         <title>Processing</title>
-        <link>http://example.org/en/tags/processing/</link>
+        <link>http://kfrajer.github.io/en/tags/processing/</link>
         <pubDate>Sat, 30 May 2020 18:09:26 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/processing/</guid>
+        <guid>http://kfrajer.github.io/en/tags/processing/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -294,11 +294,11 @@
       
       <item>
         <title>one</title>
-        <link>http://example.org/en/tags/one/</link>
+        <link>http://kfrajer.github.io/en/tags/one/</link>
         <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/one/</guid>
+        <guid>http://kfrajer.github.io/en/tags/one/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -312,11 +312,11 @@
       
       <item>
         <title>two</title>
-        <link>http://example.org/en/tags/two/</link>
+        <link>http://kfrajer.github.io/en/tags/two/</link>
         <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/two/</guid>
+        <guid>http://kfrajer.github.io/en/tags/two/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -330,11 +330,11 @@
       
       <item>
         <title>Docker-compose</title>
-        <link>http://example.org/en/tags/docker-compose/</link>
+        <link>http://kfrajer.github.io/en/tags/docker-compose/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/docker-compose/</guid>
+        <guid>http://kfrajer.github.io/en/tags/docker-compose/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -348,11 +348,11 @@
       
       <item>
         <title>Golang</title>
-        <link>http://example.org/en/tags/golang/</link>
+        <link>http://kfrajer.github.io/en/tags/golang/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/golang/</guid>
+        <guid>http://kfrajer.github.io/en/tags/golang/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -366,11 +366,11 @@
       
       <item>
         <title>Hugo</title>
-        <link>http://example.org/en/tags/hugo/</link>
+        <link>http://kfrajer.github.io/en/tags/hugo/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/hugo/</guid>
+        <guid>http://kfrajer.github.io/en/tags/hugo/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -384,11 +384,11 @@
       
       <item>
         <title>Linux</title>
-        <link>http://example.org/en/tags/linux/</link>
+        <link>http://kfrajer.github.io/en/tags/linux/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/linux/</guid>
+        <guid>http://kfrajer.github.io/en/tags/linux/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -402,11 +402,11 @@
       
       <item>
         <title>static-generator</title>
-        <link>http://example.org/en/tags/static-generator/</link>
+        <link>http://kfrajer.github.io/en/tags/static-generator/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/static-generator/</guid>
+        <guid>http://kfrajer.github.io/en/tags/static-generator/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -420,11 +420,11 @@
       
       <item>
         <title>web</title>
-        <link>http://example.org/en/tags/web/</link>
+        <link>http://kfrajer.github.io/en/tags/web/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/web/</guid>
+        <guid>http://kfrajer.github.io/en/tags/web/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -438,11 +438,11 @@
       
       <item>
         <title>shortcode</title>
-        <link>http://example.org/en/tags/shortcode/</link>
+        <link>http://kfrajer.github.io/en/tags/shortcode/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/shortcode/</guid>
+        <guid>http://kfrajer.github.io/en/tags/shortcode/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -456,11 +456,11 @@
       
       <item>
         <title>css</title>
-        <link>http://example.org/en/tags/css/</link>
+        <link>http://kfrajer.github.io/en/tags/css/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/css/</guid>
+        <guid>http://kfrajer.github.io/en/tags/css/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -474,11 +474,11 @@
       
       <item>
         <title>html</title>
-        <link>http://example.org/en/tags/html/</link>
+        <link>http://kfrajer.github.io/en/tags/html/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/html/</guid>
+        <guid>http://kfrajer.github.io/en/tags/html/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -492,11 +492,11 @@
       
       <item>
         <title>markdown</title>
-        <link>http://example.org/en/tags/markdown/</link>
+        <link>http://kfrajer.github.io/en/tags/markdown/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/markdown/</guid>
+        <guid>http://kfrajer.github.io/en/tags/markdown/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -510,11 +510,11 @@
       
       <item>
         <title>themes</title>
-        <link>http://example.org/en/tags/themes/</link>
+        <link>http://kfrajer.github.io/en/tags/themes/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/themes/</guid>
+        <guid>http://kfrajer.github.io/en/tags/themes/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -528,11 +528,11 @@
       
       <item>
         <title>privacy</title>
-        <link>http://example.org/en/tags/privacy/</link>
+        <link>http://kfrajer.github.io/en/tags/privacy/</link>
         <pubDate>Thu, 19 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/privacy/</guid>
+        <guid>http://kfrajer.github.io/en/tags/privacy/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -546,11 +546,11 @@
       
       <item>
         <title>shortcodes</title>
-        <link>http://example.org/en/tags/shortcodes/</link>
+        <link>http://kfrajer.github.io/en/tags/shortcodes/</link>
         <pubDate>Thu, 19 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/shortcodes/</guid>
+        <guid>http://kfrajer.github.io/en/tags/shortcodes/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -564,11 +564,11 @@
       
       <item>
         <title>amoji</title>
-        <link>http://example.org/en/tags/amoji/</link>
+        <link>http://kfrajer.github.io/en/tags/amoji/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/amoji/</guid>
+        <guid>http://kfrajer.github.io/en/tags/amoji/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -582,11 +582,11 @@
       
       <item>
         <title>bamoji</title>
-        <link>http://example.org/en/tags/bamoji/</link>
+        <link>http://kfrajer.github.io/en/tags/bamoji/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/bamoji/</guid>
+        <guid>http://kfrajer.github.io/en/tags/bamoji/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -600,11 +600,11 @@
       
       <item>
         <title>emoji</title>
-        <link>http://example.org/en/tags/emoji/</link>
+        <link>http://kfrajer.github.io/en/tags/emoji/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/emoji/</guid>
+        <guid>http://kfrajer.github.io/en/tags/emoji/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -618,11 +618,11 @@
       
       <item>
         <title>gamoji</title>
-        <link>http://example.org/en/tags/gamoji/</link>
+        <link>http://kfrajer.github.io/en/tags/gamoji/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/gamoji/</guid>
+        <guid>http://kfrajer.github.io/en/tags/gamoji/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -636,11 +636,11 @@
       
       <item>
         <title>namoji</title>
-        <link>http://example.org/en/tags/namoji/</link>
+        <link>http://kfrajer.github.io/en/tags/namoji/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/namoji/</guid>
+        <guid>http://kfrajer.github.io/en/tags/namoji/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -654,11 +654,11 @@
       
       <item>
         <title>diagram</title>
-        <link>http://example.org/en/tags/diagram/</link>
+        <link>http://kfrajer.github.io/en/tags/diagram/</link>
         <pubDate>Sun, 17 Nov 2019 12:00:06 +0900</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/diagram/</guid>
+        <guid>http://kfrajer.github.io/en/tags/diagram/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -672,11 +672,11 @@
       
       <item>
         <title>index</title>
-        <link>http://example.org/en/tags/index/</link>
+        <link>http://kfrajer.github.io/en/tags/index/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         
-        <guid>http://example.org/en/tags/index/</guid>
+        <guid>http://kfrajer.github.io/en/tags/index/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>

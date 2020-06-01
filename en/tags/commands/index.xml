@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Commands on Hugo Zzo Theme</title>
-    <link>http://example.org/en/tags/commands/</link>
+    <link>http://kfrajer.github.io/en/tags/commands/</link>
     <description>Recent content in Commands on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 30 May 2020 18:11:04 -0400</lastBuildDate>
     
-        <atom:link href="http://example.org/en/tags/commands/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/en/tags/commands/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Git Flow - Feature branch</title>
-        <link>http://example.org/en/development/git-flow-fbranch/</link>
+        <link>http://kfrajer.github.io/en/development/git-flow-fbranch/</link>
         <pubDate>Sat, 30 May 2020 18:11:04 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:11:04 -0400</atom:modified>
-        <guid>http://example.org/en/development/git-flow-fbranch/</guid>
+        <guid>http://kfrajer.github.io/en/development/git-flow-fbranch/</guid>
         <description>Git flow  Set git for the first time:  E-mail, name, crlf line termination handling git init git config &amp;ndash;global user.name &amp;ldquo;kfrajer&amp;rdquo; git config &amp;ndash;global user.email krisfrajer@gmail.com git config &amp;ndash;global core.autocrlf true git config &amp;ndash;global merge.tool meld git config &amp;ndash;global mergetool.meld.cmd &amp;ldquo;meld $LOCAL $MERGED $REMOTE &amp;ndash;output $MERGED&amp;rdquo; Set git token   git clone repo(s) locally Create a branch with named either feature(s)/{feature-name}, bugfix/{issue-name} or mayor/{name}  git checkout -b {purpose}/{name}   Perform changes, add unit/system/integration tests Commit often Push upstream to origin.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>

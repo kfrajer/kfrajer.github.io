@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>build on Hugo Zzo Theme</title>
-    <link>http://example.org/en/tags/build/</link>
+    <link>http://kfrajer.github.io/en/tags/build/</link>
     <description>Recent content in build on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 30 May 2020 18:09:54 -0400</lastBuildDate>
     
-        <atom:link href="http://example.org/en/tags/build/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/en/tags/build/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Dockerfile Multistage</title>
-        <link>http://example.org/en/templates/docker/dockerfile-multistage/</link>
+        <link>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</link>
         <pubDate>Sat, 30 May 2020 18:09:54 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:09:54 -0400</atom:modified>
-        <guid>http://example.org/en/templates/docker/dockerfile-multistage/</guid>
+        <guid>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</guid>
         <description>############### # FROM buildpack-deps:buster-curl as certGetter ## Copy from src to dest, load to base and outputed in master ENV SRC_CERT=ORGANIZATION \ DEST_CERT=/usr/share/ca-certificates/ORGANIZATION \ BASE_CERT=/etc/ca-certificates.conf \ MASTER_CERT_FILE=/etc/ssl/certs WORKDIR app/ COPY . . RUN mkdir -p $DEST_CERT &amp;amp;&amp;amp; cp -f $SRC_CERT/* $DEST_CERT/ &amp;amp;&amp;amp; \ for i in `find ${SRC_CERT} -type f -name &amp;quot;*.crt&amp;quot;`; do echo $i &amp;gt;&amp;gt; $BASE_CERT; echo &amp;quot;Loading $i into $BASE_CERT&amp;quot;; done &amp;amp;&amp;amp; \ echo &amp;quot;Calling update-ca-certificates...&amp;quot; &amp;amp;&amp;amp; update-ca-certificates ONBUILD RUN echo -e &amp;quot;\nFinish executing loading\n\nCertGetter\n\nNext step.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
@@ -52,12 +52,12 @@
       
       <item>
         <title>Dockerfile sample</title>
-        <link>http://example.org/en/templates/docker/dockerfile/</link>
+        <link>http://kfrajer.github.io/en/templates/docker/dockerfile/</link>
         <pubDate>Sat, 30 May 2020 18:08:14 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:08:14 -0400</atom:modified>
-        <guid>http://example.org/en/templates/docker/dockerfile/</guid>
-        <description>Instructions  docker build -t {imageName} . docker run -it &amp;ndash;rm &amp;ndash;mount type=bind,src=http://example.org/c/Users/C/workspace/out,dst=/app/publish &amp;ndash;name {containerName} {imageName}  Dockerfile content FROM golang:1.14 ENV \ PRINTING_PRESS_VERSION=&amp;quot;v0.2.0&amp;quot; \ APPROOT=&amp;quot;/app&amp;quot; \ OUTFOLDER=&amp;quot;$APPROOT/publish&amp;quot; \ RECIPIENT_EMAIL=&amp;quot;user@example.com&amp;quot; \ GITLAB_USER_EMAIL=&amp;quot;user@example.com&amp;quot; \ SEND_EMAIL_FLAG=true WORKDIR $APPROOT COPY . $APPROOT ##find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix RUN for i in `find -type f -name &amp;quot;*.sh&amp;quot; -o -name &amp;quot;*.json&amp;quot;`; do sed -i &#39;s/\r//g&#39; $i; echo &amp;quot;Removing Windows end of line for : $i&amp;quot;; done ##RUN for i in `find editorial/ -type f -name &amp;quot;*.</description>
+        <guid>http://kfrajer.github.io/en/templates/docker/dockerfile/</guid>
+        <description>Instructions  docker build -t {imageName} . docker run -it &amp;ndash;rm &amp;ndash;mount type=bind,src=http://kfrajer.github.io/c/Users/C/workspace/out,dst=/app/publish &amp;ndash;name {containerName} {imageName}  Dockerfile content FROM golang:1.14 ENV \ PRINTING_PRESS_VERSION=&amp;quot;v0.2.0&amp;quot; \ APPROOT=&amp;quot;/app&amp;quot; \ OUTFOLDER=&amp;quot;$APPROOT/publish&amp;quot; \ RECIPIENT_EMAIL=&amp;quot;user@example.com&amp;quot; \ GITLAB_USER_EMAIL=&amp;quot;user@example.com&amp;quot; \ SEND_EMAIL_FLAG=true WORKDIR $APPROOT COPY . $APPROOT ##find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix RUN for i in `find -type f -name &amp;quot;*.sh&amp;quot; -o -name &amp;quot;*.json&amp;quot;`; do sed -i &#39;s/\r//g&#39; $i; echo &amp;quot;Removing Windows end of line for : $i&amp;quot;; done ##RUN for i in `find editorial/ -type f -name &amp;quot;*.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         

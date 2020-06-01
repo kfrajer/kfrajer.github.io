@@ -3,115 +3,115 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/es/</loc>
+    <loc>http://kfrajer.github.io/es/</loc>
     <lastmod>2020-05-31T12:10:39-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/"
+                href="http://kfrajer.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/"
+                href="http://kfrajer.github.io/es/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/es/tags/demo/</loc>
+    <loc>http://kfrajer.github.io/es/tags/demo/</loc>
     <lastmod>2020-05-31T12:10:39-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/es/entradas/entrada01/</loc>
+    <loc>http://kfrajer.github.io/es/entradas/entrada01/</loc>
     <lastmod>2020-05-31T12:10:39-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/es/tags/entradas/</loc>
+    <loc>http://kfrajer.github.io/es/tags/entradas/</loc>
     <lastmod>2020-05-31T12:10:39-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/es/entradas/</loc>
+    <loc>http://kfrajer.github.io/es/entradas/</loc>
     <lastmod>2020-05-31T12:10:39-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/es/tags/</loc>
+    <loc>http://kfrajer.github.io/es/tags/</loc>
     <lastmod>2020-05-31T12:10:39-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/tags/"
+                href="http://kfrajer.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/tags/"
+                href="http://kfrajer.github.io/es/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/es/entradas/entrada02/</loc>
+    <loc>http://kfrajer.github.io/es/entradas/entrada02/</loc>
     <lastmod>2020-05-31T12:10:25-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/es/entradas/bienvenido/</loc>
+    <loc>http://kfrajer.github.io/es/entradas/bienvenido/</loc>
     <lastmod>2020-05-31T12:07:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/es/tags/index/</loc>
+    <loc>http://kfrajer.github.io/es/tags/index/</loc>
     <lastmod>2020-05-31T12:07:35-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/tags/index/"
+                href="http://kfrajer.github.io/en/tags/index/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/tags/index/"
+                href="http://kfrajer.github.io/es/tags/index/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/es/tags/main/</loc>
+    <loc>http://kfrajer.github.io/es/tags/main/</loc>
     <lastmod>2020-05-31T12:07:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/es/tags/welcome/</loc>
+    <loc>http://kfrajer.github.io/es/tags/welcome/</loc>
     <lastmod>2020-05-31T12:07:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/es/categories/</loc>
+    <loc>http://kfrajer.github.io/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/categories/"
+                href="http://kfrajer.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/categories/"
+                href="http://kfrajer.github.io/es/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/es/series/</loc>
+    <loc>http://kfrajer.github.io/es/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/en/series/"
+                href="http://kfrajer.github.io/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/series/"
+                href="http://kfrajer.github.io/es/series/"
                 />
   </url>
   

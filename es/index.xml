@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Hugo Zzo Theme</title>
-    <link>http://example.org/es/</link>
+    <link>http://kfrajer.github.io/es/</link>
     <description>Recent content on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 31 May 2020 12:10:39 -0400</lastBuildDate>
     
-        <atom:link href="http://example.org/es/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/es/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -45,11 +45,11 @@
       
       <item>
         <title>Entrada01</title>
-        <link>http://example.org/es/entradas/entrada01/</link>
+        <link>http://kfrajer.github.io/es/entradas/entrada01/</link>
         <pubDate>Sun, 31 May 2020 12:10:39 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 31 May 2020 12:10:39 -0400</atom:modified>
-        <guid>http://example.org/es/entradas/entrada01/</guid>
+        <guid>http://kfrajer.github.io/es/entradas/entrada01/</guid>
         <description></description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
@@ -73,11 +73,11 @@
       
       <item>
         <title>Entrada02</title>
-        <link>http://example.org/es/entradas/entrada02/</link>
+        <link>http://kfrajer.github.io/es/entradas/entrada02/</link>
         <pubDate>Sun, 31 May 2020 12:10:25 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 31 May 2020 12:10:25 -0400</atom:modified>
-        <guid>http://example.org/es/entradas/entrada02/</guid>
+        <guid>http://kfrajer.github.io/es/entradas/entrada02/</guid>
         <description></description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
@@ -101,11 +101,11 @@
       
       <item>
         <title>Bienvenido</title>
-        <link>http://example.org/es/entradas/bienvenido/</link>
+        <link>http://kfrajer.github.io/es/entradas/bienvenido/</link>
         <pubDate>Sun, 31 May 2020 12:07:35 -0400</pubDate>
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 31 May 2020 12:07:35 -0400</atom:modified>
-        <guid>http://example.org/es/entradas/bienvenido/</guid>
+        <guid>http://kfrajer.github.io/es/entradas/bienvenido/</guid>
         <description>Bienvenido Demonstracion de suporte a multi-idioma</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
