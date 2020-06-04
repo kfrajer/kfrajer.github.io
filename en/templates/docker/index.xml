@@ -57,7 +57,7 @@
         <author>krisfrajerg@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:08:28 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/docker/docker-compose/</guid>
-        <description></description>
+        <description>Dockerfiles with common network layer: Master-slave setup Instructions  Configure values in .env file Init sequence:  Spin master first (See cmd 1) Spin slave second (See cmd 1)   Docker tear down instructions:  Stop + rm slave container first. Do not run dk-cp down (See cmd 2) Down master script. It will manage the network teardown (See cmd 3)   If slave container needs to be re-built and spin up again: Init only slave If master container needs to be re-built and spin up again: Follow init sequence  Sample commands:  docker-compose -f docker-compose.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         

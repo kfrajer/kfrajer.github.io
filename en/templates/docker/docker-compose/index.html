@@ -1261,7 +1261,7 @@
     "datePublished": "2020-05-30T18:08:28-04:00",
     "dateModified": "2020-05-30T18:08:28-04:00",
     "url" : "http://kfrajer.github.io/en/templates/docker/docker-compose/",
-    "description": ,
+    "description": "Dockerfiles with common network layer: Master-slave setup Instructions  Configure values in .env file Init sequence:  Spin master first (See cmd 1) Spin slave second (See …",
     "keywords": ["one","two"],
     "author": {
       "@type": "Person",
@@ -1708,7 +1708,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 30, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;0&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;4&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;Cristian Mosquera</span>
   
@@ -1730,7 +1730,232 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      
+      <h1 id="dockerfiles-with-common-network-layer-master-slave-setup">Dockerfiles with common network layer: Master-slave setup</h1>
+<h2 id="instructions">Instructions</h2>
+<ul>
+<li>Configure values in .env file</li>
+<li>Init sequence:
+<ul>
+<li>Spin master first (See cmd 1)</li>
+<li>Spin slave second (See cmd 1)</li>
+</ul>
+</li>
+<li>Docker tear down instructions:
+<ul>
+<li>Stop + rm slave container first. Do not run dk-cp down (See cmd 2)</li>
+<li>Down master script. It will manage the network teardown (See cmd 3)</li>
+</ul>
+</li>
+<li>If slave container needs to be re-built and spin up again: Init only slave</li>
+<li>If master container needs to be re-built and spin up again: Follow init sequence</li>
+</ul>
+<h3 id="sample-commands">Sample commands:</h3>
+<ol>
+<li><code>docker-compose -f docker-compose.yml -f docker-compose.tandem.yml up --build -d</code></li>
+<li><code>docker-compose stop &amp;&amp; docker-compose rm -f</code></li>
+<li><code>docker-compose -f docker-compose.yml -f docker-compose.tandem.yml down</code></li>
+</ol>
+<h2 id="standard-env-file">Standard .env file</h2>
+<pre><code>## docker-compose will extract the variables from this file
+## If variable is not defined here, it needs to be defined in terminal 
+## session running docker-compose. Any variable define in current session
+## will superseed values defined here. Nevertheless, env variable 
+## needs to be explicitely defined and read in the docker-compose file
+##
+
+SVC_PORT=8081
+#COMPOSE_PROJECT_NAME=name_folder_where_master_is   ## You need this variable in the slave
+
+CONFIG_VERSION=latest
+SVC_ENVIRONMENT=dev
+
+DOCKERFILE=./Dockerfile
+
+
+BASE_REPO_PATH=/d/repo/folder
+FOLDER_NAME_01=service_core
+FOLDER_NAME_01=svc_name
+MAIN_SVC_NAME=svc_name_main
+
+#CRED_WINDOWS_CONFIG_PATH=/d/.credential
+#OTHER_ENV_VAR_TO_USE=/
+
+## Next can be setup here or in terminal session locally
+SVC_LOGS_FOLDER_PATH=/
+AUX_SVC_ADDR=0.0.0.0
+
+</code></pre><h2 id="master-docker-composeyml-file">MASTER docker-compose.yml file</h2>
+<pre><code>version: '3.4'
+
+x-bucket-path:
+  &amp;default-bucket-svc-path
+  &quot;${FOLDER_NAME_01}/${FOLDER_NAME_02}/config/${CONFIG_VERSION}/${SVC_ENVIRONMENT}&quot;
+
+x-volumes: # Relative paths doesn't work with WSL and docker for Windows
+  &amp;default-volumes
+  - type: bind
+    source: ${BASE_REPO_PATH:?&quot;BASE_REPO_PATH needs to be set, 'D:/git-repos' is an example. This is used for Docker for windows with Windows Linux SubSystem binded volumes in your container.  Uncomment voume If you don't want them or create a shadow d-c yaml file&quot;}/${FOLDER_NAME_01}/${FOLDER_NAME_02}/${MAIN_SVC_NAME}
+    target: /${MAIN_SVC_NAME}
+  - type: bind
+    source: ${BASE_REPO_PATH:?&quot;BASE_REPO_PATH needs to be set, 'D:/git-repos' is an example. This is used for Docker for windows with Windows Linux SubSystem binded volumes in your container.  Uncomment voume If you don't want them or create a shadow d-c yaml file&quot;}/${FOLDER_NAME_01}/${FOLDER_NAME_02}/${MAIN_SVC_NAME}-config
+    target: /${MAIN_SVC_NAME}-config
+  - type: bind
+    source: ${CRED_WINDOWS_CONFIG_PATH:?&quot;CRED_WINDOWS_CONFIG_PATH is unset, 'C:/Users/username/.credential' is an example.  This is used for Docker for windows with WSL binded volumes in your container.  Uncomment this volume if you don't want them&quot;}
+    target: &quot;/root/.credential&quot;
+
+x-args:
+  &amp;default-args
+  http_proxy: &quot;http://yourproxy.org:port&quot;
+  https_proxy: &quot;http://yourproxy.org:port&quot;
+  no_proxy: &quot;localhost, 127.0.0.1&quot;
+
+x-environment:
+    &amp;default-env
+    SVC_ENVIRONMENT: ${SVC_ENVIRONMENT}
+    CRED_CONFIG_PATH: &quot;/root/.credential&quot;
+    SVC_LOGS_FOLDER_PATH: &quot;${MAIN_SVC_NAME}/logs&quot;
+    CONFIG_VERSION: ${CONFIG_VERSION}
+    CONFIG_SVC_BUCKET: &quot;bucket-name-for-svc&quot;
+    CONFIG_SVC_BUCKET_PATH: *default-bucket-svc-path
+    AUX_SVC_ADDR: ${AUX_SVC_ADDR:?&quot;AUX_SVC_ADDR is unset. You should have example to `example`&quot;}
+
+services:
+  main-dev:
+    build:
+      args:
+        *default-args
+    environment:
+      &lt;&lt; : *default-env
+      OTHER_ENV_VAR: ${OTHER_ENV_VAR_TO_USE:?&quot;OTHER_ENV_VAR_TO_USE is unset. 'dflt-value' is an example&quot;}
+    volumes:
+      *default-volumes
+    networks:
+      - svc_net
+
+  aux-svc:
+    image: aux_svc_image:latest
+    ports:
+      - 'svc_port:svc_port'
+    networks:
+      - svc_net
+
+  main-test:
+    build:
+      args:
+        *default-args
+    environment:
+      OTHER_ENV_VAR: ${OTHER_ENV_VAR_TO_USE:?&quot;OTHER_ENV_VAR_TO_USE is unset. 'dflt-value' is an example&quot;}
+    volumes: # Relative paths doesn't work with WSL and docker for windows
+      *default-volumes
+
+networks:
+  svc_net:
+    driver: bridge
+
+</code></pre><h2 id="additional-lines-for-slave-docker-composeyml-file">Additional lines for SLAVE docker-compose.yml file</h2>
+<pre><code>networks:
+  my_net:
+    external:
+      name: ${COMPOSE_PROJECT_NAME}_my_net
+</code></pre><h2 id="sample-defining-other-services-in-docker-compose-file">Sample defining other services in docker-compose file</h2>
+<pre><code>services:
+  redis:
+    image: redis
+    volumes:
+      *default-volumes
+    ports:
+      - '6379:6379'
+    networks:
+      - my_net
+
+  db:
+    image: mongo:latest
+    command: mongod --port 27018
+    ports:
+      - '27018:27018'
+    networks:
+      - my_net
+
+  mysql:
+    image: mysql
+    container_name: mysql
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=ghost
+      - MYSQL_USER=ghost
+      - MYSQL_PASSWORD=password
+    networks:
+      - db
+
+volumes:
+ mysql:
+
+</code></pre><ul>
+<li>Example Dockerize PostgreSQL:  <a href="https://docs.docker.com/engine/examples/postgresql_service/">https://docs.docker.com/engine/examples/postgresql_service/</a></li>
+</ul>
+<h2 id="handy-commands-for-debugging">Handy commands for debugging</h2>
+<ul>
+<li>Shows all running containers: <code>docker ps -a</code></li>
+<li>Removes idle stopped containers: <code>docker rm $(docker ps -q -f &quot;status=exited&quot;)</code></li>
+<li>See logs from container (name as displayed in docker ps): <code>docker logs -f {containerName}</code></li>
+<li>Sh into a container: <code>docker exec -it {containerName} /bin/bash</code></li>
+<li>To explore/beautify logs in container and extract loglevel and message and assign it to <strong>LEVEL</strong> and <strong>MSG</strong> resp.: <code>cat app_logs.txt | jq &quot;. | {LEVEL: .logLevel, MSG: .message}&quot;</code></li>
+<li>To see the network bridges: <code>docker network ls</code></li>
+</ul>
+<h2 id="overriding-docker-compose">Overriding docker-compose</h2>
+<pre><code># This file  will override the docker-compose.yml
+# Currently overrrides only any mounted volumes because they don't exist when deployed
+# The way the override work with volume  : it override the volume with a different 
+# source but the same destination path
+
+version: '3.4'
+
+x-args:
+  &amp;default-args
+  http_proxy: &quot;&quot;
+  https_proxy: &quot;&quot;
+  no_proxy: &quot;&quot;
+x-environment:
+    &amp;default-env
+    &lt;&lt; : *default-args
+    REMOTE_SERVICE_USE_PUBLIC_IP: &quot;false&quot;
+#Next modified previously defined volumes
+x-volumes: # Relative paths doesn't work with WSL and docker for windows
+  &amp;default-volumes
+  - type: bind
+    source: /dir
+    target: /${MAIN_SVC_NAME}
+  - type: bind
+    source: /dir
+    target: /${MAIN_SVC_NAME}-config
+  - type: bind
+    source: /dir
+    target: &quot;/app/.credential&quot;
+#Here we apply the change by replacing the current mounted drives with the one defined in this file
+services:
+  svc-dev:
+    build:
+      args:
+        &lt;&lt; : *default-args
+    volumes: # Relative paths doesn't work with WSL and docker for windows
+      *default-volumes
+
+  svc-test:
+    build:
+      args:
+        &lt;&lt; : *default-args
+    volumes: # Relative paths doesn't work with WSL and docker for windows
+      *default-volumes
+
+  svc-codevalidation:
+    build:
+      args:
+        &lt;&lt; : *default-args
+    environment:
+      *default-env
+</code></pre>
     </article>
     
     <script>
@@ -2336,7 +2561,21 @@ document.addEventListener('DOMContentLoaded', function () {
     
   </div>
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#instructions">Instructions</a>
+      <ul>
+        <li><a href="#sample-commands">Sample commands:</a></li>
+      </ul>
+    </li>
+    <li><a href="#standard-env-file">Standard .env file</a></li>
+    <li><a href="#master-docker-composeyml-file">MASTER docker-compose.yml file</a></li>
+    <li><a href="#additional-lines-for-slave-docker-composeyml-file">Additional lines for SLAVE docker-compose.yml file</a></li>
+    <li><a href="#sample-defining-other-services-in-docker-compose-file">Sample defining other services in docker-compose file</a></li>
+    <li><a href="#handy-commands-for-debugging">Handy commands for debugging</a></li>
+    <li><a href="#overriding-docker-compose">Overriding docker-compose</a></li>
+  </ul>
+</nav>
   </div>
 </section>
 
