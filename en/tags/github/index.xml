@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Active on Hugo Zzo Theme</title>
-    <link>http://kfrajer.github.io/en/tags/active/</link>
-    <description>Recent content in Active on Hugo Zzo Theme</description>
+    <title>Github on Hugo Zzo Theme</title>
+    <link>http://kfrajer.github.io/en/tags/github/</link>
+    <description>Recent content in Github on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 19 Jul 2020 11:44:27 -0400</lastBuildDate>
     
-        <atom:link href="http://kfrajer.github.io/en/tags/active/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://kfrajer.github.io/en/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -29,7 +29,7 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 19 Jul 2020 11:44:27 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/projects/</guid>
-        <description>Under construction  Current list of projects Reference TODO list  </description>
+        <description>Under construction  Current list of projects and their respective repo links Reference TODO list  </description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -50,7 +50,7 @@
             
           
             
-              <category>Active</category>
+              <category>Github</category>
             
           
         

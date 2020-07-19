@@ -29,7 +29,7 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 19 Jul 2020 11:44:27 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/projects/</guid>
-        <description>Under construction  Current list of projects Reference TODO list  </description>
+        <description>Under construction  Current list of projects and their respective repo links Reference TODO list  </description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -50,7 +50,7 @@
             
           
             
-              <category>Active</category>
+              <category>Github</category>
             
           
         
