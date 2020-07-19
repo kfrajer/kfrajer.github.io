@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>network on Hugo Zzo Theme</title>
+    <link>http://kfrajer.github.io/en/tags/network/</link>
+    <description>Recent content in network on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 30 May 2020 18:08:28 -0400</lastBuildDate>
+    
+        <atom:link href="http://kfrajer.github.io/en/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Docker Compose</title>
+        <link>http://kfrajer.github.io/en/templates/docker/docker-compose/</link>
+        <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 18:08:28 -0400</atom:modified>
+        <guid>http://kfrajer.github.io/en/templates/docker/docker-compose/</guid>
+        <description>Dockerfiles with common network layer: Master-slave setup Instructions  Configure values in .env file Init sequence:  Spin master first (See cmd 1) Spin slave second (See cmd 1)   Docker tear down instructions:  Stop + rm slave container first. Do not run dk-cp down (See cmd 2) Down master script. It will manage the network teardown (See cmd 3)   If slave container needs to be re-built and spin up again: Init only slave If master container needs to be re-built and spin up again: Follow init sequence  Sample commands:  docker-compose -f docker-compose.</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>docker-compose</category>
+            
+          
+            
+              <category>docker</category>
+            
+          
+            
+              <category>network</category>
+            
+          
+            
+              <category>demo</category>
+            
+          
+            
+              <category>services</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

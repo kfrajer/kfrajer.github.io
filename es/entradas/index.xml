@@ -11,8 +11,8 @@
     <description>Recent content in Entradas/Posts on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
-    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 31 May 2020 12:10:39 -0400</lastBuildDate>
     
@@ -26,7 +26,7 @@
         <title>Entrada01</title>
         <link>http://kfrajer.github.io/es/entradas/entrada01/</link>
         <pubDate>Sun, 31 May 2020 12:10:39 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 31 May 2020 12:10:39 -0400</atom:modified>
         <guid>http://kfrajer.github.io/es/entradas/entrada01/</guid>
         <description></description>
@@ -54,7 +54,7 @@
         <title>Entrada02</title>
         <link>http://kfrajer.github.io/es/entradas/entrada02/</link>
         <pubDate>Sun, 31 May 2020 12:10:25 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 31 May 2020 12:10:25 -0400</atom:modified>
         <guid>http://kfrajer.github.io/es/entradas/entrada02/</guid>
         <description></description>
@@ -82,7 +82,7 @@
         <title>Bienvenido</title>
         <link>http://kfrajer.github.io/es/entradas/bienvenido/</link>
         <pubDate>Sun, 31 May 2020 12:07:35 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 31 May 2020 12:07:35 -0400</atom:modified>
         <guid>http://kfrajer.github.io/es/entradas/bienvenido/</guid>
         <description>Bienvenido Demonstracion de suporte a multi-idioma</description>

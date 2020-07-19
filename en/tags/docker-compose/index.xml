@@ -11,10 +11,10 @@
     <description>Recent content in Docker-compose on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
-    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 30 May 2020 17:29:59 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 18:08:28 -0400</lastBuildDate>
     
         <atom:link href="http://kfrajer.github.io/en/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,10 +23,50 @@
 
       
       <item>
+        <title>Docker Compose</title>
+        <link>http://kfrajer.github.io/en/templates/docker/docker-compose/</link>
+        <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 18:08:28 -0400</atom:modified>
+        <guid>http://kfrajer.github.io/en/templates/docker/docker-compose/</guid>
+        <description>Dockerfiles with common network layer: Master-slave setup Instructions  Configure values in .env file Init sequence:  Spin master first (See cmd 1) Spin slave second (See cmd 1)   Docker tear down instructions:  Stop + rm slave container first. Do not run dk-cp down (See cmd 2) Down master script. It will manage the network teardown (See cmd 3)   If slave container needs to be re-built and spin up again: Init only slave If master container needs to be re-built and spin up again: Follow init sequence  Sample commands:  docker-compose -f docker-compose.</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>docker-compose</category>
+            
+          
+            
+              <category>docker</category>
+            
+          
+            
+              <category>network</category>
+            
+          
+            
+              <category>demo</category>
+            
+          
+            
+              <category>services</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Docker Knowlegde Base</title>
         <link>http://kfrajer.github.io/en/development/docker/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:29:59 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/docker/</guid>
         <description>Core Docker commands   docker ps -a

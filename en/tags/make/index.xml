@@ -11,8 +11,8 @@
     <description>Recent content in make on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
-    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 30 May 2020 18:10:09 -0400</lastBuildDate>
     
@@ -26,7 +26,7 @@
         <title>Makefile</title>
         <link>http://kfrajer.github.io/en/templates/makefile/</link>
         <pubDate>Sat, 30 May 2020 18:10:09 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:10:09 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/makefile/</guid>
         <description>.DEFAULT_GOAL := build

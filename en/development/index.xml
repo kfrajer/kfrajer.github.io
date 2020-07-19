@@ -11,8 +11,8 @@
     <description>Recent content in Development on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
-    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate>
     
@@ -23,10 +23,42 @@
 
       
       <item>
+        <title>Handy_links</title>
+        <link>http://kfrajer.github.io/en/development/handy_links/</link>
+        <pubDate>Wed, 03 Jun 2020 22:51:34 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        <atom:modified>Wed, 03 Jun 2020 22:51:34 -0400</atom:modified>
+        <guid>http://kfrajer.github.io/en/development/handy_links/</guid>
+        <description>My sites  https://kfrajer.github.io http://devhugo.atspace.cc/en/index.html http://krisfrajer.atspace.cc/drdcsurvey/location.php?get=demo http://krisfrajer.atspace.cc/drdcsurvey/cgi-bin/demo3.pl http://www.bluelion.site/mem.php?top- readapps.xyz krisfrajer.dev GCP: data4good, headless chrome, contact form https://data4good.uc.r.appspot.com/ /admin /hidden  Android  GPS map Blinking LEDs pwd-encoder-vX Model-Timer Stef-15  Reference - development  TMUX cheatsheet: https://www.hostinger.com/tutorials/tmux-beginners-guide-and-cheat-sheet/ Hugo themes:  https://themes.gohugo.io/hugo-theme-zzo/ https://themes.gohugo.io/hugo-theme-zdoc/   Emacs: http://ergoemacs.org/emacs/emacs.html GOlang tutorial: https://gocloud.dev/tutorials gRPC: https://www.grpc.io/docs/what-is-grpc/core-concepts/ Internet X.509 PKI CA and CRL: https://tools.ietf.org/html/rfc5280  References - Other  French modules: https://learn.altissia.org/platform/#/learning-path  </description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>my-sites</category>
+            
+          
+            
+              <category>reference</category>
+            
+          
+            
+              <category>cheatsheets</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Setup Docker in Wsl</title>
         <link>http://kfrajer.github.io/en/development/setup-docker-in-wsl/</link>
         <pubDate>Sat, 30 May 2020 19:50:05 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 19:50:05 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/setup-docker-in-wsl/</guid>
         <description>Installing Docker in Windows Subsystem Linux (WSL) NOTES  After ssummer 2020, you need to have WSL2 which is made available for Windows 10 Home edition It is recommended to upgrade to Windows 10 Pro In &amp;ldquo;Turn Windows features on and off&amp;rdquo;, check &amp;ldquo;Windows Hypervisor Platform&amp;rdquo; To be confirmed, check &amp;ldquo;Hyper-V&amp;rdquo;? Currently working but this is not checked. To investigate&amp;hellip; Finally, install &amp;ldquo;Docker Destop&amp;rdquo; and ensure the docker-machine is up and running.</description>
@@ -58,7 +90,7 @@
         <title>Docker Cpp Memory Demo</title>
         <link>http://kfrajer.github.io/en/development/docker-cpp-mem-demo/</link>
         <pubDate>Sat, 30 May 2020 18:11:25 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:11:25 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/docker-cpp-mem-demo/</guid>
         <description>Memory analysis using docker  Reference: https://github.com/CppMtl/Meetups/tree/master/2020/2020-02-27%20%5BGabriel%20Aubut-Lussier%5D%20Memory%20analysis  Roadmap 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58  docker run --rm -it ubuntu ls /proc ls /proc/1 bash cat /proc/1/stack docker run --privileged --rm -it ubuntu cat /proc/1/stack less /proc/1/smaps apt-get install less less /proc/1/maps Virtual memory Different binary sections Different permissions [heap] Shared libraries (libc, terminfo, dynamic linker) Anonymous zones [stack] [vvar], [vdso], [vsyscall] less /proc/1/smaps Rss Pss Shared_* Private_* VmFlags less /proc/1/smaps_rollup less /proc/1/map_files/* less /proc/1/oom_score less /proc/1/status Vm* pushd /home/01-programme-vide g++ main.</description>
@@ -86,7 +118,7 @@
         <title>Git Flow - Feature branch</title>
         <link>http://kfrajer.github.io/en/development/git-flow-fbranch/</link>
         <pubDate>Sat, 30 May 2020 18:11:04 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:11:04 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/git-flow-fbranch/</guid>
         <description>Git flow  Set git for the first time:  E-mail, name, crlf line termination handling git init git config &amp;ndash;global user.name &amp;ldquo;kfrajer&amp;rdquo; git config &amp;ndash;global user.email krisfrajer@gmail.com git config &amp;ndash;global core.autocrlf true git config &amp;ndash;global merge.tool meld git config &amp;ndash;global mergetool.meld.cmd &amp;ldquo;meld $LOCAL $MERGED $REMOTE &amp;ndash;output $MERGED&amp;rdquo; Set git token   git clone repo(s) locally Create a branch with named either feature(s)/{feature-name}, bugfix/{issue-name} or mayor/{name}  git checkout -b {purpose}/{name}   Perform changes, add unit/system/integration tests Commit often Push upstream to origin.</description>
@@ -118,7 +150,7 @@
         <title>Python Virtualenv</title>
         <link>http://kfrajer.github.io/en/development/python-virtualenv/</link>
         <pubDate>Sat, 30 May 2020 18:00:56 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:00:56 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/python-virtualenv/</guid>
         <description>Python Virtual Environment For Linux  virtualenv -v venv --python=/usr/bin/python3 source ./venv/bin/activate  For Windows  python -m pip install --proxy=http://u:p@proxy-svc-name.com:port --upgrade pip pip install --proxy=http://u:p@proxy-svc-name.com:port virtualenv virtualenv -v {envName} --python=c:\Python37\python.exe {envName}\Scripts\activate
@@ -147,7 +179,7 @@
         <title>Jq</title>
         <link>http://kfrajer.github.io/en/development/jq/</link>
         <pubDate>Sat, 30 May 2020 18:00:31 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:00:31 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/jq/</guid>
         <description>Core JQ commands Doc&amp;rsquo;s main reference: jq Tutorial
@@ -176,7 +208,7 @@ Commands in Docker context  [TBD]  Commands applied to log files  cat {filename}
         <title>Building a Hugo Page</title>
         <link>http://kfrajer.github.io/en/development/cr_buidling_static_site/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:29:59 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/cr_buidling_static_site/</guid>
         <description>Building a Site: Generation
@@ -225,7 +257,7 @@ Setting up page hosting using (GitHub)[https://gohugo.</description>
         <title>Docker Knowlegde Base</title>
         <link>http://kfrajer.github.io/en/development/docker/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:29:59 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/docker/</guid>
         <description>Core Docker commands   docker ps -a
@@ -271,7 +303,7 @@ Setting up page hosting using (GitHub)[https://gohugo.</description>
         <title>Git</title>
         <link>http://kfrajer.github.io/en/development/git/</link>
         <pubDate>Sat, 30 May 2020 17:25:33 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:25:33 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/git/</guid>
         <description>Core Git commands  git status git checkout git rev-parse --abbrev-ref HEAD: Current branch name git branch -a: List all branches git checkout -b git log --pretty=oneline git diff {branch1}..{branch2} git diff {fileName} git add {fileName01} {fileName02} ... {fileName0N} git commit -m &amp;quot;Commit msg here&amp;quot; git push  or  git push --set-upstream {upstream-ref} {which-branch} git stash git stash pop git commit --amend -m {new-commit-message} git commit -amend ## Opens vi to edit commit msg.</description>

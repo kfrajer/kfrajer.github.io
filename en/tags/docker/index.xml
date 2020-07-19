@@ -11,8 +11,8 @@
     <description>Recent content in docker on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
-    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 30 May 2020 19:50:05 -0400</lastBuildDate>
     
@@ -26,7 +26,7 @@
         <title>Setup Docker in Wsl</title>
         <link>http://kfrajer.github.io/en/development/setup-docker-in-wsl/</link>
         <pubDate>Sat, 30 May 2020 19:50:05 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 19:50:05 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/setup-docker-in-wsl/</guid>
         <description>Installing Docker in Windows Subsystem Linux (WSL) NOTES  After ssummer 2020, you need to have WSL2 which is made available for Windows 10 Home edition It is recommended to upgrade to Windows 10 Pro In &amp;ldquo;Turn Windows features on and off&amp;rdquo;, check &amp;ldquo;Windows Hypervisor Platform&amp;rdquo; To be confirmed, check &amp;ldquo;Hyper-V&amp;rdquo;? Currently working but this is not checked. To investigate&amp;hellip; Finally, install &amp;ldquo;Docker Destop&amp;rdquo; and ensure the docker-machine is up and running.</description>
@@ -58,7 +58,7 @@
         <title>Docker Cpp Memory Demo</title>
         <link>http://kfrajer.github.io/en/development/docker-cpp-mem-demo/</link>
         <pubDate>Sat, 30 May 2020 18:11:25 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:11:25 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/docker-cpp-mem-demo/</guid>
         <description>Memory analysis using docker  Reference: https://github.com/CppMtl/Meetups/tree/master/2020/2020-02-27%20%5BGabriel%20Aubut-Lussier%5D%20Memory%20analysis  Roadmap 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58  docker run --rm -it ubuntu ls /proc ls /proc/1 bash cat /proc/1/stack docker run --privileged --rm -it ubuntu cat /proc/1/stack less /proc/1/smaps apt-get install less less /proc/1/maps Virtual memory Different binary sections Different permissions [heap] Shared libraries (libc, terminfo, dynamic linker) Anonymous zones [stack] [vvar], [vdso], [vsyscall] less /proc/1/smaps Rss Pss Shared_* Private_* VmFlags less /proc/1/smaps_rollup less /proc/1/map_files/* less /proc/1/oom_score less /proc/1/status Vm* pushd /home/01-programme-vide g++ main.</description>
@@ -86,7 +86,7 @@
         <title>Dockerfile Multistage</title>
         <link>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</link>
         <pubDate>Sat, 30 May 2020 18:09:54 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:09:54 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</guid>
         <description>############### # FROM buildpack-deps:buster-curl as certGetter ## Copy from src to dest, load to base and outputed in master ENV SRC_CERT=ORGANIZATION \ DEST_CERT=/usr/share/ca-certificates/ORGANIZATION \ BASE_CERT=/etc/ca-certificates.conf \ MASTER_CERT_FILE=/etc/ssl/certs WORKDIR app/ COPY . . RUN mkdir -p $DEST_CERT &amp;amp;&amp;amp; cp -f $SRC_CERT/* $DEST_CERT/ &amp;amp;&amp;amp; \ for i in `find ${SRC_CERT} -type f -name &amp;quot;*.crt&amp;quot;`; do echo $i &amp;gt;&amp;gt; $BASE_CERT; echo &amp;quot;Loading $i into $BASE_CERT&amp;quot;; done &amp;amp;&amp;amp; \ echo &amp;quot;Calling update-ca-certificates...&amp;quot; &amp;amp;&amp;amp; update-ca-certificates ONBUILD RUN echo -e &amp;quot;\nFinish executing loading\n\nCertGetter\n\nNext step.</description>
@@ -111,10 +111,50 @@
       </item>
       
       <item>
+        <title>Docker Compose</title>
+        <link>http://kfrajer.github.io/en/templates/docker/docker-compose/</link>
+        <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 18:08:28 -0400</atom:modified>
+        <guid>http://kfrajer.github.io/en/templates/docker/docker-compose/</guid>
+        <description>Dockerfiles with common network layer: Master-slave setup Instructions  Configure values in .env file Init sequence:  Spin master first (See cmd 1) Spin slave second (See cmd 1)   Docker tear down instructions:  Stop + rm slave container first. Do not run dk-cp down (See cmd 2) Down master script. It will manage the network teardown (See cmd 3)   If slave container needs to be re-built and spin up again: Init only slave If master container needs to be re-built and spin up again: Follow init sequence  Sample commands:  docker-compose -f docker-compose.</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>docker-compose</category>
+            
+          
+            
+              <category>docker</category>
+            
+          
+            
+              <category>network</category>
+            
+          
+            
+              <category>demo</category>
+            
+          
+            
+              <category>services</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Dockerfile sample</title>
         <link>http://kfrajer.github.io/en/templates/docker/dockerfile/</link>
         <pubDate>Sat, 30 May 2020 18:08:14 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:08:14 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/docker/dockerfile/</guid>
         <description>Instructions  docker build -t {imageName} . docker run -it &amp;ndash;rm &amp;ndash;mount type=bind,src=http://kfrajer.github.io/c/Users/C/workspace/out,dst=/app/publish &amp;ndash;name {containerName} {imageName}  Dockerfile content FROM golang:1.14 ENV \ PRINTING_PRESS_VERSION=&amp;quot;v0.2.0&amp;quot; \ APPROOT=&amp;quot;/app&amp;quot; \ OUTFOLDER=&amp;quot;$APPROOT/publish&amp;quot; \ RECIPIENT_EMAIL=&amp;quot;user@example.com&amp;quot; \ GITLAB_USER_EMAIL=&amp;quot;user@example.com&amp;quot; \ SEND_EMAIL_FLAG=true WORKDIR $APPROOT COPY . $APPROOT ##find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix RUN for i in `find -type f -name &amp;quot;*.sh&amp;quot; -o -name &amp;quot;*.json&amp;quot;`; do sed -i &#39;s/\r//g&#39; $i; echo &amp;quot;Removing Windows end of line for : $i&amp;quot;; done ##RUN for i in `find editorial/ -type f -name &amp;quot;*.</description>
@@ -142,7 +182,7 @@
         <title>Docker Knowlegde Base</title>
         <link>http://kfrajer.github.io/en/development/docker/</link>
         <pubDate>Sat, 30 May 2020 17:29:59 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:29:59 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/docker/</guid>
         <description>Core Docker commands   docker ps -a

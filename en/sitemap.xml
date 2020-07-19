@@ -3,23 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://kfrajer.github.io/en/showcase/hugo/hugo-resources/</loc>
-    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/showcase/hugo/hugo-theme-zzo/</loc>
-    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/showcase/hugo/hugo-theme-zdoc/</loc>
-    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://kfrajer.github.io/en/</loc>
-    <lastmod>2020-05-30T19:50:05-04:00</lastmod>
+    <lastmod>2020-07-19T11:44:27-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -30,6 +15,96 @@
                 hreflang="en"
                 href="http://kfrajer.github.io/en/"
                 />
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/active/</loc>
+    <lastmod>2020-07-19T11:44:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/development/</loc>
+    <lastmod>2020-07-19T11:44:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/programming/</loc>
+    <lastmod>2020-07-19T11:44:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/projects/</loc>
+    <lastmod>2020-07-19T11:44:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/projects/</loc>
+    <lastmod>2020-07-19T11:44:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/</loc>
+    <lastmod>2020-07-19T11:44:27-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://kfrajer.github.io/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://kfrajer.github.io/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/css/</loc>
+    <lastmod>2020-06-04T17:46:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/html/</loc>
+    <lastmod>2020-06-04T17:46:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/templates/html-core/</loc>
+    <lastmod>2020-06-04T17:46:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/js/</loc>
+    <lastmod>2020-06-04T17:46:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/templates/</loc>
+    <lastmod>2020-06-04T17:46:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/web-page/</loc>
+    <lastmod>2020-06-04T17:46:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/cheatsheets/</loc>
+    <lastmod>2020-06-03T22:51:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/development/handy_links/</loc>
+    <lastmod>2020-06-03T22:51:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/my-sites/</loc>
+    <lastmod>2020-06-03T22:51:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/reference/</loc>
+    <lastmod>2020-06-03T22:51:34-04:00</lastmod>
   </url>
   
   <url>
@@ -45,21 +120,6 @@
   <url>
     <loc>http://kfrajer.github.io/en/development/setup-docker-in-wsl/</loc>
     <lastmod>2020-05-30T19:50:05-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/</loc>
-    <lastmod>2020-05-30T19:50:05-04:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://kfrajer.github.io/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://kfrajer.github.io/en/tags/"
-                />
   </url>
   
   <url>
@@ -108,11 +168,6 @@
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/templates/</loc>
-    <lastmod>2020-05-30T18:10:09-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://kfrajer.github.io/en/tags/build/</loc>
     <lastmod>2020-05-30T18:09:54-04:00</lastmod>
   </url>
@@ -129,11 +184,6 @@
   
   <url>
     <loc>http://kfrajer.github.io/en/tags/javascript/</loc>
-    <lastmod>2020-05-30T18:09:26-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/js/</loc>
     <lastmod>2020-05-30T18:09:26-04:00</lastmod>
   </url>
   
@@ -163,17 +213,37 @@
   </url>
   
   <url>
+    <loc>http://kfrajer.github.io/en/tags/demo/</loc>
+    <lastmod>2020-05-30T18:08:28-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://kfrajer.github.io/es/tags/demo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://kfrajer.github.io/en/tags/demo/"
+                />
+  </url>
+  
+  <url>
     <loc>http://kfrajer.github.io/en/templates/docker/docker-compose/</loc>
     <lastmod>2020-05-30T18:08:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/tags/one/</loc>
+    <loc>http://kfrajer.github.io/en/tags/docker-compose/</loc>
     <lastmod>2020-05-30T18:08:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/tags/two/</loc>
+    <loc>http://kfrajer.github.io/en/tags/network/</loc>
+    <lastmod>2020-05-30T18:08:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/services/</loc>
     <lastmod>2020-05-30T18:08:28-04:00</lastmod>
   </url>
   
@@ -183,7 +253,17 @@
   </url>
   
   <url>
+    <loc>http://kfrajer.github.io/en/tags/one/</loc>
+    <lastmod>2020-05-30T18:00:56-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kfrajer.github.io/en/development/python-virtualenv/</loc>
+    <lastmod>2020-05-30T18:00:56-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/two/</loc>
     <lastmod>2020-05-30T18:00:56-04:00</lastmod>
   </url>
   
@@ -199,11 +279,6 @@
   
   <url>
     <loc>http://kfrajer.github.io/en/development/docker/</loc>
-    <lastmod>2020-05-30T17:29:59-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/docker-compose/</loc>
     <lastmod>2020-05-30T17:29:59-04:00</lastmod>
   </url>
   
@@ -238,16 +313,6 @@
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/publication/article/</loc>
-    <lastmod>2020-03-05T14:08:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/publication/book/</loc>
-    <lastmod>2020-03-05T14:08:48+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://kfrajer.github.io/en/development/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url>
@@ -258,268 +323,8 @@
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/publication/misc/</loc>
-    <lastmod>2020-03-05T14:08:48+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://kfrajer.github.io/en/templates/processing/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/publication/</loc>
-    <lastmod>2020-03-05T14:08:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/</loc>
-    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/shortcode/</loc>
-    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/shortcodes/</loc>
-    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/showcase/hugo/</loc>
-    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/showcase/</loc>
-    <lastmod>2020-01-19T15:43:38+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/categories/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://kfrajer.github.io/es/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://kfrajer.github.io/en/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/css/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/html/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/markdown/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/markdown-syntax/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/series/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://kfrajer.github.io/es/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://kfrajer.github.io/en/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/categories/syntax/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/themes/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/categories/themes/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/series/themes-guide/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/privacy/</loc>
-    <lastmod>2019-12-19T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/rich-content/</loc>
-    <lastmod>2019-12-19T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/shortcodes/</loc>
-    <lastmod>2019-12-19T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/categories/hugo/</loc>
-    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/syntax-highlight/</loc>
-    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/math-typesetting/</loc>
-    <lastmod>2019-12-17T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/amoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/bamoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/emoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/emoji-support/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/gamoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/namoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/categories/diagram/</loc>
-    <lastmod>2019-11-18T21:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/test-viz/</loc>
-    <lastmod>2019-11-18T21:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/test-wavedrom/</loc>
-    <lastmod>2019-11-18T18:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/test-chartjs/</loc>
-    <lastmod>2019-11-18T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/test-js-sequence-diagrams/</loc>
-    <lastmod>2019-11-18T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/diagram/</loc>
-    <lastmod>2019-11-17T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/test-mermaid/</loc>
-    <lastmod>2019-11-17T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/categories/math/</loc>
-    <lastmod>2019-11-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/test-mathjax/</loc>
-    <lastmod>2019-11-16T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/test-katex/</loc>
-    <lastmod>2019-11-15T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/posts/test-flowchart/</loc>
-    <lastmod>2019-11-14T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/gallery/cartoon/</loc>
-    <lastmod>2019-10-31T10:20:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/gallery/</loc>
-    <lastmod>2019-10-31T10:20:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/gallery/photo/</loc>
-    <lastmod>2019-10-31T10:20:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/presentation/dir/fourth/</loc>
-    <lastmod>2019-10-30T20:48:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/presentation/</loc>
-    <lastmod>2019-10-30T20:48:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/presentation/third/</loc>
-    <lastmod>2019-10-30T20:46:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/presentation/second/</loc>
-    <lastmod>2019-10-30T20:45:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/presentation/first/</loc>
-    <lastmod>2019-10-30T19:45:20+09:00</lastmod>
   </url>
   
   <url>
@@ -533,31 +338,30 @@
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/publication/article/article_any_folder_name_1/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/publication/book/book_any_folder_name_1/</loc>
-    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/publication/misc/misc_any_folder_name_1/</loc>
-    <lastmod>2016-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kfrajer.github.io/en/tags/index/</loc>
+    <loc>http://kfrajer.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://kfrajer.github.io/es/tags/index/"
+                href="http://kfrajer.github.io/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://kfrajer.github.io/en/tags/index/"
+                href="http://kfrajer.github.io/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://kfrajer.github.io/es/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://kfrajer.github.io/en/series/"
                 />
   </url>
   

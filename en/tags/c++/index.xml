@@ -11,8 +11,8 @@
     <description>Recent content in c&#43;&#43; on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>krisfrajerg@gmail.com (krisfrajer)</managingEditor>
-    <webMaster>krisfrajerg@gmail.com (krisfrajer)</webMaster>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 30 May 2020 18:11:25 -0400</lastBuildDate>
     
@@ -26,7 +26,7 @@
         <title>Docker Cpp Memory Demo</title>
         <link>http://kfrajer.github.io/en/development/docker-cpp-mem-demo/</link>
         <pubDate>Sat, 30 May 2020 18:11:25 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:11:25 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/docker-cpp-mem-demo/</guid>
         <description>Memory analysis using docker  Reference: https://github.com/CppMtl/Meetups/tree/master/2020/2020-02-27%20%5BGabriel%20Aubut-Lussier%5D%20Memory%20analysis  Roadmap 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58  docker run --rm -it ubuntu ls /proc ls /proc/1 bash cat /proc/1/stack docker run --privileged --rm -it ubuntu cat /proc/1/stack less /proc/1/smaps apt-get install less less /proc/1/maps Virtual memory Different binary sections Different permissions [heap] Shared libraries (libc, terminfo, dynamic linker) Anonymous zones [stack] [vvar], [vdso], [vsyscall] less /proc/1/smaps Rss Pss Shared_* Private_* VmFlags less /proc/1/smaps_rollup less /proc/1/map_files/* less /proc/1/oom_score less /proc/1/status Vm* pushd /home/01-programme-vide g++ main.</description>
@@ -54,7 +54,7 @@
         <title>Makefile</title>
         <link>http://kfrajer.github.io/en/templates/makefile/</link>
         <pubDate>Sat, 30 May 2020 18:10:09 -0400</pubDate>
-        <author>krisfrajerg@gmail.com (krisfrajer)</author>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:10:09 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/makefile/</guid>
         <description>.DEFAULT_GOAL := build
