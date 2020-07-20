@@ -29,7 +29,10 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sun, 19 Jul 2020 11:44:27 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/projects/</guid>
-        <description>Under construction  Current list of projects and their respective repo links Reference TODO list  </description>
+        <description>Under construction  Current list of projects and their respective repo links Reference TODO list  Projects   Demonstration of Python decorator
+ Timer function HTML maker ?    FFT processing using Processing3 Java
+ Tag: java processing3 P3 FFT    FFT algorithm in R
+ Tag: R FFT    Script to change folder and file names as well as rename content (Code name: GatewayConfig)</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
