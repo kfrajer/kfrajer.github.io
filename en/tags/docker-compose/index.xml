@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Docker-compose on Hugo Zzo Theme</title>
+    <title>Docker-compose on PlayBooks</title>
     <link>http://kfrajer.github.io/en/tags/docker-compose/</link>
-    <description>Recent content in Docker-compose on Hugo Zzo Theme</description>
+    <description>Recent content in Docker-compose on PlayBooks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
@@ -23,13 +23,14 @@
 
       
       <item>
-        <title>Docker Compose</title>
+        <title>Docker Compose - CI/CD Pipeline Generator (Python)</title>
         <link>http://kfrajer.github.io/en/templates/docker/docker-compose/</link>
         <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:08:28 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/docker/docker-compose/</guid>
-        <description>Dockerfiles with common network layer: Master-slave setup Instructions  Configure values in .env file Init sequence:  Spin master first (See cmd 1) Spin slave second (See cmd 1)   Docker tear down instructions:  Stop + rm slave container first. Do not run dk-cp down (See cmd 2) Down master script. It will manage the network teardown (See cmd 3)   If slave container needs to be re-built and spin up again: Init only slave If master container needs to be re-built and spin up again: Follow init sequence  Sample commands:  docker-compose -f docker-compose.</description>
+        <description>Overview In this section you find sample docker-compose files that allows to run a master-slave service. One service defines a custom bridge network, the second connects to this network. In addition, there is a demo of overriding a docker-compose file using another docker-compose file. Finally, you find handy commands to debug docker containers and a sample .env file.
+Handy commands for debugging  Shows all running containers: docker ps -a Removes idle stopped containers: docker rm $(docker ps -q -f &amp;quot;status=exited&amp;quot;) See logs from container (name as displayed in docker ps): docker logs -f {containerName} Create bash session in a running container: docker exec -it {containerName} /bin/bash To explore/beautify logs in container and extract loglevel and message and assign it to LEVEL and MSG resp.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -57,6 +58,10 @@
               <category>services</category>
             
           
+            
+              <category>env file</category>
+            
+          
         
         
         
@@ -69,13 +74,7 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:29:59 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/docker/</guid>
-        <description>Core Docker commands   docker ps -a
-  docker run --rm --name {containerName} {imageName}
-  docker run --rm -it --name {containerName} {imageName}
-  docker logs -f {containerName}: Continuos logs
-  docker exec -it {containerName} {cmd-to-execute}
-  alias ccx=&#39;f(){ [ -n &amp;quot;$1&amp;quot; ] &amp;amp;&amp;amp; docker exec -it &amp;quot;$1&amp;quot; /bin/bash; unset -f f; }; : Creates bash session in running container
-  docker inspect {containerName}</description>
+        <description>Core Docker commands  docker ps -a docker run --rm -it --name {containerName} {imageName} docker logs -f {containerName}: Continuos logs docker exec -it {containerName} {cmd-to-execute} alias ccx=&#39;f(){ [ -n &amp;quot;$1&amp;quot; ] &amp;amp;&amp;amp; docker exec -it &amp;quot;$1&amp;quot; /bin/bash; unset -f f; }; : Creates bash session in running container docker build -t {imageTag} . docker build -t {imageTag} -f {DockerfileName} . : Context set to current folder docker run -it --rm --mount type=bind,src=http://kfrajer.github.io/c/Users/USR/Documents/folder,dst=/app/publish --name {appName} {imagetag}  Pretty docker status reporting commands 1 2 3 4 5 6 7 8  Yellow=&amp;#39;\033[0;33m IRed=&amp;#39;\033[0;91m&amp;#39; IBlue=&amp;#39;\033[0;94m&amp;#39; NC=&amp;#39;\033[0m&amp;#39; echo -e &amp;#34;$(docker ps --format &amp;#34;${Yellow}{{.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         

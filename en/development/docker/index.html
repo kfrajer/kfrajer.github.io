@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Docker Knowlegde Base – Hugo Zzo Theme</title>
+    <title>Docker Knowlegde Base – PlayBooks</title>
     
 
 
@@ -1216,7 +1216,7 @@
 <meta property="article:author" content="http://kfrajer.github.io/en/development/docker/@Cristian Mosquera">
 
 
-<meta property="og:site_name" content="Hugo Zzo Theme">
+<meta property="og:site_name" content="PlayBooks">
 <meta property="og:title" content="Docker Knowlegde Base">
 <meta property="og:url" content="http://kfrajer.github.io/en/development/docker/">
 <meta property="og:type" content="article">
@@ -1273,7 +1273,7 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Hugo Zzo Theme",
+      "name": "PlayBooks",
       "url": "http://kfrajer.github.io"
     }
   }
@@ -1560,7 +1560,7 @@
   
   <li >
     
-      <a href="http://kfrajer.github.io/en/" class="capitalize">Hugo Zzo Theme</a>
+      <a href="http://kfrajer.github.io/en/" class="capitalize">PlayBooks</a>
     
   </li>
   
@@ -1620,94 +1620,55 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <h1 id="core-docker-commands">Core Docker commands</h1>
+      <h3 id="core-docker-commands">Core Docker commands</h3>
 <ul>
-<li>
-<p><code>docker ps -a</code></p>
-</li>
-<li>
-<p><code>docker run --rm --name {containerName} {imageName}</code></p>
-</li>
-<li>
-<p><code>docker run --rm -it --name {containerName} {imageName}</code></p>
-</li>
-<li>
-<p><code>docker logs -f {containerName}</code>: Continuos logs</p>
-</li>
-<li>
-<p><code>docker exec -it {containerName} {cmd-to-execute}</code></p>
-</li>
-<li>
-<p><code>alias ccx='f(){ [ -n &quot;$1&quot; ] &amp;&amp; docker exec -it &quot;$1&quot; /bin/bash; unset -f f; };</code> : Creates bash session in running container</p>
-</li>
-<li>
-<p><code>docker inspect {containerName}</code></p>
-</li>
-<li>
-<p>Yellow=&rsquo;\033[0;33m</p>
-</li>
-<li>
-<p>IRed=&rsquo;\033[0;91m&rsquo;</p>
-</li>
-<li>
-<p>IBlue=&rsquo;\033[0;94m&rsquo;</p>
-</li>
-<li>
-<p>NC=&rsquo;\033[0m&rsquo;</p>
-</li>
-<li>
-<p><code>echo -e &quot;$(docker ps --format &quot;${Yellow}{{.Names}}${NC}\n\tStatus:${IRed} {{.Status}}${NC}\n\t${IBlue}Container ID:${NC} {{.ID}}\t${IBlue}Command:${NC} {{.Command}}\n\t${IBlue}Image:${NC} {{.Image}}&quot; )&quot;</code></p>
-</li>
-<li>
-<p><code>VVBODY=&quot;$(docker ps -a --format &quot;${IRed}{{.Status}}${NC},${Yellow}{{.Names}}${NC} , {{.ID}} , {{.CreatedAt}}&quot; )&quot;; echo -e &quot;$VVBODY&quot; | column -t -s,</code></p>
-</li>
-<li>
-<p><code>echo -e &quot;$(docker ps -a --format &quot;${Yellow}{{.Names}}${NC}\n\tStatus:${IRed} {{.Status}}${NC}\n\t${IBlue}Container ID:${NC} {{.ID}}\t${IBlue}Command:${NC} {{.Command}}\n\t${IBlue}Image:${NC} {{.Image}}\n\t${IBlue}CreatedAt:${NC} {{.CreatedAt}}&quot; )&quot;</code></p>
-</li>
-<li>
-<p><code>VVHEAD=&quot;${Black}${On_White}\tSTATUS,CONTAINER-ID,CMD,IMAGE,CREATED AT${NC}&quot;;VVBODY=&quot;$(docker ps -a --format &quot;${Yellow}{{.Names}}${NC}\n\t${IRed}{{.Status}}${NC} , {{.ID}} , {{.Command}} , {{.Image}} , {{.CreatedAt}}&quot; )&quot;;echo -e &quot;$VVHEAD\n$VVBODY&quot; | column -t -s,</code></p>
-</li>
-<li>
-<p><code>docker build -t {imageTag} .</code></p>
-</li>
-<li>
-<p><code>docker build -t {imageTag} -f {DockerfileName} .</code> : Context set to current folder</p>
-</li>
-<li>
-<p><code>docker run -it --rm --mount type=bind,src=/c/Users/USR/Documents/folder,dst=/app/publish --name {appName} {imagetag}</code></p>
-</li>
-<li>
-<p><code>docker rm $(docker ps -a -q)</code></p>
-</li>
-<li>
-<p><code>[ -n &quot;$(docker ps -a -q)&quot; ] &amp;&amp; echo &quot;Removing idle containers&quot; &amp;&amp; docker rm $(docker ps -q -f &quot;status=exited&quot;)</code></p>
-</li>
-<li>
-<p><code>docker rmi $(docker images | awk '{print $3}')</code></p>
-</li>
-<li>
-<p><code>docker rmi $(docker images | grep &quot;&lt;none&gt;&quot; | awk '{print $3}')</code></p>
-</li>
-<li>
-<p><code>docker images prune</code></p>
-</li>
-<li>
-<p><code>docker images ls</code></p>
-</li>
-<li>
-<p><code>docker volumes prune</code></p>
-</li>
-<li>
-<p><code>docker volumes ls</code></p>
-</li>
-<li>
-<p><code>docker network ls</code></p>
-</li>
-<li>
-<p><code>docker network rm {name}</code></p>
-</li>
+<li><code>docker ps -a</code></li>
+<li><code>docker run --rm -it --name {containerName} {imageName}</code></li>
+<li><code>docker logs -f {containerName}</code>: Continuos logs</li>
+<li><code>docker exec -it {containerName} {cmd-to-execute}</code></li>
+<li><code>alias ccx='f(){ [ -n &quot;$1&quot; ] &amp;&amp; docker exec -it &quot;$1&quot; /bin/bash; unset -f f; };</code> : Creates bash session in running container</li>
+<li><code>docker build -t {imageTag} .</code></li>
+<li><code>docker build -t {imageTag} -f {DockerfileName} .</code> : Context set to current folder</li>
+<li><code>docker run -it --rm --mount type=bind,src=/c/Users/USR/Documents/folder,dst=/app/publish --name {appName} {imagetag}</code></li>
 </ul>
-<h1 id="core-docker-compose-commands">Core docker-compose commands</h1>
+<h3 id="pretty-docker-status-reporting-commands">Pretty docker status reporting commands</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">Yellow</span><span class="o">=</span><span class="s1">&#39;\033[0;33m
+</span><span class="s1">IRed=&#39;</span><span class="se">\0</span>33<span class="o">[</span>0<span class="p">;</span>91m<span class="s1">&#39;
+</span><span class="s1">IBlue=&#39;</span><span class="se">\0</span>33<span class="o">[</span>0<span class="p">;</span>94m<span class="s1">&#39;
+</span><span class="s1">NC=&#39;</span><span class="se">\0</span>33<span class="o">[</span>0m<span class="err">&#39;</span>
+<span class="nb">echo</span> -e <span class="s2">&#34;</span><span class="k">$(</span>docker ps --format <span class="s2">&#34;</span><span class="si">${</span><span class="nv">Yellow</span><span class="si">}</span><span class="s2">{{.Names}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">\n\tStatus:</span><span class="si">${</span><span class="nv">IRed</span><span class="si">}</span><span class="s2"> {{.Status}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">\n\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Container ID:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.ID}}\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Command:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.Command}}\n\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Image:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.Image}}&#34;</span> <span class="k">)</span><span class="s2">&#34;</span>
+<span class="nv">VVBODY</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>docker ps -a --format <span class="s2">&#34;</span><span class="si">${</span><span class="nv">IRed</span><span class="si">}</span><span class="s2">{{.Status}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">,</span><span class="si">${</span><span class="nv">Yellow</span><span class="si">}</span><span class="s2">{{.Names}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> , {{.ID}} , {{.CreatedAt}}&#34;</span> <span class="k">)</span><span class="s2">&#34;</span><span class="p">;</span> <span class="nb">echo</span> -e <span class="s2">&#34;</span><span class="nv">$VVBODY</span><span class="s2">&#34;</span> <span class="p">|</span> column -t -s,
+<span class="nb">echo</span> -e <span class="s2">&#34;</span><span class="k">$(</span>docker ps -a --format <span class="s2">&#34;</span><span class="si">${</span><span class="nv">Yellow</span><span class="si">}</span><span class="s2">{{.Names}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">\n\tStatus:</span><span class="si">${</span><span class="nv">IRed</span><span class="si">}</span><span class="s2"> {{.Status}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">\n\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Container ID:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.ID}}\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Command:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.Command}}\n\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Image:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.Image}}\n\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">CreatedAt:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.CreatedAt}}&#34;</span> <span class="k">)</span><span class="s2">&#34;</span>
+<span class="nv">VVHEAD</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">Black</span><span class="si">}${</span><span class="nv">On_White</span><span class="si">}</span><span class="s2">\tSTATUS,CONTAINER-ID,CMD,IMAGE,CREATED AT</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">;</span><span class="nv">VVBODY</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>docker ps -a --format <span class="s2">&#34;</span><span class="si">${</span><span class="nv">Yellow</span><span class="si">}</span><span class="s2">{{.Names}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">\n\t</span><span class="si">${</span><span class="nv">IRed</span><span class="si">}</span><span class="s2">{{.Status}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> , {{.ID}} , {{.Command}} , {{.Image}} , {{.CreatedAt}}&#34;</span> <span class="k">)</span><span class="s2">&#34;</span><span class="p">;</span><span class="nb">echo</span> -e <span class="s2">&#34;</span><span class="nv">$VVHEAD</span><span class="s2">\n</span><span class="nv">$VVBODY</span><span class="s2">&#34;</span> <span class="p">|</span> column -t -s,
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="housekeeping">Housekeeping</h3>
+<ul>
+<li><code>docker inspect {containerName}</code></li>
+<li><code>docker rm $(docker ps -a -q)</code></li>
+<li><code>[ -n &quot;$(docker ps -a -q)&quot; ] &amp;&amp; echo &quot;Removing idle containers&quot; &amp;&amp; docker rm $(docker ps -q -f &quot;status=exited&quot;)</code></li>
+<li><code>docker rmi $(docker images | awk '{print $3}')</code></li>
+<li><code>docker rmi $(docker images | grep &quot;&lt;none&gt;&quot; | awk '{print $3}')</code></li>
+<li><code>docker images prune</code></li>
+<li><code>docker images ls</code></li>
+<li><code>docker volumes prune</code></li>
+<li><code>docker volumes ls</code></li>
+<li><code>docker network ls</code></li>
+<li><code>docker network rm {name}</code></li>
+</ul>
+<h3 id="core-docker-compose-commands">Core docker-compose commands</h3>
 <ul>
 <li><code>docker-compose up --build</code></li>
 <li><code>docker-compose --verbose up --build -d</code></li>
@@ -1717,7 +1678,7 @@
 <li><code>docker-compose stop   &amp;&amp; docker-compose rm -f &quot;&quot;</code>: Removes only the containers. It doe snot remove volumes or network adapters</li>
 <li><code>f(){ docker-compose stop &quot;$@&quot;  &amp;&amp; docker-compose rm -f &quot;$@&quot;; unset -f f; }; f</code> : To be used in a bash function</li>
 </ul>
-<h2 id="other-commands">Other commands</h2>
+<h3 id="other-commands">Other commands</h3>
 <ul>
 <li><code>export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0</code></li>
 <li><code>export DOCKER_HOST='tcp://localhost:2375'</code></li>
@@ -1784,7 +1745,7 @@
     
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fdocker%2f&title=Docker%20Knowlegde%20Base &summary=Core%20Docker%20commands%20for%20development%20in%20Linux&source=The%20Zzo%20theme%20for%20Hugo%20example%20site." target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fdocker%2f&title=Docker%20Knowlegde%20Base &summary=Core%20Docker%20commands%20for%20development%20in%20Linux&source=Knowledge%20base%20%26%20Playbooks" target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
@@ -1930,6 +1891,21 @@
 
     <section class="related">
     
+    
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        See Also
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/en/development/git/" class="related__link">Git</a>
+        </li>
+        
+    </ul>
     
   </section>
     <div class="grow"></div>
@@ -2308,7 +2284,15 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#other-commands">Other commands</a></li>
+    <li>
+      <ul>
+        <li><a href="#core-docker-commands">Core Docker commands</a></li>
+        <li><a href="#pretty-docker-status-reporting-commands">Pretty docker status reporting commands</a></li>
+        <li><a href="#housekeeping">Housekeeping</a></li>
+        <li><a href="#core-docker-compose-commands">Core docker-compose commands</a></li>
+        <li><a href="#other-commands">Other commands</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>

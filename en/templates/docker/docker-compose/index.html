@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Docker Compose – Hugo Zzo Theme</title>
+    <title>Docker Compose - CI/CD Pipeline Generator (Python) – PlayBooks</title>
     
 
 
@@ -1203,10 +1203,10 @@
 
 
     
-<meta name="description" content="Docker compose sample: network, service definition, .env" />
+<meta name="description" content="Docker compose sample file: network, service definition, .env" />
 
 
-<meta name="keywords" content="docker-compose,docker,network,demo,services">
+<meta name="keywords" content="docker-compose,docker,network,demo,services,env file">
 
 <meta name="created" content="2020-05-30T18:08:28-0400">
 <meta name="modified" content="2020-05-30T18:08:28-0400">
@@ -1216,11 +1216,11 @@
 <meta property="article:author" content="http://kfrajer.github.io/en/templates/docker/docker-compose/@Cristian Mosquera">
 
 
-<meta property="og:site_name" content="Hugo Zzo Theme">
-<meta property="og:title" content="Docker Compose">
+<meta property="og:site_name" content="PlayBooks">
+<meta property="og:title" content="Docker Compose - CI/CD Pipeline Generator (Python)">
 <meta property="og:url" content="http://kfrajer.github.io/en/templates/docker/docker-compose/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Docker compose sample: network, service definition, .env">
+<meta property="og:description" content="Docker compose sample file: network, service definition, .env">
 
 <meta name="generator" content="Hugo 0.71.1" />
 <meta name="msapplication-TileColor" content="#fff">
@@ -1257,12 +1257,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Docker Compose",
+    "headline": "Docker Compose - CI/CD Pipeline Generator (Python)",
     "datePublished": "2020-05-30T18:08:28-04:00",
     "dateModified": "2020-05-30T18:08:28-04:00",
     "url" : "http://kfrajer.github.io/en/templates/docker/docker-compose/",
-    "description": "Docker compose sample: network, service definition, .env",
-    "keywords": ["docker-compose","docker","network","demo","services"],
+    "description": "Docker compose sample file: network, service definition, .env",
+    "keywords": ["docker-compose","docker","network","demo","services","env file"],
     "author": {
       "@type": "Person",
       "name": "Cristian Mosquera"
@@ -1273,7 +1273,7 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Hugo Zzo Theme",
+      "name": "PlayBooks",
       "url": "http://kfrajer.github.io"
     }
   }
@@ -1562,7 +1562,7 @@
   
   <li >
     
-      <a href="http://kfrajer.github.io/en/" class="capitalize">Hugo Zzo Theme</a>
+      <a href="http://kfrajer.github.io/en/" class="capitalize">PlayBooks</a>
     
   </li>
   
@@ -1583,7 +1583,7 @@
   
   <li  class="is-active" >
     
-      <span>Docker Compose</span>
+      <span>Docker Compose - CI/CD Pipeline Generator (Python)</span>
     
   </li>
   
@@ -1595,13 +1595,13 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">Docker Compose</h2>
+    <h2 class="single__title" data-ani="true">Docker Compose - CI/CD Pipeline Generator (Python)</h2>
     <div class="single__meta">
       
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 30, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;4&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;6&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;Cristian Mosquera</span>
   
@@ -1621,6 +1621,8 @@
 
   <li><a href="http://kfrajer.github.io/en/tags/docker-compose/" class="single__tag" title="Docker-compose">#Docker-compose</a></li>
 
+  <li><a href="http://kfrajer.github.io/en/tags/env-file/" class="single__tag" title="env file">#env file</a></li>
+
   <li><a href="http://kfrajer.github.io/en/tags/network/" class="single__tag" title="network">#network</a></li>
 
   <li><a href="http://kfrajer.github.io/en/tags/services/" class="single__tag" title="services">#services</a></li>
@@ -1629,232 +1631,453 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <h1 id="dockerfiles-with-common-network-layer-master-slave-setup">Dockerfiles with common network layer: Master-slave setup</h1>
-<h2 id="instructions">Instructions</h2>
+      <h2 id="overview">Overview</h2>
+<p>In this section you find sample docker-compose files that allows to run a master-slave service. One service defines a custom bridge network, the second connects to this network. In addition, there is a demo of overriding a docker-compose file using another docker-compose file. Finally, you find handy commands to debug docker containers and a sample <code>.env</code> file.</p>
+<h3 id="handy-commands-for-debugging">Handy commands for debugging</h3>
+<ul>
+<li>Shows all running containers: <code>docker ps -a</code></li>
+<li>Removes idle stopped containers: <code>docker rm $(docker ps -q -f &quot;status=exited&quot;)</code></li>
+<li>See logs from container (name as displayed in docker ps): <code>docker logs -f {containerName}</code></li>
+<li>Create <code>bash</code> session in a running container: <code>docker exec -it {containerName} /bin/bash</code></li>
+<li>To explore/beautify logs in container and extract loglevel and message and assign it to <strong>LEVEL</strong> and <strong>MSG</strong> resp.: <code>cat app_logs.txt | jq &quot;. | {LEVEL: .logLevel, MSG: .message}&quot;</code></li>
+<li>To see the current network setup: <code>docker network ls</code></li>
+</ul>
+<h3 id="example-dockerize-postgresql">Example Dockerize PostgreSQL</h3>
+<ul>
+<li><a href="https://docs.docker.com/engine/examples/postgresql_service/">https://docs.docker.com/engine/examples/postgresql_service/</a></li>
+</ul>
+<hr />
+<h2 id="dockerfiles-with-common-network-layer-master-slave-setup">Dockerfiles with common network layer: Master-slave setup</h2>
+<h3 id="instructions">Instructions</h3>
 <ul>
 <li>Configure values in .env file</li>
 <li>Init sequence:
 <ul>
-<li>Spin master first (See cmd 1)</li>
-<li>Spin slave second (See cmd 1)</li>
+<li>Spin master first (See cmd #1)</li>
+<li>Spin slave second (See cmd #1)</li>
 </ul>
 </li>
 <li>Docker tear down instructions:
 <ul>
-<li>Stop + rm slave container first. Do not run dk-cp down (See cmd 2)</li>
-<li>Down master script. It will manage the network teardown (See cmd 3)</li>
+<li>Stop + remove slave container first. Do not run dk-cp down (See cmd #2 below)</li>
+<li>Spin down master script. It will manage the network teardown (See cmd #3)</li>
 </ul>
 </li>
 <li>If slave container needs to be re-built and spin up again: Init only slave</li>
 <li>If master container needs to be re-built and spin up again: Follow init sequence</li>
 </ul>
-<h3 id="sample-commands">Sample commands:</h3>
+<h4 id="sample-commands">Sample commands:</h4>
 <ol>
 <li><code>docker-compose -f docker-compose.yml -f docker-compose.tandem.yml up --build -d</code></li>
 <li><code>docker-compose stop &amp;&amp; docker-compose rm -f</code></li>
 <li><code>docker-compose -f docker-compose.yml -f docker-compose.tandem.yml down</code></li>
 </ol>
-<h2 id="standard-env-file">Standard .env file</h2>
-<pre><code>## docker-compose will extract the variables from this file
-## If variable is not defined here, it needs to be defined in terminal 
-## session running docker-compose. Any variable define in current session
-## will superseed values defined here. Nevertheless, env variable 
-## needs to be explicitely defined and read in the docker-compose file
-##
+<h3 id="standard-env-file">Standard .env file</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">## docker-compose will extract the variables from this file</span>
+<span class="c1">## If variable is not defined here, it needs to be defined in terminal</span> 
+<span class="c1">## session running docker-compose. Any variable define in current session</span>
+<span class="c1">## will superseed values defined here. Nevertheless, env variable</span> 
+<span class="c1">## needs to be explicitely defined and read in the docker-compose file</span>
+<span class="c1">##</span>
 
-SVC_PORT=8081
-#COMPOSE_PROJECT_NAME=name_folder_where_master_is   ## You need this variable in the slave
+<span class="nv">SVC_PORT</span><span class="o">=</span><span class="m">8081</span>
+<span class="c1">#COMPOSE_PROJECT_NAME=name_folder_where_master_is   ## You need this variable in the slave</span>
 
-CONFIG_VERSION=latest
-SVC_ENVIRONMENT=dev
+<span class="nv">CONFIG_VERSION</span><span class="o">=</span>latest
+<span class="nv">SVC_ENVIRONMENT</span><span class="o">=</span>dev
 
-DOCKERFILE=./Dockerfile
+<span class="nv">DOCKERFILE</span><span class="o">=</span>./Dockerfile
 
 
-BASE_REPO_PATH=/d/repo/folder
-FOLDER_NAME_01=service_core
-FOLDER_NAME_01=svc_name
-MAIN_SVC_NAME=svc_name_main
+<span class="nv">BASE_REPO_PATH</span><span class="o">=</span>/d/repo/folder
+<span class="nv">FOLDER_NAME_01</span><span class="o">=</span>service_core
+<span class="nv">FOLDER_NAME_01</span><span class="o">=</span>svc_name
+<span class="nv">MAIN_SVC_NAME</span><span class="o">=</span>svc_name_main
 
-#CRED_WINDOWS_CONFIG_PATH=/d/.credential
-#OTHER_ENV_VAR_TO_USE=/
+<span class="c1">#CRED_WINDOWS_CONFIG_PATH=/d/.credential</span>
+<span class="c1">#OTHER_ENV_VAR_TO_USE=/</span>
 
-## Next can be setup here or in terminal session locally
-SVC_LOGS_FOLDER_PATH=/
-AUX_SVC_ADDR=0.0.0.0
+<span class="c1">## Next can be setup here or in terminal session locally</span>
+<span class="nv">SVC_LOGS_FOLDER_PATH</span><span class="o">=</span>/
+<span class="nv">AUX_SVC_ADDR</span><span class="o">=</span>0.0.0.0
 
-</code></pre><h2 id="master-docker-composeyml-file">MASTER docker-compose.yml file</h2>
-<pre><code>version: '3.4'
-
-x-bucket-path:
-  &amp;default-bucket-svc-path
-  &quot;${FOLDER_NAME_01}/${FOLDER_NAME_02}/config/${CONFIG_VERSION}/${SVC_ENVIRONMENT}&quot;
-
-x-volumes: # Relative paths doesn't work with WSL and docker for Windows
-  &amp;default-volumes
-  - type: bind
-    source: ${BASE_REPO_PATH:?&quot;BASE_REPO_PATH needs to be set, 'D:/git-repos' is an example. This is used for Docker for windows with Windows Linux SubSystem binded volumes in your container.  Uncomment voume If you don't want them or create a shadow d-c yaml file&quot;}/${FOLDER_NAME_01}/${FOLDER_NAME_02}/${MAIN_SVC_NAME}
-    target: /${MAIN_SVC_NAME}
-  - type: bind
-    source: ${BASE_REPO_PATH:?&quot;BASE_REPO_PATH needs to be set, 'D:/git-repos' is an example. This is used for Docker for windows with Windows Linux SubSystem binded volumes in your container.  Uncomment voume If you don't want them or create a shadow d-c yaml file&quot;}/${FOLDER_NAME_01}/${FOLDER_NAME_02}/${MAIN_SVC_NAME}-config
-    target: /${MAIN_SVC_NAME}-config
-  - type: bind
-    source: ${CRED_WINDOWS_CONFIG_PATH:?&quot;CRED_WINDOWS_CONFIG_PATH is unset, 'C:/Users/username/.credential' is an example.  This is used for Docker for windows with WSL binded volumes in your container.  Uncomment this volume if you don't want them&quot;}
-    target: &quot;/root/.credential&quot;
-
-x-args:
-  &amp;default-args
-  http_proxy: &quot;http://yourproxy.org:port&quot;
-  https_proxy: &quot;http://yourproxy.org:port&quot;
-  no_proxy: &quot;localhost, 127.0.0.1&quot;
-
-x-environment:
-    &amp;default-env
-    SVC_ENVIRONMENT: ${SVC_ENVIRONMENT}
-    CRED_CONFIG_PATH: &quot;/root/.credential&quot;
-    SVC_LOGS_FOLDER_PATH: &quot;${MAIN_SVC_NAME}/logs&quot;
-    CONFIG_VERSION: ${CONFIG_VERSION}
-    CONFIG_SVC_BUCKET: &quot;bucket-name-for-svc&quot;
-    CONFIG_SVC_BUCKET_PATH: *default-bucket-svc-path
-    AUX_SVC_ADDR: ${AUX_SVC_ADDR:?&quot;AUX_SVC_ADDR is unset. You should have example to `example`&quot;}
-
-services:
-  main-dev:
-    build:
-      args:
-        *default-args
-    environment:
-      &lt;&lt; : *default-env
-      OTHER_ENV_VAR: ${OTHER_ENV_VAR_TO_USE:?&quot;OTHER_ENV_VAR_TO_USE is unset. 'dflt-value' is an example&quot;}
-    volumes:
-      *default-volumes
-    networks:
-      - svc_net
-
-  aux-svc:
-    image: aux_svc_image:latest
-    ports:
-      - 'svc_port:svc_port'
-    networks:
-      - svc_net
-
-  main-test:
-    build:
-      args:
-        *default-args
-    environment:
-      OTHER_ENV_VAR: ${OTHER_ENV_VAR_TO_USE:?&quot;OTHER_ENV_VAR_TO_USE is unset. 'dflt-value' is an example&quot;}
-    volumes: # Relative paths doesn't work with WSL and docker for windows
-      *default-volumes
-
-networks:
-  svc_net:
-    driver: bridge
-
-</code></pre><h2 id="additional-lines-for-slave-docker-composeyml-file">Additional lines for SLAVE docker-compose.yml file</h2>
-<pre><code>networks:
-  my_net:
-    external:
-      name: ${COMPOSE_PROJECT_NAME}_my_net
-</code></pre><h2 id="sample-defining-other-services-in-docker-compose-file">Sample defining other services in docker-compose file</h2>
-<pre><code>services:
-  redis:
-    image: redis
-    volumes:
-      *default-volumes
-    ports:
-      - '6379:6379'
-    networks:
-      - my_net
-
-  db:
-    image: mongo:latest
-    command: mongod --port 27018
-    ports:
-      - '27018:27018'
-    networks:
-      - my_net
-
-  mysql:
-    image: mysql
-    container_name: mysql
-    volumes:
-      - mysql:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=ghost
-      - MYSQL_USER=ghost
-      - MYSQL_PASSWORD=password
-    networks:
-      - db
-
-volumes:
- mysql:
-
-</code></pre><ul>
-<li>Example Dockerize PostgreSQL:  <a href="https://docs.docker.com/engine/examples/postgresql_service/">https://docs.docker.com/engine/examples/postgresql_service/</a></li>
-</ul>
-<h2 id="handy-commands-for-debugging">Handy commands for debugging</h2>
-<ul>
-<li>Shows all running containers: <code>docker ps -a</code></li>
-<li>Removes idle stopped containers: <code>docker rm $(docker ps -q -f &quot;status=exited&quot;)</code></li>
-<li>See logs from container (name as displayed in docker ps): <code>docker logs -f {containerName}</code></li>
-<li>Sh into a container: <code>docker exec -it {containerName} /bin/bash</code></li>
-<li>To explore/beautify logs in container and extract loglevel and message and assign it to <strong>LEVEL</strong> and <strong>MSG</strong> resp.: <code>cat app_logs.txt | jq &quot;. | {LEVEL: .logLevel, MSG: .message}&quot;</code></li>
-<li>To see the network bridges: <code>docker network ls</code></li>
-</ul>
-<h2 id="overriding-docker-compose">Overriding docker-compose</h2>
-<pre><code># This file  will override the docker-compose.yml
-# Currently overrrides only any mounted volumes because they don't exist when deployed
-# The way the override work with volume  : it override the volume with a different 
-# source but the same destination path
-
-version: '3.4'
-
-x-args:
-  &amp;default-args
-  http_proxy: &quot;&quot;
-  https_proxy: &quot;&quot;
-  no_proxy: &quot;&quot;
-x-environment:
-    &amp;default-env
-    &lt;&lt; : *default-args
-    REMOTE_SERVICE_USE_PUBLIC_IP: &quot;false&quot;
-#Next modified previously defined volumes
-x-volumes: # Relative paths doesn't work with WSL and docker for windows
-  &amp;default-volumes
-  - type: bind
-    source: /dir
-    target: /${MAIN_SVC_NAME}
-  - type: bind
-    source: /dir
-    target: /${MAIN_SVC_NAME}-config
-  - type: bind
-    source: /dir
-    target: &quot;/app/.credential&quot;
-#Here we apply the change by replacing the current mounted drives with the one defined in this file
-services:
-  svc-dev:
-    build:
-      args:
-        &lt;&lt; : *default-args
-    volumes: # Relative paths doesn't work with WSL and docker for windows
-      *default-volumes
-
-  svc-test:
-    build:
-      args:
-        &lt;&lt; : *default-args
-    volumes: # Relative paths doesn't work with WSL and docker for windows
-      *default-volumes
-
-  svc-codevalidation:
-    build:
-      args:
-        &lt;&lt; : *default-args
-    environment:
-      *default-env
-</code></pre>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="master-docker-composeyml-file">MASTER docker-compose.yml file</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-docker" data-lang="docker">version: <span class="s1">&#39;3.4&#39;</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span>x-bucket-path:<span class="err">
+</span><span class="err"></span>  <span class="p">&amp;</span>default-bucket-svc-path<span class="err">
+</span><span class="err"></span>  <span class="s2">&#34;</span><span class="si">${</span><span class="nv">FOLDER_NAME_01</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">FOLDER_NAME_02</span><span class="si">}</span><span class="s2">/config/</span><span class="si">${</span><span class="nv">CONFIG_VERSION</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">SVC_ENVIRONMENT</span><span class="si">}</span><span class="s2">&#34;</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span>x-volumes: <span class="c1"># Relative paths doesn&#39;t work with WSL and docker for Windows</span><span class="err">
+</span><span class="err"></span>  <span class="p">&amp;</span>default-volumes<span class="err">
+</span><span class="err"></span>  - type: bind<span class="err">
+</span><span class="err"></span>    source: <span class="si">${</span><span class="nv">BASE_REPO_PATH</span><span class="p">:?</span><span class="s2">&#34;BASE_REPO_PATH needs to be set, &#39;D:/git-repos&#39; is an example. This is used for Docker for windows with Windows Linux SubSystem binded volumes in your container.  Uncomment voume If you don&#39;t want them or create a shadow d-c yaml file&#34;</span><span class="si">}</span>/<span class="si">${</span><span class="nv">FOLDER_NAME_01</span><span class="si">}</span>/<span class="si">${</span><span class="nv">FOLDER_NAME_02</span><span class="si">}</span>/<span class="si">${</span><span class="nv">MAIN_SVC_NAME</span><span class="si">}</span><span class="err">
+</span><span class="err"></span>    target: /<span class="si">${</span><span class="nv">MAIN_SVC_NAME</span><span class="si">}</span><span class="err">
+</span><span class="err"></span>  - type: bind<span class="err">
+</span><span class="err"></span>    source: <span class="si">${</span><span class="nv">BASE_REPO_PATH</span><span class="p">:?</span><span class="s2">&#34;BASE_REPO_PATH needs to be set, &#39;D:/git-repos&#39; is an example. This is used for Docker for windows with Windows Linux SubSystem binded volumes in your container.  Uncomment voume If you don&#39;t want them or create a shadow d-c yaml file&#34;</span><span class="si">}</span>/<span class="si">${</span><span class="nv">FOLDER_NAME_01</span><span class="si">}</span>/<span class="si">${</span><span class="nv">FOLDER_NAME_02</span><span class="si">}</span>/<span class="si">${</span><span class="nv">MAIN_SVC_NAME</span><span class="si">}</span>-config<span class="err">
+</span><span class="err"></span>    target: /<span class="si">${</span><span class="nv">MAIN_SVC_NAME</span><span class="si">}</span>-config<span class="err">
+</span><span class="err"></span>  - type: bind<span class="err">
+</span><span class="err"></span>    source: <span class="si">${</span><span class="nv">CRED_WINDOWS_CONFIG_PATH</span><span class="p">:?</span><span class="s2">&#34;CRED_WINDOWS_CONFIG_PATH is unset, &#39;C:/Users/username/.credential&#39; is an example.  This is used for Docker for windows with WSL binded volumes in your container.  Uncomment this volume if you don&#39;t want them&#34;</span><span class="si">}</span><span class="err">
+</span><span class="err"></span>    target: <span class="s2">&#34;/root/.credential&#34;</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span>x-args:<span class="err">
+</span><span class="err"></span>  <span class="p">&amp;</span>default-args<span class="err">
+</span><span class="err"></span>  http_proxy: <span class="s2">&#34;http://yourproxy.org:port&#34;</span><span class="err">
+</span><span class="err"></span>  https_proxy: <span class="s2">&#34;http://yourproxy.org:port&#34;</span><span class="err">
+</span><span class="err"></span>  no_proxy: <span class="s2">&#34;localhost, 127.0.0.1&#34;</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span>x-environment:<span class="err">
+</span><span class="err"></span>    <span class="p">&amp;</span>default-env<span class="err">
+</span><span class="err"></span>    SVC_ENVIRONMENT: <span class="si">${</span><span class="nv">SVC_ENVIRONMENT</span><span class="si">}</span><span class="err">
+</span><span class="err"></span>    CRED_CONFIG_PATH: <span class="s2">&#34;/root/.credential&#34;</span><span class="err">
+</span><span class="err"></span>    SVC_LOGS_FOLDER_PATH: <span class="s2">&#34;</span><span class="si">${</span><span class="nv">MAIN_SVC_NAME</span><span class="si">}</span><span class="s2">/logs&#34;</span><span class="err">
+</span><span class="err"></span>    CONFIG_VERSION: <span class="si">${</span><span class="nv">CONFIG_VERSION</span><span class="si">}</span><span class="err">
+</span><span class="err"></span>    CONFIG_SVC_BUCKET: <span class="s2">&#34;bucket-name-for-svc&#34;</span><span class="err">
+</span><span class="err"></span>    CONFIG_SVC_BUCKET_PATH: *default-bucket-svc-path<span class="err">
+</span><span class="err"></span>    AUX_SVC_ADDR: <span class="si">${</span><span class="nv">AUX_SVC_ADDR</span><span class="p">:?</span><span class="s2">&#34;AUX_SVC_ADDR is unset. You should have example to `example`&#34;</span><span class="si">}</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span>services:<span class="err">
+</span><span class="err"></span>  main-dev:<span class="err">
+</span><span class="err"></span>    build:<span class="err">
+</span><span class="err"></span>      args:<span class="err">
+</span><span class="err"></span>        *default-args<span class="err">
+</span><span class="err"></span>    environment:<span class="err">
+</span><span class="err"></span>      &lt;&lt; : *default-env<span class="err">
+</span><span class="err"></span>      OTHER_ENV_VAR: <span class="si">${</span><span class="nv">OTHER_ENV_VAR_TO_USE</span><span class="p">:?</span><span class="s2">&#34;OTHER_ENV_VAR_TO_USE is unset. &#39;dflt-value&#39; is an example&#34;</span><span class="si">}</span><span class="err">
+</span><span class="err"></span>    volumes:<span class="err">
+</span><span class="err"></span>      *default-volumes<span class="err">
+</span><span class="err"></span>    networks:<span class="err">
+</span><span class="err"></span>      - svc_net<span class="err">
+</span><span class="err">
+</span><span class="err"></span>  aux-svc:<span class="err">
+</span><span class="err"></span>    image: aux_svc_image:latest<span class="err">
+</span><span class="err"></span>    ports:<span class="err">
+</span><span class="err"></span>      - <span class="s1">&#39;svc_port:svc_port&#39;</span><span class="err">
+</span><span class="err"></span>    networks:<span class="err">
+</span><span class="err"></span>      - svc_net<span class="err">
+</span><span class="err">
+</span><span class="err"></span>  main-test:<span class="err">
+</span><span class="err"></span>    build:<span class="err">
+</span><span class="err"></span>      args:<span class="err">
+</span><span class="err"></span>        *default-args<span class="err">
+</span><span class="err"></span>    environment:<span class="err">
+</span><span class="err"></span>      OTHER_ENV_VAR: <span class="si">${</span><span class="nv">OTHER_ENV_VAR_TO_USE</span><span class="p">:?</span><span class="s2">&#34;OTHER_ENV_VAR_TO_USE is unset. &#39;dflt-value&#39; is an example&#34;</span><span class="si">}</span><span class="err">
+</span><span class="err"></span>    volumes: <span class="c1"># Relative paths doesn&#39;t work with WSL and docker for windows</span><span class="err">
+</span><span class="err"></span>      *default-volumes<span class="err">
+</span><span class="err">
+</span><span class="err"></span>networks:<span class="err">
+</span><span class="err"></span>  svc_net:<span class="err">
+</span><span class="err"></span>    driver: bridge<span class="err">
+</span><span class="err">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="additional-lines-for-slave-docker-composeyml-file">Additional lines for SLAVE docker-compose.yml file</h3>
+<p>These lines are needed to define an external network so service is attached to it instead of the default bridge network</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-docker" data-lang="docker">networks:<span class="err">
+</span><span class="err"></span>  my_net:<span class="err">
+</span><span class="err"></span>    external:<span class="err">
+</span><span class="err"></span>      name: <span class="si">${</span><span class="nv">COMPOSE_PROJECT_NAME</span><span class="si">}</span>_my_net<span class="err">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="other-service-definitions-in-a-docker-compose-file">Other service definitions in a docker-compose file</h3>
+<p>Demo showing definition of additional services</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-docker" data-lang="docker">services:<span class="err">
+</span><span class="err"></span>  redis:<span class="err">
+</span><span class="err"></span>    image: redis<span class="err">
+</span><span class="err"></span>    volumes:<span class="err">
+</span><span class="err"></span>      *default-volumes<span class="err">
+</span><span class="err"></span>    ports:<span class="err">
+</span><span class="err"></span>      - <span class="s1">&#39;6379:6379&#39;</span><span class="err">
+</span><span class="err"></span>    networks:<span class="err">
+</span><span class="err"></span>      - my_net<span class="err">
+</span><span class="err">
+</span><span class="err"></span>  db:<span class="err">
+</span><span class="err"></span>    image: mongo:latest<span class="err">
+</span><span class="err"></span>    command: mongod --port <span class="m">27018</span><span class="err">
+</span><span class="err"></span>    ports:<span class="err">
+</span><span class="err"></span>      - <span class="s1">&#39;27018:27018&#39;</span><span class="err">
+</span><span class="err"></span>    networks:<span class="err">
+</span><span class="err"></span>      - my_net<span class="err">
+</span><span class="err">
+</span><span class="err"></span>  mysql:<span class="err">
+</span><span class="err"></span>    image: mysql<span class="err">
+</span><span class="err"></span>    container_name: mysql<span class="err">
+</span><span class="err"></span>    volumes:<span class="err">
+</span><span class="err"></span>      - mysql:/var/lib/mysql<span class="err">
+</span><span class="err"></span>    environment:<span class="err">
+</span><span class="err"></span>      - <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root<span class="err">
+</span><span class="err"></span>      - <span class="nv">MYSQL_DATABASE</span><span class="o">=</span>ghost<span class="err">
+</span><span class="err"></span>      - <span class="nv">MYSQL_USER</span><span class="o">=</span>ghost<span class="err">
+</span><span class="err"></span>      - <span class="nv">MYSQL_PASSWORD</span><span class="o">=</span>password<span class="err">
+</span><span class="err"></span>    networks:<span class="err">
+</span><span class="err"></span>      - db<span class="err">
+</span><span class="err">
+</span><span class="err"></span>volumes:<span class="err">
+</span><span class="err"></span> mysql:<span class="err">
+</span><span class="err">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="sample-overriding-a-docker-compose-file">Sample overriding a docker-compose file</h3>
+<p>To override a docker-compose file, you need to pass both files to docker-compose and docker-compose will set the state based from the difference of these two files. Use case: This permit to differentiate running locally and overriding when deploying in a CI/CD pipeline removing volumes or dropping environmental variables. The command which builds the service(s) and sets docker-compose in dttached state:<br />
+<code>docker-compose -f docker-compose.yml -f docker-compose.deploy.yml up --build -d</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="c"># This file  will override the docker-compose.yml</span><span class="err">
+</span><span class="err"></span><span class="c"># Currently overrrides only any mounted volumes because they don&#39;t exist when deployed</span><span class="err">
+</span><span class="err"></span><span class="c"># The way the override work with volume  : it override the volume with a different </span><span class="err">
+</span><span class="err"></span><span class="c"># source but the same destination path</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span>version: <span class="s1">&#39;3.4&#39;</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span>x-args:<span class="err">
+</span><span class="err"></span>  <span class="p">&amp;</span>default-args<span class="err">
+</span><span class="err"></span>  http_proxy: <span class="s2">&#34;&#34;</span><span class="err">
+</span><span class="err"></span>  https_proxy: <span class="s2">&#34;&#34;</span><span class="err">
+</span><span class="err"></span>  no_proxy: <span class="s2">&#34;&#34;</span><span class="err">
+</span><span class="err"></span>x-environment:<span class="err">
+</span><span class="err"></span>    <span class="p">&amp;</span>default-env<span class="err">
+</span><span class="err"></span>    &lt;&lt; : *default-args<span class="err">
+</span><span class="err"></span>    REMOTE_SERVICE_USE_PUBLIC_IP: <span class="s2">&#34;false&#34;</span><span class="err">
+</span><span class="err"></span><span class="c">#Next modified previously defined volumes</span><span class="err">
+</span><span class="err"></span>x-volumes: <span class="c1"># Relative paths doesn&#39;t work with WSL and docker for windows</span><span class="err">
+</span><span class="err"></span>  <span class="p">&amp;</span>default-volumes<span class="err">
+</span><span class="err"></span>  - type: bind<span class="err">
+</span><span class="err"></span>    source: /dir<span class="err">
+</span><span class="err"></span>    target: /<span class="si">${</span><span class="nv">MAIN_SVC_NAME</span><span class="si">}</span><span class="err">
+</span><span class="err"></span>  - type: bind<span class="err">
+</span><span class="err"></span>    source: /dir<span class="err">
+</span><span class="err"></span>    target: /<span class="si">${</span><span class="nv">MAIN_SVC_NAME</span><span class="si">}</span>-config<span class="err">
+</span><span class="err"></span>  - type: bind<span class="err">
+</span><span class="err"></span>    source: /dir<span class="err">
+</span><span class="err"></span>    target: <span class="s2">&#34;/app/.credential&#34;</span><span class="err">
+</span><span class="err"></span><span class="c">#Here we apply the change by replacing the current mounted drives with the one defined in this file</span><span class="err">
+</span><span class="err"></span>services:<span class="err">
+</span><span class="err"></span>  svc-dev:<span class="err">
+</span><span class="err"></span>    build:<span class="err">
+</span><span class="err"></span>      args:<span class="err">
+</span><span class="err"></span>        &lt;&lt; : *default-args<span class="err">
+</span><span class="err"></span>    volumes: <span class="c1"># Relative paths doesn&#39;t work with WSL and docker for windows</span><span class="err">
+</span><span class="err"></span>      *default-volumes<span class="err">
+</span><span class="err">
+</span><span class="err"></span>  svc-test:<span class="err">
+</span><span class="err"></span>    build:<span class="err">
+</span><span class="err"></span>      args:<span class="err">
+</span><span class="err"></span>        &lt;&lt; : *default-args<span class="err">
+</span><span class="err"></span>    volumes: <span class="c1"># Relative paths doesn&#39;t work with WSL and docker for windows</span><span class="err">
+</span><span class="err"></span>      *default-volumes<span class="err">
+</span><span class="err">
+</span><span class="err"></span>  svc-codevalidation:<span class="err">
+</span><span class="err"></span>    build:<span class="err">
+</span><span class="err"></span>      args:<span class="err">
+</span><span class="err"></span>        &lt;&lt; : *default-args<span class="err">
+</span><span class="err"></span>    environment:<span class="err">
+</span><span class="err"></span>      *default-env<span class="err">
+</span></code></pre></td></tr></table>
+</div>
+</div>
     </article>
     
     <script>
@@ -1915,13 +2138,13 @@ services:
     
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2ftemplates%2fdocker%2fdocker-compose%2f&title=Docker%20Compose &summary=Docker%20compose%20sample%3a%20network%2c%20service%20definition%2c%20.env&source=The%20Zzo%20theme%20for%20Hugo%20example%20site." target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2ftemplates%2fdocker%2fdocker-compose%2f&title=Docker%20Compose%20-%20CI%2fCD%20Pipeline%20Generator%20%28Python%29 &summary=Docker%20compose%20sample%20file%3a%20network%2c%20service%20definition%2c%20.env&source=Knowledge%20base%20%26%20Playbooks" target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Docker%20Compose&url=http%3a%2f%2fkfrajer.github.io%2fen%2ftemplates%2fdocker%2fdocker-compose%2f&hashtags=docker-compose%2cdocker%2cnetwork%2cdemo%2cservices&via=crist_mos" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Docker%20Compose%20-%20CI%2fCD%20Pipeline%20Generator%20%28Python%29&url=http%3a%2f%2fkfrajer.github.io%2fen%2ftemplates%2fdocker%2fdocker-compose%2f&hashtags=docker-compose%2cdocker%2cnetwork%2cdemo%2cservices%2cenv%20file&via=crist_mos" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -2072,7 +2295,7 @@ services:
     <ul class="related-ul">
         
         <li>
-          <a href="/en/templates/docker/dockerfile/" class="related__link">Dockerfile sample</a>
+          <a href="/en/templates/docker/dockerfile/" class="related__link">Dockerfile sample - Report/Printing Press(Go)</a>
         </li>
         
     </ul>
@@ -2086,13 +2309,13 @@ services:
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">Dockerfile sample</div>      
+        <div class="pagination-single__left-title">Dockerfile sample - Report/Printing Press(Go)</div>      
       </a>
     
     <div class="grow"></div>
     
       <a href="http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Dockerfile Multistage</div>
+        <div class="pagination-single__right-title">Dockerfile Multistage - Newsletter/PrintingPress (Go)</div>
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
         </div>
@@ -2454,17 +2677,26 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#instructions">Instructions</a>
+    <li><a href="#overview">Overview</a>
       <ul>
-        <li><a href="#sample-commands">Sample commands:</a></li>
+        <li><a href="#handy-commands-for-debugging">Handy commands for debugging</a></li>
+        <li><a href="#example-dockerize-postgresql">Example Dockerize PostgreSQL</a></li>
       </ul>
     </li>
-    <li><a href="#standard-env-file">Standard .env file</a></li>
-    <li><a href="#master-docker-composeyml-file">MASTER docker-compose.yml file</a></li>
-    <li><a href="#additional-lines-for-slave-docker-composeyml-file">Additional lines for SLAVE docker-compose.yml file</a></li>
-    <li><a href="#sample-defining-other-services-in-docker-compose-file">Sample defining other services in docker-compose file</a></li>
-    <li><a href="#handy-commands-for-debugging">Handy commands for debugging</a></li>
-    <li><a href="#overriding-docker-compose">Overriding docker-compose</a></li>
+    <li><a href="#dockerfiles-with-common-network-layer-master-slave-setup">Dockerfiles with common network layer: Master-slave setup</a>
+      <ul>
+        <li><a href="#instructions">Instructions</a>
+          <ul>
+            <li><a href="#sample-commands">Sample commands:</a></li>
+          </ul>
+        </li>
+        <li><a href="#standard-env-file">Standard .env file</a></li>
+        <li><a href="#master-docker-composeyml-file">MASTER docker-compose.yml file</a></li>
+        <li><a href="#additional-lines-for-slave-docker-composeyml-file">Additional lines for SLAVE docker-compose.yml file</a></li>
+        <li><a href="#other-service-definitions-in-a-docker-compose-file">Other service definitions in a docker-compose file</a></li>
+        <li><a href="#sample-overriding-a-docker-compose-file">Sample overriding a docker-compose file</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>

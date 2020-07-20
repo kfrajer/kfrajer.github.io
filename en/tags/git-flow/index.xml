@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Git flow on PlayBooks</title>
+    <link>http://kfrajer.github.io/en/tags/git-flow/</link>
+    <description>Recent content in Git flow on PlayBooks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 30 May 2020 18:11:04 -0400</lastBuildDate>
+    
+        <atom:link href="http://kfrajer.github.io/en/tags/git-flow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Git Flow - Feature branch</title>
+        <link>http://kfrajer.github.io/en/development/git-flow-fbranch/</link>
+        <pubDate>Sat, 30 May 2020 18:11:04 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 18:11:04 -0400</atom:modified>
+        <guid>http://kfrajer.github.io/en/development/git-flow-fbranch/</guid>
+        <description>Git flow  Set git for the first time:  E-mail, name, crlf line termination handling git init git config &amp;ndash;global user.name &amp;ldquo;kfrajer&amp;rdquo; git config &amp;ndash;global user.email krisfrajer@gmail.com git config &amp;ndash;global core.autocrlf true git config &amp;ndash;global merge.tool meld git config &amp;ndash;global mergetool.meld.cmd &amp;ldquo;meld $LOCAL $MERGED $REMOTE &amp;ndash;output $MERGED&amp;rdquo; Set git token   git clone repo(s) locally Create a branch with named either feature(s)/{feature-name}, bugfix/{issue-name} or mayor/{name}  git checkout -b {purpose}/{name}   Perform changes, add unit/system/integration tests Commit often Push upstream to origin.</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Git</category>
+            
+          
+            
+              <category>Cheatsheet</category>
+            
+          
+            
+              <category>Git flow</category>
+            
+          
+            
+              <category>version control</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Git</title>
+        <link>http://kfrajer.github.io/en/development/git/</link>
+        <pubDate>Sat, 30 May 2020 17:25:33 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 17:25:33 -0400</atom:modified>
+        <guid>http://kfrajer.github.io/en/development/git/</guid>
+        <description>Core Git commands Git init  git init git config --global user.name &amp;quot;username&amp;quot; git config --global user.email user@mail.com git config --global core.autocrlf true git config --global merge.tool meld git config --global mergetool.meld.cmd &amp;quot;meld \$LOCAL \$MERGED \$REMOTE --output \$MERGED&amp;quot; Need to set git token to pull/push using SSH strategy isntead of HTTP  General  git status git status -s: Minimum output, s for short git rev-parse --abbrev-ref HEAD: Current branch name git branch -a: List all branches git checkout {branch-name} git checkout -b {branch-name}: create branch and switch into it  Push and pull  git remote -v git remote rm {nameRemote} git remote add {nameRemote} {ssh:git_url} git fetch {branch-name}: Bring changes but do not merge them git add {fileName01} {fileName02} .</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>git</category>
+            
+          
+            
+              <category>git flow</category>
+            
+          
+            
+              <category>version control</category>
+            
+          
+            
+              <category>Cheatsheet</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

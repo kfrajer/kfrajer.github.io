@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Hugo Zzo Theme</title>
+    <title>PlayBooks</title>
     <link>http://kfrajer.github.io/en/</link>
-    <description>Recent content on Hugo Zzo Theme</description>
+    <description>Recent content on PlayBooks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
@@ -50,7 +50,7 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Thu, 04 Jun 2020 17:46:12 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/html-core/</guid>
-        <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width,initial-scale=1&amp;#34;&amp;gt; &amp;lt;title&amp;gt;The HTML5 Herald&amp;lt;/title&amp;gt; &amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;The HTML5 Content&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;SitePoint&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;css/styles.css?v=1.0&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/addons/p5.sound.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;!-- &amp;lt;script src=&amp;#34;sketch.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; --&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script src=&amp;#34;js/scripts.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;   Form template  Credits: https://github.</description>
+        <description>&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width,initial-scale=1&amp;#34;&amp;gt; &amp;lt;title&amp;gt;The HTML5 Herald&amp;lt;/title&amp;gt; &amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;The HTML5 Content&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;SitePoint&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;css/styles.css?v=1.0&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/addons/p5.sound.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;js/scripts.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Form template  Credits: https://github.com/siwalikm/quick-form-css/blob/master/demoForm.html  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width,initial-scale=1&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;qfc-dark.css&amp;#34;&amp;gt; &amp;lt;!-- &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;qfc-light.css&amp;#34;&amp;gt; --&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;qfc-container&amp;#34;&amp;gt; &amp;lt;h2&amp;gt;Form Title&amp;lt;/h2&amp;gt; &amp;lt;label&amp;gt;Description of Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -86,7 +86,7 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Wed, 03 Jun 2020 22:51:34 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/handy_links/</guid>
-        <description>My sites  https://kfrajer.github.io http://devhugo.atspace.cc/en/index.html http://krisfrajer.atspace.cc/drdcsurvey/location.php?get=demo http://krisfrajer.atspace.cc/drdcsurvey/cgi-bin/demo3.pl http://www.bluelion.site/mem.php?top- readapps.xyz krisfrajer.dev GCP: data4good, headless chrome, contact form https://data4good.uc.r.appspot.com/ /admin /hidden  Android  GPS map Blinking LEDs pwd-encoder-vX Model-Timer Stef-15  Reference - development  TMUX cheatsheet: https://www.hostinger.com/tutorials/tmux-beginners-guide-and-cheat-sheet/ Hugo themes:  https://themes.gohugo.io/hugo-theme-zzo/ https://themes.gohugo.io/hugo-theme-zdoc/   Emacs: http://ergoemacs.org/emacs/emacs.html GOlang tutorial: https://gocloud.dev/tutorials gRPC: https://www.grpc.io/docs/what-is-grpc/core-concepts/ Internet X.509 PKI CA and CRL: https://tools.ietf.org/html/rfc5280  References - Other  French modules: https://learn.altissia.org/platform/#/learning-path  </description>
+        <description>My sites  https://kfrajer.github.io http://devhugo.atspace.cc/en/index.html http://krisfrajer.atspace.cc/drdcsurvey/location.php?get=demo http://krisfrajer.atspace.cc/drdcsurvey/cgi-bin/demo3.pl http://www.bluelion.site/mem.php?top- readapps.xyz silverowl.biz: Expires June 6th 2021 krisfrajer.dev GCP: data4good, headless chrome, contact form https://data4good.uc.r.appspot.com/ /admin /hidden  Android  GPS map Blinking LEDs pwd-encoder-vX Model-Timer Stef-15  Reference - development  TMUX cheatsheet: https://www.hostinger.com/tutorials/tmux-beginners-guide-and-cheat-sheet/ Hugo themes:  https://themes.gohugo.io/hugo-theme-zzo/ https://themes.gohugo.io/hugo-theme-zdoc/   Emacs: http://ergoemacs.org/emacs/emacs.html GOlang tutorial: https://gocloud.dev/tutorials gRPC: https://www.grpc.io/docs/what-is-grpc/core-concepts/ Internet X.509 PKI CA and CRL: https://tools.ietf.org/html/rfc5280  References - Other  French modules: https://learn.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -166,6 +166,10 @@
               <category>c&#43;&#43;</category>
             
           
+            
+              <category>Memory analysis</category>
+            
+          
         
         
         
@@ -191,11 +195,15 @@
             
           
             
-              <category>Commands</category>
+              <category>Cheatsheet</category>
             
           
             
-              <category>Cheatsheet</category>
+              <category>Git flow</category>
+            
+          
+            
+              <category>version control</category>
             
           
         
@@ -210,24 +218,7 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:10:09 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/makefile/</guid>
-        <description>.DEFAULT_GOAL := build
-.PHONY: clean
-CTIMESTAMP=$(shell date +%Y%m%d%H%M%S)
-MAIN=newsletter-prep
-DF_ORIGINAL=dockerfiles/df-original/Dockerfile
-DF_STAGES=dockerfiles/df-stages/Dockerfile
-DC_DF_FILE=dockerfiles/dockercompose/Dockerfile
-DC_MAIN_FILE=dockerfiles/dockercompose/docker-compose.yml
-LOGFILE=log-backups.log
-TRASH=Trash/
-info:
-@ echo &amp;ldquo;Build and runs report generator (code name newsletter&amp;rdquo;
-safebackup: clean
-$(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(TRASH)/$(LOGFILE))
-@echo &amp;ldquo;:::::Dockerfile_$CTIMESTAMP&amp;rdquo;
--@test -f Dockerfile &amp;amp;&amp;amp; $(shell head -n 3 Dockerfile &amp;raquo; $(TRASH)/$(LOGFILE))
--@test -f Dockerfile &amp;amp;&amp;amp; $(shell [ ! -s Dockerfile ] &amp;amp;&amp;amp; echo &amp;quot; (Dockerfile was empty)&amp;rdquo; &amp;raquo; $(TRASH)/$(LOGFILE))
--@test -f Dockerfile &amp;amp;&amp;amp; cp -vf Dockerfile $(TRASH)/Dockerfile_$(CTIMESTAMP) || true</description>
+        <description>Makefile: Newsletter/Printing Press Template (Go) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72  .</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -253,7 +244,7 @@ $(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(T
       </item>
       
       <item>
-        <title>Dockerfile Multistage</title>
+        <title>Dockerfile Multistage - Newsletter/PrintingPress (Go)</title>
         <link>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</link>
         <pubDate>Sat, 30 May 2020 18:09:54 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
@@ -273,6 +264,10 @@ $(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(T
           
             
               <category>build</category>
+            
+          
+            
+              <category>Multistage</category>
             
           
         
@@ -349,13 +344,14 @@ $(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(T
       </item>
       
       <item>
-        <title>Docker Compose</title>
+        <title>Docker Compose - CI/CD Pipeline Generator (Python)</title>
         <link>http://kfrajer.github.io/en/templates/docker/docker-compose/</link>
         <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:08:28 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/docker/docker-compose/</guid>
-        <description>Dockerfiles with common network layer: Master-slave setup Instructions  Configure values in .env file Init sequence:  Spin master first (See cmd 1) Spin slave second (See cmd 1)   Docker tear down instructions:  Stop + rm slave container first. Do not run dk-cp down (See cmd 2) Down master script. It will manage the network teardown (See cmd 3)   If slave container needs to be re-built and spin up again: Init only slave If master container needs to be re-built and spin up again: Follow init sequence  Sample commands:  docker-compose -f docker-compose.</description>
+        <description>Overview In this section you find sample docker-compose files that allows to run a master-slave service. One service defines a custom bridge network, the second connects to this network. In addition, there is a demo of overriding a docker-compose file using another docker-compose file. Finally, you find handy commands to debug docker containers and a sample .env file.
+Handy commands for debugging  Shows all running containers: docker ps -a Removes idle stopped containers: docker rm $(docker ps -q -f &amp;quot;status=exited&amp;quot;) See logs from container (name as displayed in docker ps): docker logs -f {containerName} Create bash session in a running container: docker exec -it {containerName} /bin/bash To explore/beautify logs in container and extract loglevel and message and assign it to LEVEL and MSG resp.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -383,19 +379,24 @@ $(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(T
               <category>services</category>
             
           
+            
+              <category>env file</category>
+            
+          
         
         
         
       </item>
       
       <item>
-        <title>Dockerfile sample</title>
+        <title>Dockerfile sample - Report/Printing Press(Go)</title>
         <link>http://kfrajer.github.io/en/templates/docker/dockerfile/</link>
         <pubDate>Sat, 30 May 2020 18:08:14 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:08:14 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/docker/dockerfile/</guid>
-        <description>Instructions  docker build -t {imageName} . docker run -it &amp;ndash;rm &amp;ndash;mount type=bind,src=http://kfrajer.github.io/c/Users/C/workspace/out,dst=/app/publish &amp;ndash;name {containerName} {imageName}  Dockerfile content FROM golang:1.14 ENV \ PRINTING_PRESS_VERSION=&amp;quot;v0.2.0&amp;quot; \ APPROOT=&amp;quot;/app&amp;quot; \ OUTFOLDER=&amp;quot;$APPROOT/publish&amp;quot; \ RECIPIENT_EMAIL=&amp;quot;user@example.com&amp;quot; \ GITLAB_USER_EMAIL=&amp;quot;user@example.com&amp;quot; \ SEND_EMAIL_FLAG=true WORKDIR $APPROOT COPY . $APPROOT ##find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix RUN for i in `find -type f -name &amp;quot;*.sh&amp;quot; -o -name &amp;quot;*.json&amp;quot;`; do sed -i &#39;s/\r//g&#39; $i; echo &amp;quot;Removing Windows end of line for : $i&amp;quot;; done ##RUN for i in `find editorial/ -type f -name &amp;quot;*.</description>
+        <description>Instructions Next commands tag an image and run the container locally with the option to mount the source code for live updates
+ docker build -t {imageName} . docker run -it --rm --mount type=bind,src=http://kfrajer.github.io/c/Users/C/workspace/out,dst=/app/publish --name {containerName} {imageName}  Dockerfile content FROM golang:1.14 ENV \ PRINTING_PRESS_VERSION=&amp;quot;v0.2.0&amp;quot; \ APPROOT=&amp;quot;/app&amp;quot; \ OUTFOLDER=&amp;quot;$APPROOT/publish&amp;quot; \ RECIPIENT_EMAIL=&amp;quot;user@example.com&amp;quot; \ GITLAB_USER_EMAIL=&amp;quot;user@example.com&amp;quot; \ SEND_EMAIL_FLAG=true WORKDIR $APPROOT COPY . $APPROOT ##find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix RUN for i in `find -type f -name &amp;quot;*.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -411,6 +412,10 @@ $(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(T
               <category>build</category>
             
           
+            
+              <category>Volumes</category>
+            
+          
         
         
         
@@ -423,8 +428,8 @@ $(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(T
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:00:56 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/python-virtualenv/</guid>
-        <description>Python Virtual Environment For Linux  virtualenv -v venv --python=/usr/bin/python3 source ./venv/bin/activate  For Windows  python -m pip install --proxy=http://u:p@proxy-svc-name.com:port --upgrade pip pip install --proxy=http://u:p@proxy-svc-name.com:port virtualenv virtualenv -v {envName} --python=c:\Python37\python.exe {envName}\Scripts\activate
-[…] deactivate doskey /history  </description>
+        <description>Python Virtual Environment Install Linux  python -m pip install --proxy=http://u:p@proxy-svc-name.com:port --upgrade pip pip install --proxy=http://u:p@proxy-svc-name.com:port virtualenv  Windows To set the python virtualenv in Windows see https://mothergeo-py.readthedocs.io/en/latest/development/how-to/venv-win.html
+Additional reference from Google GAE  https://cloud.google.com/python/setup https://cloud.google.com/appengine/docs/flexible/python/quickstart  Start environment  For Linux, run the following script to activate the environment using local Python3  1 2 3 4  PY3PATH=$(which python3) ENVNAME=wslenv virtualenv --python=&amp;#34;$PY3PATH&amp;#34; $ENVNAME source &amp;#34;./$ENVNAME/bin/activate&amp;#34;    For Windows  1 2  virtualenv --python C:\Python37\python.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -433,11 +438,11 @@ $(shell echo &amp;ldquo;:::::Dockerfile_$(CTIMESTAMP)&amp;rdquo; &amp;raquo; $(T
         
           
             
-              <category>one</category>
+              <category>Python</category>
             
           
             
-              <category>two</category>
+              <category>virtualenv</category>
             
           
         
@@ -462,11 +467,19 @@ Commands in Docker context  [TBD]  Commands applied to log files  cat {filename}
         
           
             
-              <category>one</category>
+              <category>jq</category>
             
           
             
-              <category>two</category>
+              <category>json</category>
+            
+          
+            
+              <category>Formatter</category>
+            
+          
+            
+              <category>logs</category>
             
           
         
@@ -530,13 +543,7 @@ Setting up page hosting using (GitHub)[https://gohugo.</description>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:29:59 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/docker/</guid>
-        <description>Core Docker commands   docker ps -a
-  docker run --rm --name {containerName} {imageName}
-  docker run --rm -it --name {containerName} {imageName}
-  docker logs -f {containerName}: Continuos logs
-  docker exec -it {containerName} {cmd-to-execute}
-  alias ccx=&#39;f(){ [ -n &amp;quot;$1&amp;quot; ] &amp;amp;&amp;amp; docker exec -it &amp;quot;$1&amp;quot; /bin/bash; unset -f f; }; : Creates bash session in running container
-  docker inspect {containerName}</description>
+        <description>Core Docker commands  docker ps -a docker run --rm -it --name {containerName} {imageName} docker logs -f {containerName}: Continuos logs docker exec -it {containerName} {cmd-to-execute} alias ccx=&#39;f(){ [ -n &amp;quot;$1&amp;quot; ] &amp;amp;&amp;amp; docker exec -it &amp;quot;$1&amp;quot; /bin/bash; unset -f f; }; : Creates bash session in running container docker build -t {imageTag} . docker build -t {imageTag} -f {DockerfileName} . : Context set to current folder docker run -it --rm --mount type=bind,src=http://kfrajer.github.io/c/Users/USR/Documents/folder,dst=/app/publish --name {appName} {imagetag}  Pretty docker status reporting commands 1 2 3 4 5 6 7 8  Yellow=&amp;#39;\033[0;33m IRed=&amp;#39;\033[0;91m&amp;#39; IBlue=&amp;#39;\033[0;94m&amp;#39; NC=&amp;#39;\033[0m&amp;#39; echo -e &amp;#34;$(docker ps --format &amp;#34;${Yellow}{{.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -576,7 +583,7 @@ Setting up page hosting using (GitHub)[https://gohugo.</description>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 17:25:33 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/development/git/</guid>
-        <description>Core Git commands  git status git checkout git rev-parse --abbrev-ref HEAD: Current branch name git branch -a: List all branches git checkout -b git log --pretty=oneline git diff {branch1}..{branch2} git diff {fileName} git add {fileName01} {fileName02} ... {fileName0N} git commit -m &amp;quot;Commit msg here&amp;quot; git push  or  git push --set-upstream {upstream-ref} {which-branch} git stash git stash pop git commit --amend -m {new-commit-message} git commit -amend ## Opens vi to edit commit msg.</description>
+        <description>Core Git commands Git init  git init git config --global user.name &amp;quot;username&amp;quot; git config --global user.email user@mail.com git config --global core.autocrlf true git config --global merge.tool meld git config --global mergetool.meld.cmd &amp;quot;meld \$LOCAL \$MERGED \$REMOTE --output \$MERGED&amp;quot; Need to set git token to pull/push using SSH strategy isntead of HTTP  General  git status git status -s: Minimum output, s for short git rev-parse --abbrev-ref HEAD: Current branch name git branch -a: List all branches git checkout {branch-name} git checkout -b {branch-name}: create branch and switch into it  Push and pull  git remote -v git remote rm {nameRemote} git remote add {nameRemote} {ssh:git_url} git fetch {branch-name}: Bring changes but do not merge them git add {fileName01} {fileName02} .</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -585,11 +592,19 @@ Setting up page hosting using (GitHub)[https://gohugo.</description>
         
           
             
-              <category>one</category>
+              <category>git</category>
             
           
             
-              <category>two</category>
+              <category>git flow</category>
+            
+          
+            
+              <category>version control</category>
+            
+          
+            
+              <category>Cheatsheet</category>
             
           
         

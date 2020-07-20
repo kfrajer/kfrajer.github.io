@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Git – Hugo Zzo Theme</title>
+    <title>Git – PlayBooks</title>
     
 
 
@@ -1203,10 +1203,10 @@
 
 
     
-<meta name="description" content="" />
+<meta name="description" content="Summary of core Git commands for development" />
 
 
-<meta name="keywords" content="one,two">
+<meta name="keywords" content="git,git flow,version control,Cheatsheet">
 
 <meta name="created" content="2020-05-30T17:25:33-0400">
 <meta name="modified" content="2020-05-30T17:25:33-0400">
@@ -1216,11 +1216,11 @@
 <meta property="article:author" content="http://kfrajer.github.io/en/development/git/@Cristian Mosquera">
 
 
-<meta property="og:site_name" content="Hugo Zzo Theme">
+<meta property="og:site_name" content="PlayBooks">
 <meta property="og:title" content="Git">
 <meta property="og:url" content="http://kfrajer.github.io/en/development/git/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="">
+<meta property="og:description" content="Summary of core Git commands for development">
 
 <meta name="generator" content="Hugo 0.71.1" />
 <meta name="msapplication-TileColor" content="#fff">
@@ -1261,8 +1261,8 @@
     "datePublished": "2020-05-30T17:25:33-04:00",
     "dateModified": "2020-05-30T17:25:33-04:00",
     "url" : "http://kfrajer.github.io/en/development/git/",
-    "description": "Core Git commands  git status git checkout git rev-parse --abbrev-ref HEAD: Current branch name git branch -a: List all branches git checkout -b git log --pretty=oneline …",
-    "keywords": ["one","two"],
+    "description": "Summary of core Git commands for development",
+    "keywords": ["git","git flow","version control","Cheatsheet"],
     "author": {
       "@type": "Person",
       "name": "Cristian Mosquera"
@@ -1273,7 +1273,7 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Hugo Zzo Theme",
+      "name": "PlayBooks",
       "url": "http://kfrajer.github.io"
     }
   }
@@ -1560,7 +1560,7 @@
   
   <li >
     
-      <a href="http://kfrajer.github.io/en/" class="capitalize">Hugo Zzo Theme</a>
+      <a href="http://kfrajer.github.io/en/" class="capitalize">PlayBooks</a>
     
   </li>
   
@@ -1592,7 +1592,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 30, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;2&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;Cristian Mosquera</span>
   
@@ -1606,34 +1606,69 @@
   🏷️
   
 
-  <li><a href="http://kfrajer.github.io/en/tags/one/" class="single__tag" title="one">#one</a></li>
+  <li><a href="http://kfrajer.github.io/en/tags/cheatsheet/" class="single__tag" title="Cheatsheet">#Cheatsheet</a></li>
 
-  <li><a href="http://kfrajer.github.io/en/tags/two/" class="single__tag" title="two">#two</a></li>
+  <li><a href="http://kfrajer.github.io/en/tags/git/" class="single__tag" title="Git">#Git</a></li>
+
+  <li><a href="http://kfrajer.github.io/en/tags/git-flow/" class="single__tag" title="Git flow">#Git flow</a></li>
+
+  <li><a href="http://kfrajer.github.io/en/tags/version-control/" class="single__tag" title="version control">#version control</a></li>
 
 </ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
       <h1 id="core-git-commands">Core Git commands</h1>
+<h3 id="git-init">Git init</h3>
+<ul>
+<li><code>git init</code></li>
+<li><code>git config --global user.name &quot;username&quot;</code></li>
+<li><code>git config --global user.email user@mail.com</code></li>
+<li><code>git config --global core.autocrlf true</code></li>
+<li><code>git config --global merge.tool meld</code></li>
+<li><code>git config --global mergetool.meld.cmd &quot;meld \$LOCAL \$MERGED \$REMOTE --output \$MERGED&quot;</code></li>
+<li>Need to set git token to  pull/push using SSH strategy isntead of HTTP</li>
+</ul>
+<h3 id="general">General</h3>
 <ul>
 <li><code>git status</code></li>
-<li><code>git checkout</code></li>
+<li><code>git status -s</code>: Minimum output, s for short</li>
 <li><code>git rev-parse --abbrev-ref HEAD</code>: Current branch name</li>
 <li><code>git branch -a</code>: List all branches</li>
-<li><code>git checkout -b</code></li>
-<li><code>git log --pretty=oneline</code></li>
-<li><code>git diff {branch1}..{branch2}</code></li>
-<li><code>git diff {fileName}</code></li>
+<li><code>git checkout {branch-name}</code></li>
+<li><code>git checkout -b {branch-name}</code>: create branch and switch into it</li>
+</ul>
+<h3 id="push-and-pull">Push and pull</h3>
+<ul>
+<li><code>git remote -v</code></li>
+<li><code>git remote rm {nameRemote}</code></li>
+<li><code>git remote add {nameRemote} {ssh:git_url}</code></li>
+<li><code>git fetch {branch-name}</code>: Bring changes but do not merge them</li>
 <li><code>git add {fileName01} {fileName02} ... {fileName0N}</code></li>
 <li><code>git commit -m &quot;Commit msg here&quot;</code></li>
 <li><code>git push </code> or <code> git push --set-upstream {upstream-ref} {which-branch}</code></li>
+</ul>
+<h3 id="reporting">Reporting</h3>
+<ul>
+<li><code>git rev-parse --abbrev-ref HEAD</code>: Current branch name</li>
+<li><code>git log --pretty=oneline</code></li>
+<li><code>git diff {branch1}..{branch2}</code></li>
+<li><code>git diff {fileName}</code></li>
+</ul>
+<h3 id="stash">Stash</h3>
+<ul>
 <li><code>git stash</code></li>
 <li><code>git stash pop</code></li>
+<li><code>git stash list</code></li>
+<li><code>git stash show</code>: Show top files modified in the top stash</li>
+<li><code>git stash show -p</code>: Shows actual file changes as a difference of to stash with current branch</li>
+</ul>
+<h3 id="amend">Amend</h3>
+<ul>
 <li><code>git commit --amend -m {new-commit-message}</code></li>
 <li><code>git commit -amend</code> ## Opens vi to edit commit msg. Type <code>a</code> for append. When done, press <code>ESC</code> then press <code>:</code> and type <code>wq</code> meaning write and exit</li>
 <li><code>git cherry-pick {commitID01} {commitID02} ... {commitID0N}</code></li>
 <li><code>git rebase -i {commit-id-to-start-from}</code>: squash, fix commits, order commits, drop commits</li>
-<li><code>git fetch master</code>: Bring changes but do not merge them</li>
 <li><code>git reset HEAD</code>: Reset unstaging changes (Reset &ldquo;git add {&hellip;}&quot;)</li>
 <li><code>git reset HEAD^</code>: Branch reset - reset last commit, move head to previous commit</li>
 <li><code>git config --global alias.uncommit 'reset HEAD^'</code>: Use this as <code>git uncommit</code></li>
@@ -1641,52 +1676,48 @@
 <li><code>git checkout -- {file}</code>: Revert a file back to the state it was in before any changes</li>
 <li>Rebasing commits from master into current branch</li>
 </ul>
-<pre><code># master(public): c1 - c37
-# feaure(mine): c1 - c2 - c3 - [...] - c36
-git checkout {master-br-name}
-git rebase {master-br-name} {feature-br-name}
-# Final: c1 - c37 - c2 - c3 - [...] - c36
-# Branch changed here would be the feature branch (aka current branch at the end is &quot;feature&quot; branch)  
-# If conflict arises, rebase will stop and indicate where the conflict is (what file)
-# - Resolve conflict using emacs:
-# - Remove conflict indicators
-# - Choose/amend changes to desired behavior
-# - Save file and exit
-# - `git rebase --continue`: It will continue rebase operation
-</code></pre><ul>
-<li>
-<p><code>git remote -v</code></p>
-</li>
-<li>
-<p><code>git remote rm {nameRemote}</code></p>
-</li>
-<li>
-<p><code>git remote add {nameRemote} {ssh:git_url}</code></p>
-</li>
-<li>
-<p><code>git rev-parse --abbrev-ref HEAD</code>: Current branch</p>
-</li>
-<li>
-<p><code>git branch -D {branchName}</code>:  Removes branch even if it has not been pushed</p>
-</li>
-<li>
-<p><code>git branch -m {oldName} {newName}</code>: Rename branch</p>
-</li>
-<li>
-<p><code>git mv {oldFileName} {newFileName}</code></p>
-</li>
-<li>
-<p><code>GIT_TRACE_PERFORMANCE=1 git status</code>: To get a report in git ops and their performance</p>
-</li>
-<li>
-<p><code>git submodule add {URL-Repo}.git {folder}</code></p>
-</li>
-<li>
-<p><code>git submodule update --remote --merge</code></p>
-</li>
-<li>
-<p><code>git submodule update --init --recursive</code></p>
-</li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># master(public): c1 - c37</span>
+<span class="c1"># feaure(mine): c1 - c2 - c3 - [...] - c36</span>
+git checkout <span class="o">{</span>master-br-name<span class="o">}</span>
+git rebase <span class="o">{</span>master-br-name<span class="o">}</span> <span class="o">{</span>feature-br-name<span class="o">}</span>
+<span class="c1"># Final: c1 - c37 - c2 - c3 - [...] - c36</span>
+<span class="c1"># Branch changed here would be the feature branch (aka current branch at the end is &#34;feature&#34; branch)</span>  
+<span class="c1"># If conflict arises, rebase will stop and indicate where the conflict is (what file)</span>
+<span class="c1"># - Resolve conflict using emacs:</span>
+<span class="c1"># - Remove conflict indicators</span>
+<span class="c1"># - Choose/amend changes to desired behavior</span>
+<span class="c1"># - Save file and exit</span>
+<span class="c1"># - `git rebase --continue`: It will continue rebase operation</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="housekeeping">Housekeeping</h3>
+<ul>
+<li><code>git branch -D {branchName}</code>:  Removes branch even if it has not been pushed</li>
+<li><code>git branch -m {oldName} {newName}</code>: Rename branch</li>
+<li><code>git mv {oldFileName} {newFileName}</code></li>
+<li><code>GIT_TRACE_PERFORMANCE=1 git status</code>: To get a report in git ops and their performance</li>
+</ul>
+<h3 id="git-submodule">Git submodule</h3>
+<ul>
+<li><code>git submodule add {URL-Repo}.git {folder}</code></li>
+<li><code>git submodule update --remote --merge</code></li>
+<li><code>git submodule update --init --recursive</code></li>
 </ul>
 
     </article>
@@ -1749,13 +1780,13 @@ git rebase {master-br-name} {feature-br-name}
     
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fgit%2f&title=Git &summary=&source=The%20Zzo%20theme%20for%20Hugo%20example%20site." target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fgit%2f&title=Git &summary=Summary%20of%20core%20Git%20commands%20for%20development&source=Knowledge%20base%20%26%20Playbooks" target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Git&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fgit%2f&hashtags=one%2ctwo&via=crist_mos" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Git&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fgit%2f&hashtags=git%2cgit%20flow%2cversion%20control%2cCheatsheet&via=crist_mos" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -2264,7 +2295,22 @@ document.addEventListener('DOMContentLoaded', function () {
     
   </div>
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git-init">Git init</a></li>
+        <li><a href="#general">General</a></li>
+        <li><a href="#push-and-pull">Push and pull</a></li>
+        <li><a href="#reporting">Reporting</a></li>
+        <li><a href="#stash">Stash</a></li>
+        <li><a href="#amend">Amend</a></li>
+        <li><a href="#housekeeping">Housekeeping</a></li>
+        <li><a href="#git-submodule">Git submodule</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </section>
 

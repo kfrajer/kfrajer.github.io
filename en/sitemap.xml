@@ -138,8 +138,8 @@
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/tags/commands/</loc>
-    <lastmod>2020-05-30T18:11:04-04:00</lastmod>
+    <loc>http://kfrajer.github.io/en/tags/memory-analysis/</loc>
+    <lastmod>2020-05-30T18:11:25-04:00</lastmod>
   </url>
   
   <url>
@@ -148,7 +148,17 @@
   </url>
   
   <url>
+    <loc>http://kfrajer.github.io/en/tags/git-flow/</loc>
+    <lastmod>2020-05-30T18:11:04-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kfrajer.github.io/en/development/git-flow-fbranch/</loc>
+    <lastmod>2020-05-30T18:11:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/version-control/</loc>
     <lastmod>2020-05-30T18:11:04-04:00</lastmod>
   </url>
   
@@ -174,6 +184,11 @@
   
   <url>
     <loc>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</loc>
+    <lastmod>2020-05-30T18:09:54-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/multistage/</loc>
     <lastmod>2020-05-30T18:09:54-04:00</lastmod>
   </url>
   
@@ -238,6 +253,11 @@
   </url>
   
   <url>
+    <loc>http://kfrajer.github.io/en/tags/env-file/</loc>
+    <lastmod>2020-05-30T18:08:28-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kfrajer.github.io/en/tags/network/</loc>
     <lastmod>2020-05-30T18:08:28-04:00</lastmod>
   </url>
@@ -253,7 +273,12 @@
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/tags/one/</loc>
+    <loc>http://kfrajer.github.io/en/tags/volumes/</loc>
+    <lastmod>2020-05-30T18:08:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/python/</loc>
     <lastmod>2020-05-30T18:00:56-04:00</lastmod>
   </url>
   
@@ -263,12 +288,32 @@
   </url>
   
   <url>
-    <loc>http://kfrajer.github.io/en/tags/two/</loc>
+    <loc>http://kfrajer.github.io/en/tags/virtualenv/</loc>
     <lastmod>2020-05-30T18:00:56-04:00</lastmod>
   </url>
   
   <url>
+    <loc>http://kfrajer.github.io/en/tags/formatter/</loc>
+    <lastmod>2020-05-30T18:00:31-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kfrajer.github.io/en/development/jq/</loc>
+    <lastmod>2020-05-30T18:00:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/jq/</loc>
+    <lastmod>2020-05-30T18:00:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/json/</loc>
+    <lastmod>2020-05-30T18:00:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kfrajer.github.io/en/tags/logs/</loc>
     <lastmod>2020-05-30T18:00:31-04:00</lastmod>
   </url>
   

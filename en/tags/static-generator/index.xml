@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>static-generator on Hugo Zzo Theme</title>
+    <title>static-generator on PlayBooks</title>
     <link>http://kfrajer.github.io/en/tags/static-generator/</link>
-    <description>Recent content in static-generator on Hugo Zzo Theme</description>
+    <description>Recent content in static-generator on PlayBooks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>

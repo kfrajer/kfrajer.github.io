@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Multistage on PlayBooks</title>
+    <link>http://kfrajer.github.io/en/tags/multistage/</link>
+    <description>Recent content in Multistage on PlayBooks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 30 May 2020 18:09:54 -0400</lastBuildDate>
+    
+        <atom:link href="http://kfrajer.github.io/en/tags/multistage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Dockerfile Multistage - Newsletter/PrintingPress (Go)</title>
+        <link>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</link>
+        <pubDate>Sat, 30 May 2020 18:09:54 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 18:09:54 -0400</atom:modified>
+        <guid>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</guid>
+        <description>############### # FROM buildpack-deps:buster-curl as certGetter ## Copy from src to dest, load to base and outputed in master ENV SRC_CERT=ORGANIZATION \ DEST_CERT=/usr/share/ca-certificates/ORGANIZATION \ BASE_CERT=/etc/ca-certificates.conf \ MASTER_CERT_FILE=/etc/ssl/certs WORKDIR app/ COPY . . RUN mkdir -p $DEST_CERT &amp;amp;&amp;amp; cp -f $SRC_CERT/* $DEST_CERT/ &amp;amp;&amp;amp; \ for i in `find ${SRC_CERT} -type f -name &amp;quot;*.crt&amp;quot;`; do echo $i &amp;gt;&amp;gt; $BASE_CERT; echo &amp;quot;Loading $i into $BASE_CERT&amp;quot;; done &amp;amp;&amp;amp; \ echo &amp;quot;Calling update-ca-certificates...&amp;quot; &amp;amp;&amp;amp; update-ca-certificates ONBUILD RUN echo -e &amp;quot;\nFinish executing loading\n\nCertGetter\n\nNext step.</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>docker</category>
+            
+          
+            
+              <category>build</category>
+            
+          
+            
+              <category>Multistage</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

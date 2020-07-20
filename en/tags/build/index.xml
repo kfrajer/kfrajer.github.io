@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>build on Hugo Zzo Theme</title>
+    <title>build on PlayBooks</title>
     <link>http://kfrajer.github.io/en/tags/build/</link>
-    <description>Recent content in build on Hugo Zzo Theme</description>
+    <description>Recent content in build on PlayBooks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
@@ -23,7 +23,7 @@
 
       
       <item>
-        <title>Dockerfile Multistage</title>
+        <title>Dockerfile Multistage - Newsletter/PrintingPress (Go)</title>
         <link>http://kfrajer.github.io/en/templates/docker/dockerfile-multistage/</link>
         <pubDate>Sat, 30 May 2020 18:09:54 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
@@ -45,19 +45,24 @@
               <category>build</category>
             
           
+            
+              <category>Multistage</category>
+            
+          
         
         
         
       </item>
       
       <item>
-        <title>Dockerfile sample</title>
+        <title>Dockerfile sample - Report/Printing Press(Go)</title>
         <link>http://kfrajer.github.io/en/templates/docker/dockerfile/</link>
         <pubDate>Sat, 30 May 2020 18:08:14 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         <atom:modified>Sat, 30 May 2020 18:08:14 -0400</atom:modified>
         <guid>http://kfrajer.github.io/en/templates/docker/dockerfile/</guid>
-        <description>Instructions  docker build -t {imageName} . docker run -it &amp;ndash;rm &amp;ndash;mount type=bind,src=http://kfrajer.github.io/c/Users/C/workspace/out,dst=/app/publish &amp;ndash;name {containerName} {imageName}  Dockerfile content FROM golang:1.14 ENV \ PRINTING_PRESS_VERSION=&amp;quot;v0.2.0&amp;quot; \ APPROOT=&amp;quot;/app&amp;quot; \ OUTFOLDER=&amp;quot;$APPROOT/publish&amp;quot; \ RECIPIENT_EMAIL=&amp;quot;user@example.com&amp;quot; \ GITLAB_USER_EMAIL=&amp;quot;user@example.com&amp;quot; \ SEND_EMAIL_FLAG=true WORKDIR $APPROOT COPY . $APPROOT ##find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix RUN for i in `find -type f -name &amp;quot;*.sh&amp;quot; -o -name &amp;quot;*.json&amp;quot;`; do sed -i &#39;s/\r//g&#39; $i; echo &amp;quot;Removing Windows end of line for : $i&amp;quot;; done ##RUN for i in `find editorial/ -type f -name &amp;quot;*.</description>
+        <description>Instructions Next commands tag an image and run the container locally with the option to mount the source code for live updates
+ docker build -t {imageName} . docker run -it --rm --mount type=bind,src=http://kfrajer.github.io/c/Users/C/workspace/out,dst=/app/publish --name {containerName} {imageName}  Dockerfile content FROM golang:1.14 ENV \ PRINTING_PRESS_VERSION=&amp;quot;v0.2.0&amp;quot; \ APPROOT=&amp;quot;/app&amp;quot; \ OUTFOLDER=&amp;quot;$APPROOT/publish&amp;quot; \ RECIPIENT_EMAIL=&amp;quot;user@example.com&amp;quot; \ GITLAB_USER_EMAIL=&amp;quot;user@example.com&amp;quot; \ SEND_EMAIL_FLAG=true WORKDIR $APPROOT COPY . $APPROOT ##find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix RUN for i in `find -type f -name &amp;quot;*.</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         
@@ -71,6 +76,10 @@
           
             
               <category>build</category>
+            
+          
+            
+              <category>Volumes</category>
             
           
         

@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Projects on Hugo Zzo Theme</title>
+    <title>Projects on PlayBooks</title>
     <link>http://kfrajer.github.io/en/tags/projects/</link>
-    <description>Recent content in Projects on Hugo Zzo Theme</description>
+    <description>Recent content in Projects on PlayBooks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
@@ -32,7 +32,7 @@
         <description>Under construction  Current list of projects and their respective repo links Reference TODO list  Projects   Demonstration of Python decorator
  Timer function HTML maker ?    FFT processing using Processing3 Java
  Tag: java processing3 P3 FFT    FFT algorithm in R
- Tag: R FFT    Script to change folder and file names as well as rename content (Code name: GatewayConfig)</description>
+ Tag: R FFT    Script to change folder and file names as well as rename content: MAINa+MAINb</description>
         
         <dc:creator>Cristian Mosquera</dc:creator>
         

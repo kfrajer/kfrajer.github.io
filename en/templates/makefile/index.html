@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Makefile – Hugo Zzo Theme</title>
+    <title>Makefile – PlayBooks</title>
     
 
 
@@ -1216,7 +1216,7 @@
 <meta property="article:author" content="http://kfrajer.github.io/en/templates/makefile/@Cristian Mosquera">
 
 
-<meta property="og:site_name" content="Hugo Zzo Theme">
+<meta property="og:site_name" content="PlayBooks">
 <meta property="og:title" content="Makefile">
 <meta property="og:url" content="http://kfrajer.github.io/en/templates/makefile/">
 <meta property="og:type" content="article">
@@ -1273,7 +1273,7 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Hugo Zzo Theme",
+      "name": "PlayBooks",
       "url": "http://kfrajer.github.io"
     }
   }
@@ -1560,7 +1560,7 @@
   
   <li >
     
-      <a href="http://kfrajer.github.io/en/" class="capitalize">Hugo Zzo Theme</a>
+      <a href="http://kfrajer.github.io/en/" class="capitalize">PlayBooks</a>
     
   </li>
   
@@ -1592,7 +1592,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;May 30, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;2&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;Cristian Mosquera</span>
   
@@ -1616,61 +1616,224 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <p>.DEFAULT_GOAL := build<br />
-.PHONY: clean</p>
-<p>CTIMESTAMP=$(shell date +%Y%m%d%H%M%S)</p>
-<p>MAIN=newsletter-prep</p>
-<p>DF_ORIGINAL=dockerfiles/df-original/Dockerfile<br />
-DF_STAGES=dockerfiles/df-stages/Dockerfile<br />
-DC_DF_FILE=dockerfiles/dockercompose/Dockerfile<br />
-DC_MAIN_FILE=dockerfiles/dockercompose/docker-compose.yml</p>
-<p>LOGFILE=log-backups.log<br />
-TRASH=Trash/</p>
-<p>info:<br />
-@ echo &ldquo;Build and runs report generator (code name newsletter&rdquo;</p>
-<p>safebackup: clean<br />
-$(shell echo &ldquo;:::::Dockerfile_$(CTIMESTAMP)&rdquo; &raquo; $(TRASH)/$(LOGFILE))<br />
-@echo &ldquo;:::::Dockerfile_$CTIMESTAMP&rdquo;<br />
--@test -f Dockerfile &amp;&amp; $(shell head -n 3 Dockerfile &raquo; $(TRASH)/$(LOGFILE))<br />
--@test -f Dockerfile &amp;&amp; $(shell [ ! -s Dockerfile ] &amp;&amp; echo &quot;       (Dockerfile was empty)&rdquo; &raquo; $(TRASH)/$(LOGFILE))<br />
--@test -f Dockerfile &amp;&amp; cp -vf Dockerfile $(TRASH)/Dockerfile_$(CTIMESTAMP) || true<br />
--@test -f docker-compose.yml &amp;&amp; cp -vf docker-compose.yml $(TRASH)/docker-compose_$(CTIMESTAMP).yml || true</p>
-<p>safeori: safebackup<br />
--@test -f Dockerfile &amp;&amp; mv Dockerfile $(DF_ORIGINAL)</p>
-<p>safestages: safebackup<br />
--@test -f Dockerfile &amp;&amp; mv Dockerfile $(DF_STAGES)</p>
-<p>safedc: safebackup<br />
--@test -f Dockerfile &amp;&amp; mv Dockerfile $(DC_DF_FILE)<br />
--@test -f docker-compose.yml &amp;&amp; mv docker-compose.yml $(DC_MAIN_FILE)</p>
-<p>checkifsafe:<br />
--@test -f Dockerfile &amp;&amp; echo &ldquo;!!!!! WARNING: Dockerfile exist.&rdquo; &amp;&amp; echo &ldquo;!!!!! WARNING: You need to save proper session first&rdquo;</p>
-<p>ori: checkifsafe<br />
--@test ! -f Dockerfile &amp;&amp; cp $(DF_ORIGINAL) .</p>
-<p>stages: checkifsafe<br />
--@test ! -f Dockerfile &amp;&amp; cp $(DF_STAGES) .<br />
-dc: checkifsafe<br />
--@test ! -f Dockerfile &amp;&amp; cp $(DC_DF_FILE) .<br />
--@test ! -f docker-compose.yml &amp;&amp; cp $(DC_MAIN_FILE) .</p>
-<p>build: clean<br />
-CGO_ENABLED=0; GOOS=linux GOARCH=amd64 go build -ldflags &lsquo;-s -w&rsquo; -v -o ./pkg/&hellip;<br />
-chmod +x $(MAIN)</p>
-<h2 id="statically-compiled-binary-run-cgo_enabled0-go-get--a--ldflags--s-githubcomadriaandejongehelloworld">STATICALLY compiled binary: RUN CGO_ENABLED=0 go get -a -ldflags &lsquo;-s&rsquo; github.com/adriaandejonge/helloworld</h2>
-<p>run: build<br />
-./$(MAIN)</p>
-<p>tar:<br />
-tar -cvf ~/backup_$(CTIMESTAMP).tar *<br />
-echo &ldquo;Backup created at ~/backup_$(CTIMESTAMP).tar&rdquo;<br />
-clean:<br />
-@ echo &ldquo;Cleaning up&hellip;&rdquo;<br />
-mkdir -p $(TRASH)<br />
-mv -f $(MAIN) $(TRASH) || true<br />
-FILES=&quot;$(shell find -type f -name &lsquo;*.*~&rsquo; -o -name &lsquo;*~&rsquo;)&quot;; mv -f $$FILES $(TRASH) || true<br />
-@ echo &ldquo;Cleaning up&hellip; DONE&rdquo;</p>
-<p>test:<br />
-@echo &ldquo;CTIMESTAMP is $(CTIMESTAMP)&rdquo;<br />
--@test -f Dockerfile &amp;&amp; echo &ldquo;File does exist&rdquo;<br />
--@test ! -f Dockerfile &amp;&amp; echo &ldquo;File does NOT exist $CTIMESTAMP&rdquo;</p>
+      <h3 id="makefile-newsletterprinting-press-template-go">Makefile: Newsletter/Printing Press Template (Go)</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-makefile" data-lang="makefile"><span class="nv">.DEFAULT_GOAL</span> <span class="o">:=</span> build
+<span class="nf">.PHONY</span><span class="o">:</span> <span class="n">clean</span>
 
+
+<span class="nv">CTIMESTAMP</span><span class="o">=</span><span class="k">$(</span>shell date +%Y%m%d%H%M%S<span class="k">)</span>
+
+<span class="nv">MAIN</span><span class="o">=</span>newsletter-prep
+
+<span class="nv">DF_ORIGINAL</span><span class="o">=</span>dockerfiles/df-original/Dockerfile
+<span class="nv">DF_STAGES</span><span class="o">=</span>dockerfiles/df-stages/Dockerfile
+<span class="nv">DC_DF_FILE</span><span class="o">=</span>dockerfiles/dockercompose/Dockerfile
+<span class="nv">DC_MAIN_FILE</span><span class="o">=</span>dockerfiles/dockercompose/docker-compose.yml
+
+<span class="nv">LOGFILE</span><span class="o">=</span>log-backups.log
+<span class="nv">TRASH</span><span class="o">=</span>Trash/
+
+<span class="nf">info</span><span class="o">:</span>
+        @ <span class="nb">echo</span> <span class="s2">&#34;Build and runs report generator (code name newsletter&#34;</span>
+
+<span class="nf">safebackup</span><span class="o">:</span> <span class="n">clean</span>
+        <span class="k">$(</span>shell <span class="nb">echo</span> <span class="s2">&#34;:::::Dockerfile_</span><span class="k">$(</span>CTIMESTAMP<span class="k">)</span><span class="s2">&#34;</span> &gt;&gt; <span class="k">$(</span>TRASH<span class="k">)</span>/<span class="k">$(</span>LOGFILE<span class="k">))</span>
+        @echo <span class="s2">&#34;:::::Dockerfile_</span><span class="nv">$CTIMESTAMP</span><span class="s2">&#34;</span>
+        -@test -f Dockerfile <span class="o">&amp;&amp;</span> <span class="k">$(</span>shell head -n <span class="m">3</span> Dockerfile &gt;&gt; <span class="k">$(</span>TRASH<span class="k">)</span>/<span class="k">$(</span>LOGFILE<span class="k">))</span>
+        -@test -f Dockerfile <span class="o">&amp;&amp;</span> <span class="k">$(</span>shell <span class="o">[</span> ! -s Dockerfile <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;       (Dockerfile was empty)&#34;</span> &gt;&gt; <span class="k">$(</span>TRASH<span class="k">)</span>/<span class="k">$(</span>LOGFILE<span class="k">))</span>
+        -@test -f Dockerfile <span class="o">&amp;&amp;</span> cp -vf Dockerfile <span class="k">$(</span>TRASH<span class="k">)</span>/Dockerfile_<span class="k">$(</span>CTIMESTAMP<span class="k">)</span> <span class="o">||</span> <span class="nb">true</span>
+        -@test -f docker-compose.yml <span class="o">&amp;&amp;</span> cp -vf docker-compose.yml <span class="k">$(</span>TRASH<span class="k">)</span>/docker-compose_<span class="k">$(</span>CTIMESTAMP<span class="k">)</span>.yml <span class="o">||</span> <span class="nb">true</span>
+
+<span class="nf">safeori</span><span class="o">:</span> <span class="n">safebackup</span>
+        -@test -f Dockerfile <span class="o">&amp;&amp;</span> mv Dockerfile <span class="k">$(</span>DF_ORIGINAL<span class="k">)</span>
+
+<span class="nf">safestages</span><span class="o">:</span> <span class="n">safebackup</span>
+        -@test -f Dockerfile <span class="o">&amp;&amp;</span> mv Dockerfile <span class="k">$(</span>DF_STAGES<span class="k">)</span>
+
+<span class="nf">safedc</span><span class="o">:</span> <span class="n">safebackup</span>
+        -@test -f Dockerfile <span class="o">&amp;&amp;</span> mv Dockerfile <span class="k">$(</span>DC_DF_FILE<span class="k">)</span>
+        -@test -f docker-compose.yml <span class="o">&amp;&amp;</span> mv docker-compose.yml <span class="k">$(</span>DC_MAIN_FILE<span class="k">)</span>
+
+<span class="nf">checkifsafe</span><span class="o">:</span>
+        -@test -f Dockerfile <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;!!!!! WARNING: Dockerfile exist.&#34;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;!!!!! WARNING: You need to save proper session first&#34;</span>
+
+<span class="nf">ori</span><span class="o">:</span> <span class="n">checkifsafe</span>
+        -@test ! -f Dockerfile <span class="o">&amp;&amp;</span> cp <span class="k">$(</span>DF_ORIGINAL<span class="k">)</span> .
+
+<span class="nf">stages</span><span class="o">:</span> <span class="n">checkifsafe</span>
+        -@test ! -f Dockerfile <span class="o">&amp;&amp;</span> cp <span class="k">$(</span>DF_STAGES<span class="k">)</span> .
+<span class="nf">dc</span><span class="o">:</span> <span class="n">checkifsafe</span>
+        -@test ! -f Dockerfile <span class="o">&amp;&amp;</span> cp <span class="k">$(</span>DC_DF_FILE<span class="k">)</span> .
+        -@test ! -f docker-compose.yml <span class="o">&amp;&amp;</span> cp <span class="k">$(</span>DC_MAIN_FILE<span class="k">)</span> .
+
+<span class="nf">build</span><span class="o">:</span> <span class="n">clean</span>
+        <span class="nv">CGO_ENABLED</span><span class="o">=</span>0<span class="p">;</span> <span class="nv">GOOS</span><span class="o">=</span>linux <span class="nv">GOARCH</span><span class="o">=</span>amd64 go build -ldflags <span class="s1">&#39;-s -w&#39;</span> -v -o ./pkg/...
+        chmod +x <span class="k">$(</span>MAIN<span class="k">)</span>
+
+<span class="c">## STATICALLY compiled binary: RUN CGO_ENABLED=0 go get -a -ldflags &#39;-s&#39; github.com/adriaandejonge/helloworld
+</span><span class="c"></span>
+<span class="nf">run</span><span class="o">:</span> <span class="n">build</span>
+        ./<span class="k">$(</span>MAIN<span class="k">)</span>
+
+<span class="nf">tar</span><span class="o">:</span>
+        tar -cvf ~/backup_<span class="k">$(</span>CTIMESTAMP<span class="k">)</span>.tar *
+        <span class="nb">echo</span> <span class="s2">&#34;Backup created at ~/backup_</span><span class="k">$(</span>CTIMESTAMP<span class="k">)</span><span class="s2">.tar&#34;</span>
+<span class="nf">clean</span><span class="o">:</span>
+        @ <span class="nb">echo</span> <span class="s2">&#34;Cleaning up...&#34;</span>
+        mkdir -p <span class="k">$(</span>TRASH<span class="k">)</span>
+        mv -f <span class="k">$(</span>MAIN<span class="k">)</span> <span class="k">$(</span>TRASH<span class="k">)</span> <span class="o">||</span> <span class="nb">true</span>
+        <span class="nv">FILES</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>shell find -type f -name <span class="s1">&#39;*.*~&#39;</span> -o -name <span class="s1">&#39;*~&#39;</span><span class="k">)</span><span class="s2">&#34;</span><span class="p">;</span> mv -f <span class="nv">$$</span>FILES <span class="k">$(</span>TRASH<span class="k">)</span> <span class="o">||</span> <span class="nb">true</span>
+        @ <span class="nb">echo</span> <span class="s2">&#34;Cleaning up... DONE&#34;</span>
+
+<span class="nf">test</span><span class="o">:</span>
+        @echo <span class="s2">&#34;CTIMESTAMP is </span><span class="k">$(</span>CTIMESTAMP<span class="k">)</span><span class="s2">&#34;</span>
+        -@test -f Dockerfile <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;File does exist&#34;</span>
+        -@test ! -f Dockerfile <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;File does NOT exist </span><span class="nv">$CTIMESTAMP</span><span class="s2">&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="makefile-bets-containeration-nodejs">Makefile: Bets Containeration (NodeJS)</h3>
+<div class="highlight"><pre class="chroma"><code class="language-makefile" data-lang="makefile"><span class="nv">.DEFAULT_GOAL</span> <span class="o">:=</span> restart
+
+<span class="nv">CTIMESTAMP</span><span class="o">=</span><span class="k">$(</span>shell date +%Y%m%d%H%M%S<span class="k">)</span>
+
+<span class="nf">up</span><span class="o">:</span> <span class="c">## Spin al lservices up
+</span><span class="c"></span>        @ <span class="nb">echo</span> <span class="s2">&#34;Spinning containers up!&#34;</span>
+        docker-compose up --build -d
+        <span class="c1"># ccps</span>
+
+<span class="nf">down</span><span class="o">:</span> <span class="c">## Spin all services down and remove all associated volumes
+</span><span class="c"></span>        @ <span class="nb">echo</span> <span class="s2">&#34;Tearing down, wait...!&#34;</span>
+        docker-compose down -v
+        <span class="c1">#docker volume rm webapp-data webapp-logs</span>
+
+<span class="nf">delay</span><span class="o">:</span>
+        sleep <span class="m">5</span>
+
+<span class="nf">run</span><span class="o">:</span> <span class="n">restart</span> <span class="c">## Alias for restart goal
+</span><span class="c"></span>
+<span class="nf">restart</span><span class="o">:</span> <span class="n">down</span> <span class="n">delay</span> <span class="n">up</span> <span class="n">info</span> <span class="c">## Spins the services down and then up (Default goal)
+</span><span class="c"></span>
+<span class="nf">info2</span><span class="o">:</span> <span class="c">## Attempt to print pretty `docker ps`
+</span><span class="c"></span>        @echo  <span class="s2">&#34;</span><span class="k">$(</span>docker ps --format <span class="s2">&#34;</span><span class="si">${</span><span class="nv">Yellow</span><span class="si">}</span><span class="s2">{{.Names}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">\n\tStatus:</span><span class="si">${</span><span class="nv">IRed</span><span class="si">}</span><span class="s2"> {{.Status}}</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">\n\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Container ID:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.ID}}\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Command:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.Command}}\n\t</span><span class="si">${</span><span class="nv">IBlue</span><span class="si">}</span><span class="s2">Image:</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2"> {{.Image}}&#34;</span> <span class="k">)</span><span class="s2">&#34;</span>
+
+<span class="nf">info</span><span class="o">:</span> <span class="c">## To run when service is up. Prints each service logs, current network and output each container&#39;s ip addr
+</span><span class="c"></span>        @echo <span class="s2">&#34;CTIMESTAMP is </span><span class="k">$(</span>CTIMESTAMP<span class="k">)</span><span class="s2">&#34;</span>
+        docker logs mysql
+        @echo <span class="s2">&#34;=======&#34;</span>
+        docker logs cronjob
+        @echo <span class="s2">&#34;=======&#34;</span>
+        docker logs webapp
+        @echo <span class="s2">&#34;=======&#34;</span>
+        docker network ls
+        @echo <span class="s2">&#34;=======&#34;</span>
+        docker inspect -f <span class="s1">&#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39;</span> mysql
+        docker inspect -f <span class="s1">&#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39;</span> webapp
+        docker inspect -f <span class="s1">&#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39;</span> cronjob
+        cat /etc/resolv.conf
+
+<span class="nf">test</span><span class="o">:</span> <span class="c">## Test the webapp service
+</span><span class="c"></span>        @echo <span class="s2">&#34;Testing services...&#34;</span>
+        curl <span class="s2">&#34;http://localhost:8080/status&#34;</span>
+        <span class="c1">#@echo &#34;=======&#34;</span>
+        <span class="c1">#curl &#34;http://webapp:8080/status&#34;</span>
+        @echo <span class="s2">&#34;END of TEST&#34;</span>
+
+<span class="nf">.PHONY</span><span class="o">:</span> <span class="n">man</span>
+<span class="nf">man</span><span class="o">:</span> <span class="n">help</span> <span class="c">## Alias for help goal
+</span><span class="c"></span>
+<span class="nf">.PHONY</span><span class="o">:</span> <span class="n">help</span>
+<span class="nf">help</span><span class="o">:</span> <span class="c">## This help
+</span><span class="c"></span>        @ <span class="nb">echo</span> <span class="s2">&#34;==========&#34;</span>
+        @ <span class="nb">echo</span> <span class="s2">&#34;Help menu:&#34;</span>
+        @ <span class="nb">echo</span> <span class="s2">&#34;==========&#34;</span>
+        @ <span class="nb">echo</span> <span class="s2">&#34;INSTRUCTIONS: Type &#39;make {GOAL}&#39; where {GOAL} is any of the following entries:&#34;</span>
+        @ <span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
+        @grep -hE <span class="s1">&#39;^[a-zA-Z_-]+.*?:.*?## .*$$&#39;</span> <span class="si">${</span><span class="nv">MAKEFILE_LIST</span><span class="si">}</span> <span class="p">|</span> sort <span class="p">|</span> awk <span class="s1">&#39;BEGIN {FS = &#34;:.*?## &#34;}; {printf &#34;\033[36m%-30s\033[0m %s\n&#34;, $$1, $$2}&#39;</span>
+
+<span class="nf">.PHONY</span><span class="o">:</span> <span class="n">clean</span>
+<span class="nf">clean</span><span class="o">:</span> <span class="c">## Remove temporal/backup file screated by editors
+</span><span class="c"></span>        @ <span class="nb">echo</span> <span class="s2">&#34;Cleaning up…&#34;</span>
+        mkdir -p <span class="k">$(</span>TRASH<span class="k">)</span>
+        mv -f <span class="k">$(</span>MAIN<span class="k">)</span> <span class="k">$(</span>TRASH<span class="k">)</span> <span class="o">||</span> <span class="nb">true</span>
+        <span class="nv">FILES</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>shell find -type f -name <span class="s1">&#39;*.*~&#39;</span> -o -name <span class="s1">&#39;*~&#39;</span><span class="k">)</span><span class="s2">&#34;</span><span class="p">;</span> mv -f <span class="nv">$$</span>FILES <span class="k">$(</span>TRASH<span class="k">)</span> <span class="o">||</span> <span class="nb">true</span>
+        @ <span class="nb">echo</span> “Cleaning up… DONE
+</code></pre></div>
     </article>
     
     <script>
@@ -1731,7 +1894,7 @@ FILES=&quot;$(shell find -type f -name &lsquo;*.*~&rsquo; -o -name &lsquo;*~&rsq
     
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2ftemplates%2fmakefile%2f&title=Makefile &summary=Makefile%20demo%20-%20Nesletter%20project&source=The%20Zzo%20theme%20for%20Hugo%20example%20site." target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2ftemplates%2fmakefile%2f&title=Makefile &summary=Makefile%20demo%20-%20Nesletter%20project&source=Knowledge%20base%20%26%20Playbooks" target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
@@ -2248,7 +2411,12 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#statically-compiled-binary-run-cgo_enabled0-go-get--a--ldflags--s-githubcomadriaandejongehelloworld">STATICALLY compiled binary: RUN CGO_ENABLED=0 go get -a -ldflags &lsquo;-s&rsquo; github.com/adriaandejonge/helloworld</a></li>
+    <li>
+      <ul>
+        <li><a href="#makefile-newsletterprinting-press-template-go">Makefile: Newsletter/Printing Press Template (Go)</a></li>
+        <li><a href="#makefile-bets-containeration-nodejs">Makefile: Bets Containeration (NodeJS)</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>

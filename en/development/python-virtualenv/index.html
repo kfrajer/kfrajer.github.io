@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Python Virtualenv – Hugo Zzo Theme</title>
+    <title>Python Virtualenv – PlayBooks</title>
     
 
 
@@ -1203,10 +1203,10 @@
 
 
     
-<meta name="description" content="" />
+<meta name="description" content="Python virtual environment best practices" />
 
 
-<meta name="keywords" content="one,two">
+<meta name="keywords" content="Python,virtualenv">
 
 <meta name="created" content="2020-05-30T18:00:56-0400">
 <meta name="modified" content="2020-05-30T18:00:56-0400">
@@ -1216,11 +1216,11 @@
 <meta property="article:author" content="http://kfrajer.github.io/en/development/python-virtualenv/@Cristian Mosquera">
 
 
-<meta property="og:site_name" content="Hugo Zzo Theme">
+<meta property="og:site_name" content="PlayBooks">
 <meta property="og:title" content="Python Virtualenv">
 <meta property="og:url" content="http://kfrajer.github.io/en/development/python-virtualenv/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="">
+<meta property="og:description" content="Python virtual environment best practices">
 
 <meta name="generator" content="Hugo 0.71.1" />
 <meta name="msapplication-TileColor" content="#fff">
@@ -1261,8 +1261,8 @@
     "datePublished": "2020-05-30T18:00:56-04:00",
     "dateModified": "2020-05-30T18:00:56-04:00",
     "url" : "http://kfrajer.github.io/en/development/python-virtualenv/",
-    "description": "Python Virtual Environment For Linux  virtualenv -v venv --python=/usr/bin/python3 source ./venv/bin/activate  For Windows  python -m pip install …",
-    "keywords": ["one","two"],
+    "description": "Python virtual environment best practices",
+    "keywords": ["Python","virtualenv"],
     "author": {
       "@type": "Person",
       "name": "Cristian Mosquera"
@@ -1273,7 +1273,7 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Hugo Zzo Theme",
+      "name": "PlayBooks",
       "url": "http://kfrajer.github.io"
     }
   }
@@ -1560,7 +1560,7 @@
   
   <li >
     
-      <a href="http://kfrajer.github.io/en/" class="capitalize">Hugo Zzo Theme</a>
+      <a href="http://kfrajer.github.io/en/" class="capitalize">PlayBooks</a>
     
   </li>
   
@@ -1606,30 +1606,61 @@
   🏷️
   
 
-  <li><a href="http://kfrajer.github.io/en/tags/one/" class="single__tag" title="one">#one</a></li>
+  <li><a href="http://kfrajer.github.io/en/tags/python/" class="single__tag" title="Python">#Python</a></li>
 
-  <li><a href="http://kfrajer.github.io/en/tags/two/" class="single__tag" title="two">#two</a></li>
+  <li><a href="http://kfrajer.github.io/en/tags/virtualenv/" class="single__tag" title="virtualenv">#virtualenv</a></li>
 
 </ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <h1 id="python-virtual-environment">Python Virtual Environment</h1>
-<h2 id="for-linux">For Linux</h2>
-<ul>
-<li><code>virtualenv -v venv --python=/usr/bin/python3</code></li>
-<li><code>source ./venv/bin/activate</code></li>
-</ul>
-<h2 id="for-windows">For Windows</h2>
+      <h2 id="python-virtual-environment">Python Virtual Environment</h2>
+<h3 id="install">Install</h3>
+<h4 id="linux">Linux</h4>
 <ul>
 <li><code>python -m pip install --proxy=http://u:p@proxy-svc-name.com:port --upgrade pip</code></li>
 <li><code>pip install --proxy=http://u:p@proxy-svc-name.com:port virtualenv</code></li>
-<li><code>virtualenv -v {envName} --python=c:\Python37\python.exe</code></li>
-<li><code>{envName}\Scripts\activate</code><br />
-[…]</li>
-<li><code>deactivate</code></li>
-<li><code>doskey /history</code></li>
 </ul>
+<h4 id="windows">Windows</h4>
+<p>To set the python virtualenv in Windows see <a href="https://mothergeo-py.readthedocs.io/en/latest/development/how-to/venv-win.html">https://mothergeo-py.readthedocs.io/en/latest/development/how-to/venv-win.html</a></p>
+<h3 id="additional-reference-from-google-gae">Additional reference from Google GAE</h3>
+<ol>
+<li><a href="https://cloud.google.com/python/setup">https://cloud.google.com/python/setup</a></li>
+<li><a href="https://cloud.google.com/appengine/docs/flexible/python/quickstart">https://cloud.google.com/appengine/docs/flexible/python/quickstart</a></li>
+</ol>
+<h3 id="start-environment">Start environment</h3>
+<ul>
+<li>For Linux, run the following script to activate the environment using local Python3</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">PY3PATH</span><span class="o">=</span><span class="k">$(</span>which python3<span class="k">)</span>
+<span class="nv">ENVNAME</span><span class="o">=</span>wslenv
+virtualenv --python<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PY3PATH</span><span class="s2">&#34;</span> <span class="nv">$ENVNAME</span>
+<span class="nb">source</span> <span class="s2">&#34;./</span><span class="nv">$ENVNAME</span><span class="s2">/bin/activate&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>For Windows</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">virtualenv --python C:<span class="se">\P</span>ython37<span class="se">\p</span>ython.exe <span class="o">{</span>env_name<span class="o">}</span>
+.<span class="se">\{</span>env_name<span class="o">}</span><span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="stop-environment">Stop environment</h3>
+<p>Just type: <code>deactivate</code></p>
 
     </article>
     
@@ -1691,13 +1722,13 @@
     
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fpython-virtualenv%2f&title=Python%20Virtualenv &summary=&source=The%20Zzo%20theme%20for%20Hugo%20example%20site." target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fpython-virtualenv%2f&title=Python%20Virtualenv &summary=Python%20virtual%20environment%20best%20practices&source=Knowledge%20base%20%26%20Playbooks" target="_blank" rel="noreferer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Python%20Virtualenv&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fpython-virtualenv%2f&hashtags=one%2ctwo&via=crist_mos" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Python%20Virtualenv&url=http%3a%2f%2fkfrajer.github.io%2fen%2fdevelopment%2fpython-virtualenv%2f&hashtags=Python%2cvirtualenv&via=crist_mos" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -1837,25 +1868,6 @@
 
     <section class="related">
     
-    
-    <h1 class="related__title">
-      <hr class="hr-dots"/>
-      <div>
-        See Also
-      </div>
-      <hr class="hr-dots"/>
-    </h1>
-    <ul class="related-ul">
-        
-        <li>
-          <a href="/en/development/jq/" class="related__link">Jq</a>
-        </li>
-        
-        <li>
-          <a href="/en/development/git/" class="related__link">Git</a>
-        </li>
-        
-    </ul>
     
   </section>
     <div class="grow"></div>
@@ -2234,8 +2246,19 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#for-linux">For Linux</a></li>
-    <li><a href="#for-windows">For Windows</a></li>
+    <li><a href="#python-virtual-environment">Python Virtual Environment</a>
+      <ul>
+        <li><a href="#install">Install</a>
+          <ul>
+            <li><a href="#linux">Linux</a></li>
+            <li><a href="#windows">Windows</a></li>
+          </ul>
+        </li>
+        <li><a href="#additional-reference-from-google-gae">Additional reference from Google GAE</a></li>
+        <li><a href="#start-environment">Start environment</a></li>
+        <li><a href="#stop-environment">Stop environment</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>

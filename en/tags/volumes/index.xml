@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Volumes on PlayBooks</title>
+    <link>http://kfrajer.github.io/en/tags/volumes/</link>
+    <description>Recent content in Volumes on PlayBooks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
+    <webMaster>krisfrajer@gmail.com (krisfrajer)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 30 May 2020 18:08:14 -0400</lastBuildDate>
+    
+        <atom:link href="http://kfrajer.github.io/en/tags/volumes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Dockerfile sample - Report/Printing Press(Go)</title>
+        <link>http://kfrajer.github.io/en/templates/docker/dockerfile/</link>
+        <pubDate>Sat, 30 May 2020 18:08:14 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        <atom:modified>Sat, 30 May 2020 18:08:14 -0400</atom:modified>
+        <guid>http://kfrajer.github.io/en/templates/docker/dockerfile/</guid>
+        <description>Instructions Next commands tag an image and run the container locally with the option to mount the source code for live updates
+ docker build -t {imageName} . docker run -it --rm --mount type=bind,src=http://kfrajer.github.io/c/Users/C/workspace/out,dst=/app/publish --name {containerName} {imageName}  Dockerfile content FROM golang:1.14 ENV \ PRINTING_PRESS_VERSION=&amp;quot;v0.2.0&amp;quot; \ APPROOT=&amp;quot;/app&amp;quot; \ OUTFOLDER=&amp;quot;$APPROOT/publish&amp;quot; \ RECIPIENT_EMAIL=&amp;quot;user@example.com&amp;quot; \ GITLAB_USER_EMAIL=&amp;quot;user@example.com&amp;quot; \ SEND_EMAIL_FLAG=true WORKDIR $APPROOT COPY . $APPROOT ##find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix RUN for i in `find -type f -name &amp;quot;*.</description>
+        
+        <dc:creator>Cristian Mosquera</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>docker</category>
+            
+          
+            
+              <category>build</category>
+            
+          
+            
+              <category>Volumes</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

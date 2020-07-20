@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Golang on Hugo Zzo Theme</title>
+    <title>Golang on PlayBooks</title>
     <link>http://kfrajer.github.io/en/tags/golang/</link>
-    <description>Recent content in Golang on Hugo Zzo Theme</description>
+    <description>Recent content in Golang on PlayBooks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>

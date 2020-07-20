@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Tags on Hugo Zzo Theme</title>
+    <title>Tags on PlayBooks</title>
     <link>http://kfrajer.github.io/en/tags/</link>
-    <description>Recent content in Tags on Hugo Zzo Theme</description>
+    <description>Recent content in Tags on PlayBooks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>krisfrajer@gmail.com (krisfrajer)</managingEditor>
@@ -293,12 +293,12 @@
       </item>
       
       <item>
-        <title>Commands</title>
-        <link>http://kfrajer.github.io/en/tags/commands/</link>
-        <pubDate>Sat, 30 May 2020 18:11:04 -0400</pubDate>
+        <title>Memory analysis</title>
+        <link>http://kfrajer.github.io/en/tags/memory-analysis/</link>
+        <pubDate>Sat, 30 May 2020 18:11:25 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         
-        <guid>http://kfrajer.github.io/en/tags/commands/</guid>
+        <guid>http://kfrajer.github.io/en/tags/memory-analysis/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -317,6 +317,42 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         
         <guid>http://kfrajer.github.io/en/tags/git/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Git flow</title>
+        <link>http://kfrajer.github.io/en/tags/git-flow/</link>
+        <pubDate>Sat, 30 May 2020 18:11:04 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/git-flow/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>version control</title>
+        <link>http://kfrajer.github.io/en/tags/version-control/</link>
+        <pubDate>Sat, 30 May 2020 18:11:04 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/version-control/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -371,6 +407,24 @@
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         
         <guid>http://kfrajer.github.io/en/tags/build/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Multistage</title>
+        <link>http://kfrajer.github.io/en/tags/multistage/</link>
+        <pubDate>Sat, 30 May 2020 18:09:54 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/multistage/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -509,6 +563,24 @@
       </item>
       
       <item>
+        <title>env file</title>
+        <link>http://kfrajer.github.io/en/tags/env-file/</link>
+        <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/env-file/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>network</title>
         <link>http://kfrajer.github.io/en/tags/network/</link>
         <pubDate>Sat, 30 May 2020 18:08:28 -0400</pubDate>
@@ -545,12 +617,12 @@
       </item>
       
       <item>
-        <title>one</title>
-        <link>http://kfrajer.github.io/en/tags/one/</link>
-        <pubDate>Sat, 30 May 2020 18:00:56 -0400</pubDate>
+        <title>Volumes</title>
+        <link>http://kfrajer.github.io/en/tags/volumes/</link>
+        <pubDate>Sat, 30 May 2020 18:08:14 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         
-        <guid>http://kfrajer.github.io/en/tags/one/</guid>
+        <guid>http://kfrajer.github.io/en/tags/volumes/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
@@ -563,12 +635,102 @@
       </item>
       
       <item>
-        <title>two</title>
-        <link>http://kfrajer.github.io/en/tags/two/</link>
+        <title>Python</title>
+        <link>http://kfrajer.github.io/en/tags/python/</link>
         <pubDate>Sat, 30 May 2020 18:00:56 -0400</pubDate>
         <author>krisfrajer@gmail.com (krisfrajer)</author>
         
-        <guid>http://kfrajer.github.io/en/tags/two/</guid>
+        <guid>http://kfrajer.github.io/en/tags/python/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>virtualenv</title>
+        <link>http://kfrajer.github.io/en/tags/virtualenv/</link>
+        <pubDate>Sat, 30 May 2020 18:00:56 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/virtualenv/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Formatter</title>
+        <link>http://kfrajer.github.io/en/tags/formatter/</link>
+        <pubDate>Sat, 30 May 2020 18:00:31 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/formatter/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>jq</title>
+        <link>http://kfrajer.github.io/en/tags/jq/</link>
+        <pubDate>Sat, 30 May 2020 18:00:31 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/jq/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>json</title>
+        <link>http://kfrajer.github.io/en/tags/json/</link>
+        <pubDate>Sat, 30 May 2020 18:00:31 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/json/</guid>
+        <description></description>
+        
+        <dc:creator>krisfrajer</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>logs</title>
+        <link>http://kfrajer.github.io/en/tags/logs/</link>
+        <pubDate>Sat, 30 May 2020 18:00:31 -0400</pubDate>
+        <author>krisfrajer@gmail.com (krisfrajer)</author>
+        
+        <guid>http://kfrajer.github.io/en/tags/logs/</guid>
         <description></description>
         
         <dc:creator>krisfrajer</dc:creator>
